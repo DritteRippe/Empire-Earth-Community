@@ -1,8 +1,64 @@
-﻿Empire Earth Community – Installation
-=====================================
+﻿Empire Earth Community
+======================
+
+Empire Earth, The Art of Conquest und Neo Empire Earth mit einem einzigen Setup installieren – samt Launcher und Mod Creator.
 
 Diese Anleitung erklärt dir Schritt für Schritt, wie du alles mit einem Setup installierst.
 Du brauchst keine Vorkenntnisse. Lies jeden Schritt und klicke genau das, was dort steht.
+
+  
+Version  1.0.0 (Was ist neu?)
+Status  erste Version, getestet am 2026-10-06 unter Windows 11 (siehe Bekannte Probleme)
+Für  Windows 10 und Windows 11, nur für Besitzer des Originalspiels
+Download  etwa 1,3 GB
+
+Das ist enthalten:
+
+Teil  Version
+Empire Earth Community Setup (das eine Setup für alles)  1.0.0
+Empire Earth mit der Erweiterung The Art of Conquest  Setup 1.7.2
+Neo Empire Earth (NeoEE)  2.0.0.5
+Empire Earth Launcher  1.0.0
+Mod Creator  aus Launcher 1.0.0
+
+Schnellstart
+
+1. Oben auf „Code“ und dann auf „Download ZIP“ klicken (Schritt 1).
+2. Die ZIP-Datei mit „Alle extrahieren“ entpacken (Schritt 2 und Schritt 3).
+3. Im entpackten Ordner „Empire Earth Community Setup“ starten (Schritt 4 bis 6).
+4. Durch die Seiten klicken, das Originalspiel bestätigen und warten, bis die letzte Seite erscheint (Schritt 7 bis 9).
+5. Auf dem Desktop „Empire Earth“ oder „Neo Empire Earth“ doppelklicken und spielen.
+
+Zum ersten Mal dabei? Dann nimm dir lieber die ausführlichen Schritte unten vor. Sie zeigen dir jedes Fenster genau.
+
+Inhalt
+------
+
+- Was wird installiert?
+- Was brauchst du?
+- Schritt 1: Paket herunterladen
+- Schritt 2: Download freigeben (empfohlen)
+- Schritt 3: ZIP entpacken
+- Schritt 4: Setup starten
+- Schritt 5: SmartScreen
+- Schritt 6: Benutzerkontensteuerung
+- Schritt 7: Die Seiten des Setups
+- Schritt 8: Warten
+- Schritt 9: Die letzte Seite
+- Wo finde ich alles?
+- Spielen
+- Reparieren
+- Deinstallieren
+- Wenn etwas nicht klappt
+- Protokolle für die Hilfe
+- Paket prüfen (Prüfsummen)
+- Bekannte Probleme
+- Was ist neu?
+- Versionen
+- Hilfe und Feedback
+- Technische Details
+- Quellcode und Lizenzen
+- Rechtlicher Hinweis
 
 Was wird installiert?
 ---------------------
@@ -26,10 +82,12 @@ Was brauchst du?
 Schritt 1: Paket herunterladen
 ------------------------------
 
-1. Öffne die Seite des Pakets auf GitHub (den Link hast du bekommen). Du musst angemeldet sein.
+1. Öffne diese Seite auf GitHub. Du musst angemeldet sein.
 2. Klicke oben auf den grünen Knopf „Code“.
 3. Klicke auf „Download ZIP“.
 4. Warte, bis der Download fertig ist. Die ZIP-Datei liegt danach meistens im Ordner „Downloads“.
+
+So bekommst du immer die neueste Version. Wie du eine ältere Version holst, steht unter Versionen.
 
 Schritt 2: Download freigeben (empfohlen)
 -----------------------------------------
@@ -84,7 +142,7 @@ Schritt 7: Die Seiten des Setups
 Seite „Was möchtest du installieren?“
 
 1. Beide Spiele haben schon einen Haken: „Empire Earth (mit The Art of Conquest)“ und „Neo Empire Earth (NeoEE)“. Lass beide Haken stehen, wenn du beide Spiele willst.
-2. Unter jedem Spiel steht, ob es „Noch nicht installiert.“ oder „Schon installiert.“ ist.
+2. Unter jedem Spiel steht, ob es „Noch nicht installiert.“ oder „Schon installiert. Das Setup aktualisiert oder repariert es.“ ist.
 3. Lass den Haken bei „Erweitert: Das Setup jedes Spiels selbst durchgehen“ leer. Die meisten brauchen das nicht.
 4. Klicke auf „Weiter“.
 
@@ -156,6 +214,8 @@ Spielen
 
 Fehlt auf deinem Computer das .NET Framework 4.8, gibt es keinen Launcher. Dann starten die beiden Verknüpfungen das Spiel direkt.
 
+Reagiert die Maus direkt nach dem Spielstart nicht? Dafür gibt es eine einfache Abhilfe, siehe Bekannte Probleme.
+
 Reparieren
 ----------
 
@@ -175,7 +235,7 @@ Deinstallieren
 
 1. Schließe alle Spiele und den Launcher.
 2. Öffne „Einstellungen“ > „Apps“ > „Installierte Apps“. Unter Windows 10 heißt die Seite „Apps & Features“.
-3. Suche den Eintrag „Empire Earth Community (Launcher, EE, NeoEE)“. In der Liste stehen auch die Spiele einzeln (z. B. „Empire Earth“ und „NeoEE“). Um alles zu entfernen, wähle nur „Empire Earth Community (Launcher, EE, NeoEE)“.
+3. Suche den Eintrag „Empire Earth Community (Launcher, EE, NeoEE)“. In der Liste stehen auch die Spiele einzeln (Einträge, die mit „Empire Earth“ und „NeoEE“ beginnen). Um alles zu entfernen, wähle nur „Empire Earth Community (Launcher, EE, NeoEE)“.
 4. Windows 11: Klicke rechts daneben auf „...“ und dann auf „Deinstallieren“. Windows 10: Klicke auf den Eintrag und dann auf „Deinstallieren“.
 5. Bestätige mit „Deinstallieren“ und bei der Benutzerkontensteuerung mit „Ja“.
 6. Das Setup zeigt eine Liste: „Dabei wird entfernt:“. Darunter steht: „Deine Spielstände, Profile und Launcher-Sicherungen bleiben erhalten, außer du entscheidest am Ende anders.“ Klicke auf „Ja“. Danach fragt das Setup noch: „Sind Sie sicher, dass Sie Empire Earth Community und alle zugehörigen Komponenten entfernen möchten?“ Klicke auch dort auf „Ja“ (nicht einfach Enter drücken, vorausgewählt ist „Nein“).
@@ -219,11 +279,11 @@ Lösche auf diesem Laufwerk nicht mehr benötigte Dateien. Leere den Papierkorb.
 
 Dein Virenschutz meldet etwas oder löscht eine Datei
 
-Manche Virenschutzprogramme halten unbekannte Programme ohne Signatur für verdächtig. Sie verschieben dann eine Datei in die Quarantäne. Danach fehlt sie, und das Setup meldet ein unvollständiges Paket. Stelle die Datei im Virenschutz wieder her. Entpacke im Zweifel die ZIP-Datei noch einmal neu.
+Manche Virenschutzprogramme halten unbekannte Programme ohne Signatur für verdächtig. Sie verschieben dann eine Datei in die Quarantäne. Danach fehlt sie, und das Setup meldet ein unvollständiges Paket. Stelle die Datei im Virenschutz wieder her. Entpacke im Zweifel die ZIP-Datei noch einmal.
 
 Windows blockiert das Setup ganz („Smart App Control“ / „Intelligente App-Steuerung“)
 
-Unter Windows 11 gibt es die „Intelligente App-Steuerung“. Sie blockiert Programme ohne digitale Signatur. Dieses Setup hat keine Signatur. Wenn die Intelligente App-Steuerung eingeschaltet ist, startet das Setup deshalb nicht. Es gibt keinen Trick, das zu umgehen. Es hilft nur, die Intelligente App-Steuerung auszuschalten (in „Windows-Sicherheit“ > „App- & Browsersteuerung“). Achtung: Windows lässt sie danach nicht einfach wieder einschalten. Entscheide selbst, ob du das möchtest.
+Unter Windows 11 gibt es die „Intelligente App-Steuerung“. Sie blockiert Programme ohne digitale Signatur. Dieses Setup hat keine Signatur. Wenn die Intelligente App-Steuerung eingeschaltet ist, startet das Setup deshalb nicht. Es gibt keinen Trick, das zu umgehen. Es hilft nur, die Intelligente App-Steuerung auszuschalten (in „Windows-Sicherheit“ > „App- & Browsersteuerung“). Achtung: Je nach Windows-Version lässt sie sich danach nicht einfach wieder einschalten. Entscheide selbst, ob du das möchtest.
 
 Der Launcher fehlt (.NET Framework 4.8 fehlt)
 
@@ -244,10 +304,173 @@ Protokolle für die Hilfe
 
 Wenn du Hilfe brauchst, schicke diese Dateien mit:
 
-1. Das Protokoll des Setups. Es liegt im Ordner für temporäre Dateien. Drücke die Windows-Taste und R, tippe %TEMP% ein und drücke Enter. Suche die neueste Datei, deren Name mit „Setup Log“ beginnt und mit „.txt“ endet.
+1. Das Protokoll des Setups. Es liegt im Ordner für temporäre Dateien. Drücke die Windows-Taste und R, tippe `%TEMP%` ein und drücke Enter. Suche die neueste Datei, deren Name mit „Setup Log“ beginnt und mit „.txt“ endet.
 2. Die Protokolle der beiden Spiel-Setups. Sie liegen im Ordner „Logs“ im Installationsordner, normalerweise „C:\Program Files\Empire Earth Community\Logs“. Die Dateien heißen zum Beispiel „EE-Datum-Uhrzeit.log“ und „NeoEE-Datum-Uhrzeit.log“. Den genauen Ordner zeigt dir auch die letzte Seite des Setups unter „Protokolle:“.
+
+Paket prüfen (Prüfsummen)
+-------------------------
+
+Dieser Schritt ist freiwillig. Das Setup prüft beim Start selbst, ob alle Dateien da sind und die richtige Größe haben. Willst du ganz sicher sein, dass beim Download kein einziges Byte kaputtgegangen ist, kannst du die Prüfsummen vergleichen.
+
+In der Datei SHA256SUMS.txt steht für jede der 27 Dateien (das Setup und die 26 .bin-Dateien) eine lange Folge aus Zahlen und Buchstaben, die Prüfsumme. Ist auch nur ein Byte einer Datei anders, kommt eine ganz andere Prüfsumme heraus.
+
+So prüfst du alle Dateien auf einmal:
+
+1. Öffne den entpackten Ordner, in dem „Empire Earth Community Setup“ liegt.
+2. Windows 11: Klicke mit der rechten Maustaste auf eine freie Stelle im Ordner und dann auf „Im Terminal öffnen“.
+   Windows 10: Halte die Umschalttaste gedrückt, klicke mit der rechten Maustaste auf eine freie Stelle und dann auf „PowerShell-Fenster hier öffnen“.
+   Es muss ein PowerShell-Fenster sein (die Zeile beginnt mit „PS“). In der Eingabeaufforderung funktioniert der Text unten nicht.
+3. Kopiere diesen Text, füge ihn im neuen Fenster mit einem Rechtsklick ein und drücke Enter:
+
+   Get-Content .\SHA256SUMS.txt | ForEach-Object {
+       $soll, $datei = $_ -split '  ', 2
+       $ist = (Get-FileHash -Algorithm SHA256 -LiteralPath $datei).Hash
+       if ($ist -eq $soll) { "OK      $datei" } else { "FEHLER  $datei" }
+   }
+
+4. Warte, bis alle Dateien durch sind. Das dauert etwa eine Minute, auf einer langsamen Festplatte länger. Danach steht für jede Datei eine Zeile da.
+   - Steht überall OK, ist das Paket in Ordnung.
+   - Steht irgendwo FEHLER oder eine rote Meldung, ist diese Datei beschädigt oder fehlt. Lade das Paket neu herunter und entpacke es in einen neuen Ordner.
+
+Nur eine einzelne Datei prüfen geht so:
+
+Get-FileHash -Algorithm SHA256 -LiteralPath ".\Empire Earth Community Setup.exe"
+
+Vergleiche die angezeigte Prüfsumme („Hash“) mit der Zeile für diese Datei in SHA256SUMS.txt. Groß- und Kleinschreibung spielt dabei keine Rolle.
+
+Woher kommt das Paket? Die Datei BUILD-INFO.txt nennt genau, woraus dieses Paket gebaut wurde: die Stände (Commits) des Quellcodes, die Prüfsummen der beiden Spiel-Setups, des Launchers und des Mod Creators und noch einmal die Prüfsummen der Setup-Dateien (.exe und .bin). Damit lässt sich das Paket eindeutig seinen Quellen zuordnen.
+
+Bekannte Probleme
+-----------------
+
+Version 1.0.0 ist getestet und läuft. Ein paar Kleinigkeiten kennen wir aber schon. Hier steht ehrlich, was noch nicht rund ist und was du tun kannst.
+
+1. Die Maus reagiert direkt nach dem Spielstart nicht.
+Abhilfe: Minimiere das Spiel einmal und hol es wieder nach vorne, zum Beispiel mit zweimal Alt+Tab. Danach reagiert die Maus.
+Stand: wird untersucht, die Behebung ist für 1.1.0 geplant.
+
+2. Nach einer Windows-Benachrichtigung ist das Bild nicht mehr im Vollbild oder kleiner.
+Eine Benachrichtigung von Windows kann das Spiel minimieren. Holst du es zurück, füllt das Bild manchmal nicht mehr den ganzen Bildschirm.
+Vorbeugen: Schalte Benachrichtigungen beim Spielen stumm (Windows 11: „Nicht stören“, Windows 10: „Benachrichtigungsassistent“). Dann kommt seltener etwas dazwischen.
+Stand: wird untersucht, die Behebung ist für 1.1.0 geplant.
+
+3. Die Online-Spielerliste von NeoEE im Launcher zeigt „nicht erreichbar“.
+Das liegt nicht an deinem Computer. Der Statusserver titan.empireearth.eu ist im Internet nicht mehr zu finden (er hat keinen DNS-Eintrag mehr). Das Problem liegt auf der Seite des Servers. Du musst nichts tun.
+
+4. Im Launcher überlappen auf der Seite „Einstellungen“ oben Texte, und ein Bild verdeckt zwei Knöpfe.
+Stand: die Behebung ist für 1.1.0 geplant.
+
+5. Während der Installation erscheinen neben dem Setup eigene Fortschrittsfenster der beiden Spiel-Setups.
+Das ist harmlos. Schließe keines der Fenster und warte einfach (siehe Schritt 8).
+Stand: Ein einziges Fortschrittsfenster für alles ist für 1.1.0 geplant.
+
+Was ist neu?
+------------
+
+Alle Änderungen jeder Version stehen in der Datei CHANGELOG.md (CHANGELOG.md).
+
+Kurz zu 1.0.0 (2026-10-06): die erste Version. Ein einziges Setup installiert Empire Earth mit The Art of Conquest, Neo Empire Earth, den Empire Earth Launcher und den Mod Creator, repariert sie bei Bedarf und entfernt alles wieder sauber.
+
+Versionen
+---------
+
+Die aktuelle Version steht in der Datei VERSION (VERSION). Jede Version hat eine Nummer aus drei Teilen, zum Beispiel 1.0.0:
+
+- Ändert sich die letzte Zahl (1.0.1), wurden nur Fehler behoben.
+- Ändert sich die mittlere Zahl (1.1.0), gibt es neue Funktionen.
+- Ändert sich die erste Zahl (2.0.0), hat sich etwas Grundlegendes geändert.
+
+So funktioniert es hier:
+
+- Die Hauptseite zeigt immer die neueste Version. „Code“ > „Download ZIP“ (Schritt 1) lädt also immer die neueste herunter.
+- Jede Version bekommt ein Release mit einem „v“ vor der Nummer, zum Beispiel v1.0.0. Was sich geändert hat, steht in CHANGELOG.md (CHANGELOG.md).
+- Ältere Versionen bleiben erhalten. Nichts wird nachträglich geändert oder gelöscht.
+
+So holst du eine ältere Version:
+
+1. Klicke auf dieser Seite rechts auf „Releases“.
+2. Suche die Version, die du möchtest, zum Beispiel „v1.0.0“.
+3. Klicke darunter bei „Assets“ auf „Source code (zip)“. Lass dich vom Namen nicht verwirren: Diese ZIP-Datei enthält das ganze Paket genau in dieser Version.
+4. Mach dann weiter wie ab Schritt 2.
+
+Hilfe und Feedback
+------------------
+
+Etwas klappt nicht, oder du hast eine Idee? Melde dich bei dem, der dir das Paket gegeben hat. Damit dir schnell geholfen werden kann, schreib kurz dazu:
+
+- welche Version du benutzt (steht in der Datei VERSION im entpackten Ordner),
+- ob du Windows 10 oder Windows 11 hast,
+- was du gemacht hast und was dann passiert ist,
+- den genauen Text einer Fehlermeldung (oder ein Bildschirmfoto davon).
+
+Schick außerdem die passenden Protokolle mit:
+
+- Probleme beim Installieren, Reparieren oder Deinstallieren: die Protokolle aus dem Abschnitt Protokolle für die Hilfe.
+- Probleme mit dem Launcher: das Protokoll des Launchers. Drücke die Windows-Taste und R, tippe `%LOCALAPPDATA%\Empire Earth Launcher` ein und drücke Enter. Die Datei heißt „log.txt“.
+
+Bevor du dich meldest, schau gern kurz in Bekannte Probleme. Vielleicht steht die Lösung schon dort.
+
+Gut zu wissen: In den Protokollen stehen Ordnernamen. Darin kann dein Windows-Benutzername vorkommen.
+
+Technische Details
+------------------
+
+Dieser Abschnitt ist für Neugierige. Zum Installieren und Spielen brauchst du ihn nicht.
+
+Bestandteile und Quellen
+
+Teil  Version  Quelle
+Suite-Installer „Empire Earth Community Setup“  1.0.0  DritteRippe/Empire-Earth-Setup (https://github.com/DritteRippe/Empire-Earth-Setup), Tag `suite-v1.0.0`, Commit `36b0e09`
+Empire Earth Launcher und Mod Creator  1.0.0  DritteRippe/Empire-Earth-Launcher (https://github.com/DritteRippe/Empire-Earth-Launcher), Tag `v1.0.0`, Commit `b4fd570`
+Produkt-Setup Empire Earth (mit The Art of Conquest)  Setup 1.7.2 (`EESetupv1.7.2.exe`)  DritteRippe/Empire-Earth-Setup (https://github.com/DritteRippe/Empire-Earth-Setup), Commit `02afce0`, unverändert eingebettet
+Produkt-Setup Neo Empire Earth  NeoEE 2.0.0.5 (`NeoEEv2.0.0.5Setup_v1.7.2.exe`)  DritteRippe/Empire-Earth-Setup (https://github.com/DritteRippe/Empire-Earth-Setup), Commit `02afce0`, unverändert eingebettet
+
+Gebaut mit Inno Setup 6.2.2 als Release-Build am 2026-10-06. Die vollständigen Commit-Kennungen und die Prüfsummen aller Eingaben stehen in BUILD-INFO.txt (BUILD-INFO.txt).
+
+Aufbau des Pakets
+
+- `Empire Earth Community Setup.exe`: das Setup-Programm (etwa 1,7 MB)
+- `Empire Earth Community Setup-1.bin` bis `-26.bin`: die Daten des Setups, aufgeteilt in Stücke von höchstens 50 MB, zusammen etwa 1,25 GB
+- `SHA256SUMS.txt`: die Prüfsummen der 27 Setup-Dateien (.exe und .bin)
+- `BUILD-INFO.txt`: woraus genau das Paket gebaut wurde
+- `README.md` und `LIES-MICH.txt`: diese Anleitung (die .txt-Datei kannst du auch ohne Internet im Editor lesen)
+- `CHANGELOG.md` und `VERSION`: die Änderungen und die Versionsnummer
+- `Lizenzen/`: Lizenzen und Hinweise zum Quellcode
+
+Wohin wird installiert? (bei einer Standard-Installation)
+
+Was  Ordner
+Launcher, Mod Creator, Deinstallation und Protokolle der Spiel-Setups  `C:\Program Files\Empire Earth Community`
+Empire Earth (mit The Art of Conquest)  `C:\Program Files (x86)\Empire Earth`
+Neo Empire Earth  `C:\Program Files (x86)\Neo Empire Earth`
+Einstellungen, Sicherungen und Protokoll des Launchers  `%LOCALAPPDATA%\Empire Earth Launcher`
+
+Spielstände und Profile liegen in den Spielordnern, in den Unterordnern `Users` und `Data\Saved Games`. Beim Deinstallieren mit „Behalten“ bleiben genau diese Ordner, die Launcher-Sicherungen und der Ordner „Mod Creator“ im Launcher-Ordner erhalten.
+
+Getestet
+
+Am 2026-10-06 auf einem echten Laptop mit Windows 11:
+
+- Beide Spiele mit den Standard-Einstellungen installiert und über die Desktop-Verknüpfungen gestartet und gespielt. Dabei erschien nur ein Launcher, und die NeoEE-CD-Keys wurden registriert.
+- Deinstalliert mit „Behalten“, neu installiert und wieder deinstalliert mit „Löschen“.
+
+Quellcode und Lizenzen
+----------------------
+
+Der Quellcode der Programme in diesem Paket ist öffentlich:
+
+- Setup (der Suite-Installer und die beiden Spiel-Setups): <https://github.com/DritteRippe/Empire-Earth-Setup>
+- Empire Earth Launcher und Mod Creator: <https://github.com/DritteRippe/Empire-Earth-Launcher>
+
+Welcher Stand genau in diesem Paket steckt, steht in Lizenzen/Quellcode.txt (Lizenzen/Quellcode.txt) und in BUILD-INFO.txt (BUILD-INFO.txt).
+
+- Der Quellcode und die daraus gebauten Programme stehen unter der GNU General Public License, Version 3 (GPL-3.0), siehe Lizenzen/LICENSE (Lizenzen/LICENSE).
+- Komponenten Dritter und ihre Lizenzen findest du in Lizenzen/THIRD-PARTY-NOTICES.md (Lizenzen/THIRD-PARTY-NOTICES.md) und Lizenzen/licenses/THIRD-PARTY-LICENSES.txt (Lizenzen/licenses/THIRD-PARTY-LICENSES.txt).
+- Die Spieldaten von Empire Earth, The Art of Conquest und NeoEE (Programmdateien, Grafiken, Musik, Videos und so weiter) stehen nicht unter der GPL. Für sie gelten die Rechte ihrer jeweiligen Inhaber.
 
 Rechtlicher Hinweis
 -------------------
 
 Dieses Paket ist nur für Besitzer des Originalspiels gedacht: Empire Earth mit seiner Erweiterung (oder die Gold Edition) auf CD mit gültigen Schlüsseln oder als digitaler Kauf. Gib das Paket und den Zugang zum Repository nicht weiter.
+
+Weil das Paket die Spieldaten enthält, ist dieses Repository absichtlich privat.
