@@ -1,0 +1,45 @@
+﻿Quellcode von Empire Earth Community Setup 1.0.0
+================================================
+
+Dieses Paket besteht aus mehreren Teilen. Der Quellcode der Programme und
+Installationsskripte ist öffentlich und unter der GNU General Public License,
+Version 3 (siehe LICENSE in diesem Ordner) verfügbar:
+
+1. Der Suite-Installer "Empire Earth Community Setup" (Installationsskript,
+   Build-Skripte, Dokumentation)
+   https://github.com/DritteRippe/Empire-Earth-Setup
+   Stand: Commit 36b0e0907cfc569158e79c387d1e1805f10c7c59 (Branch v2)
+
+2. Der Empire Earth Launcher 1.0.0 und der Mod Creator (Empire_Earth_Mod.exe)
+   https://github.com/DritteRippe/Empire-Earth-Launcher
+   Stand: Commit b4fd570ddb0ec00a5e57d451cfde8066e3941a2f (Branch v2)
+
+3. Die beiden Produkt-Setups für Empire Earth und NeoEE, die der Suite-Installer
+   unverändert enthält und ausführt, wurden aus dem Quellcode des Repositorys
+   Empire-Earth-Setup gebaut:
+   https://github.com/DritteRippe/Empire-Earth-Setup
+   Stand: Commit 02afce0a19c49b158db1fb50eaef5cf979913d38
+
+Mit diesen Ständen lassen sich die Installer (mit Inno Setup 6.2.2) und der
+Launcher (Visual Studio / .NET Framework 4.8) nachbauen. Wie, steht in den
+README-Dateien und in der Dokumentation der beiden Repositorys. Welche
+Eingaben und welche Versionen für genau dieses Paket verwendet wurden, steht
+in der Datei BUILD-INFO.txt im Paket.
+
+Spieldaten
+----------
+
+Die Spieldaten von Empire Earth, Empire Earth - The Art of Conquest und NeoEE
+(Programmdateien, Grafiken, Musik, Videos, Archive wie *.ssa usw.), die in den
+Produkt-Setups enthalten sind, gehören nicht zum Quellcode und stehen nicht
+unter der GPL. Sie sind kein Quellcode im Sinne der GPL und liegen deshalb
+auch nicht in den oben genannten Repositorys. Für sie gelten die Rechte ihrer
+jeweiligen Inhaber. Die GPL gilt nur für den Quellcode und die daraus
+gebauten Programme der oben genannten Repositorys.
+
+Komponenten Dritter und ihre Lizenzen sind in THIRD-PARTY-NOTICES.md und im
+Ordner licenses aufgeführt.
+
+Hinweis: Der in licenses/THIRD-PARTY-LICENSES.txt genannte Link zu EE-modders ist das
+Ursprungsprojekt des Launchers. Der Quellcode genau der Version in diesem Paket liegt im
+oben unter 2. genannten Repository.
