@@ -7,28 +7,33 @@ Du brauchst keine Vorkenntnisse. Lies jeden Schritt und klicke genau das, was do
 
 | | |
 |---|---|
-| **Version** | 1.0.0 ([Was ist neu?](#was-ist-neu)) |
-| **Status** | erste Version, getestet am 2026-10-06 unter Windows 11 (siehe [Bekannte Probleme](#bekannte-probleme)) |
+| **Version** | 1.1.0 ([Was ist neu?](#was-ist-neu)) |
+| **Status** | freigegeben am 2026-10-07, getestet unter Windows 11: Update von 1.0.0 und Spielen. Abbrechen und Deinstallieren sind noch nicht auf einem echten Computer getestet (siehe [Bekannte Probleme](#bekannte-probleme)) |
 | **Für** | Windows 10 und Windows 11, nur für Besitzer des Originalspiels |
-| **Download** | etwa 1,3 GB |
+| **Download** | eine ZIP-Datei, etwa 1,3 GB |
 
 **Das ist enthalten:**
 
 | Teil | Version |
 |---|---|
-| Empire Earth Community Setup (das eine Setup für alles) | 1.0.0 |
+| Empire Earth Community Setup (das eine Setup für alles) | 1.1.0 |
 | Empire Earth mit der Erweiterung The Art of Conquest | Setup 1.7.2 |
 | Neo Empire Earth (NeoEE) | 2.0.0.5 |
-| Empire Earth Launcher | 1.0.0 |
-| Mod Creator | aus Launcher 1.0.0 |
+| Empire Earth Launcher | 1.1.0 |
+| Mod Creator | aus Launcher 1.1.0 |
+| DirectX-Wrapper dgVoodoo (in den Spielen) | 2.87.5 |
 
 ### Schnellstart
 
-1. Oben auf „Code“ und dann auf „Download ZIP“ klicken ([Schritt 1](#schritt-1-paket-herunterladen)).
+1. Rechts auf „Releases“ klicken, beim neuesten Release „Empire Earth Community 1.1.0“ (markiert mit „Latest“) unter „Assets“ die Datei **Empire-Earth-Community-1.1.0.zip** herunterladen, nicht „Source code“ ([Schritt 1](#schritt-1-paket-herunterladen)).
 2. Die ZIP-Datei mit „Alle extrahieren“ entpacken ([Schritt 2](#schritt-2-download-freigeben-empfohlen) und [Schritt 3](#schritt-3-zip-entpacken)).
-3. Im entpackten Ordner „Empire Earth Community Setup“ starten ([Schritt 4 bis 6](#schritt-4-setup-starten)).
+3. Im entpackten Ordner „Empire-Earth-Community-1.1.0“ das Programm „Empire Earth Community Setup“ starten ([Schritt 4 bis 6](#schritt-4-setup-starten)).
 4. Durch die Seiten klicken, das Originalspiel bestätigen und warten, bis die letzte Seite erscheint ([Schritt 7 bis 9](#schritt-7-die-seiten-des-setups)).
-5. Auf dem Desktop „Empire Earth“ oder „Neo Empire Earth“ doppelklicken und [spielen](#spielen).
+5. Auf dem Desktop „Empire Earth Community“ doppelklicken, im Launcher das Spiel wählen und [spielen](#spielen).
+
+Hast du schon Version 1.0.0? Dann lies zuerst [Update von 1.0.0](#update-von-100).
+
+Liest du diese Anleitung schon im entpackten Ordner „Empire-Earth-Community-1.1.0“? Dann hast du den Download hinter dir. Mach mit [Schritt 4](#schritt-4-setup-starten) weiter.
 
 Zum ersten Mal dabei? Dann nimm dir lieber die ausführlichen Schritte unten vor. Sie zeigen dir jedes Fenster genau.
 
@@ -36,6 +41,7 @@ Zum ersten Mal dabei? Dann nimm dir lieber die ausführlichen Schritte unten vor
 
 - [Was wird installiert?](#was-wird-installiert)
 - [Was brauchst du?](#was-brauchst-du)
+- [Update von 1.0.0](#update-von-100)
 - [Schritt 1: Paket herunterladen](#schritt-1-paket-herunterladen)
 - [Schritt 2: Download freigeben (empfohlen)](#schritt-2-download-freigeben-empfohlen)
 - [Schritt 3: ZIP entpacken](#schritt-3-zip-entpacken)
@@ -43,10 +49,12 @@ Zum ersten Mal dabei? Dann nimm dir lieber die ausführlichen Schritte unten vor
 - [Schritt 5: SmartScreen](#schritt-5-smartscreen-nur-wenn-du-schritt-2-übersprungen-hast)
 - [Schritt 6: Benutzerkontensteuerung](#schritt-6-benutzerkontensteuerung)
 - [Schritt 7: Die Seiten des Setups](#schritt-7-die-seiten-des-setups)
-- [Schritt 8: Warten](#schritt-8-warten)
+- [Schritt 8: Warten (oder abbrechen)](#schritt-8-warten-oder-abbrechen)
 - [Schritt 9: Die letzte Seite](#schritt-9-die-letzte-seite)
 - [Wo finde ich alles?](#wo-finde-ich-alles)
 - [Spielen](#spielen)
+- [Der Launcher](#der-launcher)
+- [Bild und Fenster](#bild-und-fenster)
 - [Reparieren](#reparieren)
 - [Deinstallieren](#deinstallieren)
 - [Wenn etwas nicht klappt](#wenn-etwas-nicht-klappt)
@@ -64,8 +72,10 @@ Zum ersten Mal dabei? Dann nimm dir lieber die ausführlichen Schritte unten vor
 
 - **Empire Earth** (mit der Erweiterung The Art of Conquest)
 - **Neo Empire Earth** (NeoEE)
-- der **Empire Earth Launcher**: Mit ihm startest du die Spiele. Er hat auch Werkzeuge für Einstellungen und Reparatur.
+- der **Empire Earth Launcher**: Mit ihm startest du alle vier Spiele. Er hat auch Werkzeuge für Einstellungen und Reparatur.
 - der **Mod Creator**
+
+Die Intro-Videos der Spiele werden jetzt standardmäßig mit installiert.
 
 Du kannst im Setup auch nur eines der beiden Spiele auswählen. Der Launcher wird mit installiert (wenn das .NET Framework 4.8 vorhanden ist).
 
@@ -77,14 +87,37 @@ Du kannst im Setup auch nur eines der beiden Spiele auswählen. Der Launcher wir
 - **Genug freien Platz.** Das Setup braucht auf Laufwerk C: etwa 2,9 GB, wenn du beide Spiele installierst. Dazu kommen die ZIP-Datei und der entpackte Ordner (je etwa 1,3 GB). Plane also gut 5,5 GB freien Platz ein.
 - **Eine Internetverbindung** während der Installation. Neo Empire Earth registriert dabei seine CD-Keys online.
 
+## Update von 1.0.0
+
+Hast du Version 1.0.0 installiert? Dann musst du nichts deinstallieren.
+
+1. Lade das neue Paket herunter und entpacke es wie in [Schritt 1 bis 3](#schritt-1-paket-herunterladen).
+2. Starte das neue Setup ([Schritt 4](#schritt-4-setup-starten)). Bei beiden Spielen steht: „Schon installiert. Das Setup aktualisiert oder repariert es.“
+3. Klicke dich durch wie bei der Installation.
+
+**Das bleibt:** die Spiele in ihren Ordnern, deine Spielstände und Profile, deine eigenen Mods in `Data\dxm\mods` und die Einstellungen des Launchers.
+
+**Das ändert sich:**
+
+- Die Verknüpfungen „Empire Earth“ und „Neo Empire Earth“ von 1.0.0 verschwinden, ebenso „Empire Earth Launcher“ und die „… Diagnostic“-Einträge im Startmenü. Dafür gibt es **ein** Symbol: „Empire Earth Community“.
+- Die Intro-Videos werden einmal nachinstalliert, falls du sie noch nicht hattest.
+- Die Spiele bekommen dgVoodoo 2.87.5 mit neuen Fenstereinstellungen. Hast du `dgVoodoo.conf` selbst geändert, wird die Datei ersetzt. Heb dir vorher eine Kopie auf.
+- Das Setup schreibt die Größe des Spielfensters neu (siehe [Bild und Fenster](#bild-und-fenster)).
+- `dreXmod.config` geht auf die Voreinstellung zurück (Mod aus, Lobby-Theme `dxm`).
+
+Danach kannst du den Ordner von 1.0.0 löschen. Behalte den neuen Ordner „Empire-Earth-Community-1.1.0“.
+
 ## Schritt 1: Paket herunterladen
 
-1. Öffne diese Seite auf GitHub. Du musst angemeldet sein.
-2. Klicke oben auf den grünen Knopf „Code“.
-3. Klicke auf „Download ZIP“.
-4. Warte, bis der Download fertig ist. Die ZIP-Datei liegt danach meistens im Ordner „Downloads“.
+1. Öffne die Seite des Repositorys „ee-paket“ auf GitHub. Du musst angemeldet sein.
+2. Klicke rechts auf „Releases“.
+3. Klicke auf das neueste Release **„Empire Earth Community 1.1.0“**. Es ist mit „Latest“ markiert.
+4. Unten im Release steht „Assets“. Klicke dort auf **Empire-Earth-Community-1.1.0.zip** (etwa 1,3 GB).
+5. Warte, bis der Download fertig ist. Die ZIP-Datei liegt danach meistens im Ordner „Downloads“.
 
-So bekommst du immer die neueste Version. Wie du eine ältere Version holst, steht unter [Versionen](#versionen).
+**Wichtig:** Unter „Assets“ stehen auch „Source code (zip)“ und „Source code (tar.gz)“. Die fügt GitHub bei jedem Release von selbst hinzu. Sie enthalten nur diese Anleitung und die anderen Dokumente, **nicht** das Spiel. Nimm sie nicht. Auch der grüne Knopf „Code“ mit „Download ZIP“ lädt nur die Dokumente herunter.
+
+Das Release mit „Latest“ ist immer die neueste Version. Wie du eine ältere Version holst, steht unter [Versionen](#versionen).
 
 ## Schritt 2: Download freigeben (empfohlen)
 
@@ -108,7 +141,7 @@ Siehst du kein „Zulassen“? Dann ist nichts zu tun. Mach mit Schritt 3 weiter
 
 ## Schritt 4: Setup starten
 
-1. Öffne den entpackten Ordner. Manchmal liegt darin noch ein Ordner mit demselben Namen. Öffne dann auch diesen.
+1. Öffne den entpackten Ordner. Darin liegt der Ordner „Empire-Earth-Community-1.1.0“. Öffne auch diesen.
 2. Doppelklicke auf **„Empire Earth Community Setup“**. Windows zeigt die Endung „.exe“ oft nicht an.
 
 Starte das Setup **nie direkt aus der ZIP-Datei** heraus. Neben dem Setup liegen viele Dateien mit den Namen „Empire Earth Community Setup-1.bin“, „Empire Earth Community Setup-2.bin“ und so weiter. Diese Dateien müssen im selben Ordner neben dem Setup bleiben. Verschiebe oder lösche keine davon.
@@ -153,21 +186,35 @@ Ist eines der Spiele schon installiert, fragt das Setup nicht noch einmal. Dann 
 
 Einen Ordner musst du nicht auswählen. Das Setup wählt ihn selbst.
 
-## Schritt 8: Warten
+## Schritt 8: Warten (oder abbrechen)
 
-Jetzt installiert das Setup die Spiele nacheinander. Zuerst Empire Earth, danach Neo Empire Earth.
+Jetzt installiert das Setup die Spiele nacheinander. Zuerst Empire Earth, danach Neo Empire Earth. Alles läuft in **einem** Fenster.
 
-- Im Setup steht zum Beispiel: „Schritt 1 von 2: Empire Earth (mit The Art of Conquest) wird installiert ...“
-- Zusätzlich erscheint für jedes Spiel ein eigenes Fortschrittsfenster. Die beiden Fenster kommen nacheinander.
+- Oben steht, was gerade passiert, zum Beispiel: „Schritt 1 von 2: Empire Earth - lädt Sprachdatei 3 von 17 herunter ...“ oder „Schritt 2 von 2: NeoEE - registriert die CD-Keys ...“.
+- Darunter steht die Datei, an der das Setup gerade arbeitet. Der Balken zeigt den ganzen Lauf.
+- Die Liste darunter hakt ab, was schon fertig ist, zum Beispiel „Spieldateien installiert“ und „Fertig“.
 - Neo Empire Earth registriert dabei seine CD-Keys online. Lass die Internetverbindung an.
 
-Klicke in dieser Zeit nichts an. Schließe keines der Fenster. Warte, bis die letzte Seite erscheint.
+Klicke in dieser Zeit nichts an. Warte, bis die letzte Seite erscheint.
+
+**Abbrechen**
+
+Solange ein Spiel noch nicht installiert wird, zum Beispiel während es seine Sprachdateien herunterlädt, kannst du auf „Abbrechen“ klicken. Das Setup fragt dann nach, zum Beispiel: „Möchtest du die Installation von Empire Earth (mit The Art of Conquest) abbrechen?“
+
+- Klickst du „Ja“, wird von diesem Spiel nichts installiert. Ein Spiel, das schon installiert war, bleibt genau so, wie es war.
+- Ist das erste Spiel in diesem Lauf schon fertig, bleibt es installiert. Das Setup legt dann noch den Launcher und die Verknüpfung an, ohne das abgebrochene Spiel.
+- Was das Setup bis dahin heruntergeladen hat, bleibt in einem temporären Ordner von Windows (ein Ordner „is-*.tmp“, bis zu etwa 170 MB), bis Windows oder du ihn löschst.
+
+Sobald ein Spiel installiert wird, geht das nicht mehr. Der Knopf „Abbrechen“ ist dann grau, und unter dem Balken steht: „Abbrechen ist nicht mehr möglich: Das Spiel wird gerade installiert.“ Ein halb installiertes Spiel soll es nicht geben.
+
+Während ein Spiel installiert wird, wirken die Tasten Esc und Tab im Fenster nicht. Nimm die Maus.
 
 ## Schritt 9: Die letzte Seite
 
 Die letzte Seite zeigt unter „Das hat das Setup gemacht:“, was installiert wurde, zum Beispiel:
 
 - „Empire Earth (mit The Art of Conquest): installiert“
+- „Sprachdateien: 17 von 17 aus dem Download installiert.“
 - „Neo Empire Earth (NeoEE): installiert“
 - „Empire Earth Launcher: installiert“
 - „NeoEE-CD-Keys: registriert.“
@@ -181,38 +228,66 @@ Steht oben „Nicht alles wurde installiert“? Dann lies den Abschnitt „Wenn 
 
 ## Wo finde ich alles?
 
-**Auf dem Desktop** liegen zwei Verknüpfungen:
-
-- „Empire Earth“
-- „Neo Empire Earth“
+**Auf dem Desktop** liegt eine Verknüpfung: **„Empire Earth Community“**. Sie öffnet den Launcher.
 
 **Im Startmenü** gibt es den Ordner „Empire Earth Community“. Darin findest du:
 
-- „Empire Earth“ und „Neo Empire Earth“
-- „Empire Earth Launcher“ (nur mit .NET Framework 4.8)
+- „Empire Earth Community“ (der Launcher)
 - „Mod Creator“ (nur mit .NET Framework 4.8)
 - „Uninstall Empire Earth Community“ (zum Deinstallieren)
-- je nach Installation auch „Empire Earth Diagnostic“ und „Neo Empire Earth Diagnostic“
 
 ## Spielen
 
-1. Doppelklicke auf dem Desktop auf „Empire Earth“ oder „Neo Empire Earth“.
-2. Der Empire Earth Launcher öffnet sich für dieses Spiel. Von dort startest du das Spiel.
+1. Doppelklicke auf dem Desktop auf „Empire Earth Community“. Der Launcher öffnet sich.
+2. Auf der Seite „Spielen“ wählst du unter „Spiel“ eines der vier Spiele:
+   - „Empire Earth“
+   - „Empire Earth – The Art of Conquest“
+   - „Neo Empire Earth“
+   - „Neo Empire Earth – The Art of Conquest“
+3. Klicke auf „Spielen“.
+4. Lass den Launcher offen, bis das Hauptmenü des Spiels da ist.
 
-Fehlt auf deinem Computer das .NET Framework 4.8, gibt es keinen Launcher. Dann starten die beiden Verknüpfungen das Spiel direkt.
+Der Launcher merkt sich, welches Spiel du zuletzt gewählt hast. Ein grauer Eintrag ist nicht installiert.
 
-Reagiert die Maus direkt nach dem Spielstart nicht? Dafür gibt es eine einfache Abhilfe, siehe [Bekannte Probleme](#bekannte-probleme).
+**Die Maus beim Start:** Startest du über den Launcher, gibt er dem Spiel ein paar Sekunden nach dem Start ein Signal. Damit reagiert die Maus sofort, ohne Alt+Tab. Mehr dazu unter [Bekannte Probleme](#bekannte-probleme).
+
+Klicke nicht noch einmal auf „Empire Earth Community“, während ein Spiel läuft. Der Launcher kommt dann nach vorn, und das Spiel minimiert sich.
+
+Fehlt auf deinem Computer das .NET Framework 4.8, gibt es keinen Launcher. Dann startet „Empire Earth Community“ direkt Neo Empire Earth (oder Empire Earth, wenn nur das installiert ist).
+
+## Der Launcher
+
+Links im Launcher findest du diese Seiten:
+
+- **Spielen:** die vier Spiele und der Knopf „Spielen“.
+- **Einstellungen:** Einstellungen der Spiele und Hinweise.
+- **Grafik:** die Größe des Spielfensters (siehe [Bild und Fenster](#bild-und-fenster)). Darunter zeigt die Seite den DirectX-Wrapper und die Werte seiner `dgVoodoo.conf`, nur zur Anzeige.
+- **Mods:** die Presets von dreXmod, nur zur Anzeige. Mit „Mods-Ordner öffnen“ und „dreXmod.config öffnen“ kommst du an die Dateien.
+- **Werkzeuge:** Prüfungen und Hilfen, zum Beispiel „Reparatur-Hinweise“.
+- **Launcher:** die gefundenen Installationen, die Sprache des Launchers und mehr.
+
+Das Fenster des Launchers kannst du größer ziehen oder maximieren.
+
+## Bild und Fenster
+
+- **Spielfenster:** Das Setup stellt das Spielfenster auf die Größe deines Bildschirms ein, höchstens 1920 × 1200. Ist dein Bildschirm breiter als 1920 Pixel, behält das Fenster seine Form: Ein Bildschirm mit 2560 × 1440 bekommt 1920 × 1080, einer mit 2560 × 1600 bekommt 1920 × 1200.
+- **Selbst wählen:** Im Launcher auf der Seite „Grafik“ wählst du unter „Auflösung:“ eine andere Größe und klickst auf „Diese Größe verwenden“. Der Launcher sichert vorher die alten Werte. Eine Reparatur oder ein Update mit dem Setup stellt wieder die empfohlene Größe ein. Wähle dann einfach neu.
+- **dgVoodoo 2.87.5:** Die Spiele laufen mit dem DirectX-Wrapper dgVoodoo 2.87.5 und neuen Fenstereinstellungen. Damit funktionieren auf dem Test-Laptop die Mehrspieler-Lobby, der Szenario-Editor und Alt+Tab. Der Szenario-Editor zeigt ein 4:3-Bild mit Rändern links und rechts. Das ist so gewollt.
+- **Den Wrapper wechseln:** Das macht nur das Setup. Starte es erneut, setze den Haken bei „Erweitert: Das Setup jedes Spiels selbst durchgehen“ und wähle im Setup des Spiels „Benutzerdefinierte Installationseinstellungen“ und dann unter „DirectX-Wrapper“ den Wrapper. So steht es auch im Launcher auf der Seite „Grafik“.
+- **dgVoodoo.conf selbst ändern:** Jeder Lauf des Setups ersetzt die Datei. Heb dir eine Kopie deiner Fassung auf.
 
 ## Reparieren
 
-Ein Spiel startet nicht mehr richtig? Oder eine Verknüpfung fehlt?
+Ein Spiel startet nicht mehr richtig? Oder die Verknüpfung fehlt?
 
-1. Öffne den entpackten Ordner, den du in Schritt 3 behalten hast.
+1. Öffne den entpackten Ordner, den du in Schritt 3 behalten hast, und darin den Ordner „Empire-Earth-Community-1.1.0“.
 2. Doppelklicke wieder auf „Empire Earth Community Setup“.
 3. Bei den installierten Spielen steht jetzt: „Schon installiert. Das Setup aktualisiert oder repariert es.“
 4. Klicke dich wie bei der Installation durch.
 
-Das Setup legt dabei auch die Verknüpfungen neu an.
+Das Setup legt dabei auch die Verknüpfung neu an. Brichst du eine Reparatur ab, solange die Sprachdateien laden, bleibt das Spiel genau so, wie es war.
+
+Der Launcher hilft dir dabei: Auf der Seite „Werkzeuge“ zeigt „Reparatur-Hinweise“ die Schritte, und „Setup-Ordner öffnen“ öffnet den entpackten Ordner.
 
 Hast du den Ordner nicht mehr? Dann lade das Paket neu herunter und entpacke es wie oben beschrieben.
 
@@ -223,15 +298,15 @@ Hast du den Ordner nicht mehr? Dann lade das Paket neu herunter und entpacke es 
 3. Suche den Eintrag **„Empire Earth Community (Launcher, EE, NeoEE)“**. In der Liste stehen auch die Spiele einzeln (Einträge, die mit „Empire Earth“ und „NeoEE“ beginnen). Um alles zu entfernen, wähle nur „Empire Earth Community (Launcher, EE, NeoEE)“.
 4. Windows 11: Klicke rechts daneben auf „...“ und dann auf „Deinstallieren“. Windows 10: Klicke auf den Eintrag und dann auf „Deinstallieren“.
 5. Bestätige mit „Deinstallieren“ und bei der Benutzerkontensteuerung mit „Ja“.
-6. Das Setup zeigt eine Liste: „Dabei wird entfernt:“. Darunter steht: „Deine Spielstände, Profile und Launcher-Sicherungen bleiben erhalten, außer du entscheidest am Ende anders.“ Klicke auf „Ja“. Danach fragt das Setup noch: „Sind Sie sicher, dass Sie Empire Earth Community und alle zugehörigen Komponenten entfernen möchten?“ Klicke auch dort auf „Ja“ (nicht einfach Enter drücken, vorausgewählt ist „Nein“).
-7. Die Spiele werden nacheinander entfernt. Das kann mehrere Minuten dauern.
-8. Am Ende kommt vielleicht die Frage „Spielstände, Profile und Sicherungen auch löschen?“
+6. Das Setup zeigt eine Liste: „Dabei wird entfernt:“. Darunter steht: „Deine Spielstände, Profile, eigenen Mods und Launcher-Sicherungen bleiben erhalten, außer du entscheidest am Ende anders.“ Klicke auf „Ja“. Danach fragt das Setup noch: „Sind Sie sicher, dass Sie Empire Earth Community und alle zugehörigen Komponenten entfernen möchten?“ Klicke auch dort auf „Ja“. Bei beiden Fragen ist „Nein“ vorausgewählt: Klicke mit der Maus, drück nicht einfach Enter.
+7. Die Spiele werden nacheinander entfernt. Oben steht zum Beispiel „Schritt 1 von 2: Neo Empire Earth (NeoEE) wird entfernt ... (das kann mehrere Minuten dauern)“.
+8. Am Ende kommt vielleicht die Frage „Spielstände, Profile, eigene Mods und Sicherungen auch löschen?“
    - Klicke auf „Behalten (empfohlen)“, wenn du deine Spielstände behalten willst.
    - Klicke nur auf „Löschen“, wenn sie wirklich weg sollen. Das lässt sich nicht rückgängig machen.
 
-Hinweis: Die Einstellungen des Launchers werden immer gelöscht.
+Hinweis: Die Einstellungen und das Protokoll des Launchers werden immer gelöscht.
 
-Entfernst du nur ein Spiel über seinen eigenen Eintrag in „Apps“, kann dabei auch die Desktop-Verknüpfung verschwinden. Starte dann das Setup aus dem entpackten Ordner erneut (siehe „Reparieren“).
+Entfernst du nur ein Spiel über seinen eigenen Eintrag in „Apps“, bleibt „Empire Earth Community“ da. Im Launcher steht das Spiel dann grau. Willst du es zurück, starte das Setup aus dem entpackten Ordner erneut (siehe „Reparieren“).
 
 ## Wenn etwas nicht klappt
 
@@ -261,6 +336,14 @@ Ein Spiel oder der Launcher ist noch offen. Beende das Programm. Schau auch unte
 
 Lösche auf diesem Laufwerk nicht mehr benötigte Dateien. Leere den Papierkorb. Starte das Setup dann erneut. Du kannst auch nur ein Spiel auswählen, dann braucht das Setup weniger Platz.
 
+**Frage: „Das Setup von ... hat seit 10 Minuten keinen Fortschritt gezeigt. ...“**
+
+Vielleicht ist die Internetverbindung sehr langsam. Klicke auf „Ja“, um weiter zu warten. „Nein“ beendet das Setup dieses Spiels.
+
+**Auf der letzten Seite steht „Sprachdateien: ... von ... aus dem Download installiert. Für die übrigen ... verwendet das Spiel die Dateien des Setups ...“**
+
+Einige Sprachdateien kamen nicht an. Das Spiel läuft trotzdem, aber manche Inhalte sind vielleicht nicht übersetzt. Starte das Setup später mit funktionierender Internetverbindung erneut.
+
 **Dein Virenschutz meldet etwas oder löscht eine Datei**
 
 Manche Virenschutzprogramme halten unbekannte Programme ohne Signatur für verdächtig. Sie verschieben dann eine Datei in die Quarantäne. Danach fehlt sie, und das Setup meldet ein unvollständiges Paket. Stelle die Datei im Virenschutz wieder her. Entpacke im Zweifel die ZIP-Datei noch einmal.
@@ -271,9 +354,9 @@ Unter Windows 11 gibt es die „Intelligente App-Steuerung“. Sie blockiert Pro
 
 **Der Launcher fehlt (.NET Framework 4.8 fehlt)**
 
-Auf älteren Windows-Versionen fehlt manchmal das .NET Framework 4.8. Das Setup zeigt dann: „Der Empire Earth Launcher braucht das .NET Framework 4.8, das auf diesem Computer fehlt. Ohne es werden nur die Spiele installiert, und ihre Verknüpfungen starten die Spiele direkt.“
+Auf älteren Windows-Versionen fehlt manchmal das .NET Framework 4.8. Das Setup zeigt dann: „Der Empire Earth Launcher braucht das .NET Framework 4.8, das auf diesem Computer fehlt. Ohne es werden nur die Spiele installiert, und die Verknüpfung „Empire Earth Community“ startet Neo Empire Earth (oder Empire Earth, wenn nur das installiert ist) direkt.“
 
-Die Spiele werden trotzdem installiert. Du kannst sie über die Desktop-Verknüpfungen spielen. Willst du den Launcher und den Mod Creator haben: Installiere das .NET Framework 4.8 von Microsoft. Starte danach das Setup aus dem entpackten Ordner erneut.
+Die Spiele werden trotzdem installiert. Willst du den Launcher und den Mod Creator haben: Installiere das .NET Framework 4.8 von Microsoft. Starte danach das Setup aus dem entpackten Ordner erneut.
 
 **Auf der letzten Seite steht „NeoEE-CD-Keys: nicht registriert“ oder „Ergebnis unbekannt“**
 
@@ -283,12 +366,19 @@ Prüfe deine Internetverbindung. Starte dann das Setup erneut, um die Registrier
 
 Starte das Setup erneut. Klappt es wieder nicht, schicke die Protokolle an den, der dir das Paket gegeben hat (siehe nächster Abschnitt).
 
+**Auf der letzten Seite steht bei einem Spiel „von dir abgebrochen, nichts daran wurde geändert“**
+
+Du hast dieses Spiel abgebrochen. Starte das Setup erneut, wenn du es installieren oder reparieren willst.
+
 ## Protokolle für die Hilfe
 
 Wenn du Hilfe brauchst, schicke diese Dateien mit:
 
 1. **Das Protokoll des Setups.** Es liegt im Ordner für temporäre Dateien. Drücke die Windows-Taste und R, tippe `%TEMP%` ein und drücke Enter. Suche die neueste Datei, deren Name mit „Setup Log“ beginnt und mit „.txt“ endet.
 2. **Die Protokolle der beiden Spiel-Setups.** Sie liegen im Ordner „Logs“ im Installationsordner, normalerweise „C:\Program Files\Empire Earth Community\Logs“. Die Dateien heißen zum Beispiel „EE-Datum-Uhrzeit.log“ und „NeoEE-Datum-Uhrzeit.log“. Den genauen Ordner zeigt dir auch die letzte Seite des Setups unter „Protokolle:“.
+3. **Das Protokoll des Launchers**, wenn es ums Spielen geht. Drücke die Windows-Taste und R, tippe `%LOCALAPPDATA%\Empire Earth Launcher` ein und drücke Enter. Die Datei heißt „log.txt“. Wichtig sind die Zeilen ab „Game started:“ des Spielstarts, um den es geht.
+
+Die Deinstallation löscht die Protokolle der Spiel-Setups und des Launchers. Kopiere sie vorher, wenn du sie brauchst.
 
 ## Paket prüfen (Prüfsummen)
 
@@ -324,56 +414,78 @@ Get-FileHash -Algorithm SHA256 -LiteralPath ".\Empire Earth Community Setup.exe"
 
 Vergleiche die angezeigte Prüfsumme („Hash“) mit der Zeile für diese Datei in SHA256SUMS.txt. Groß- und Kleinschreibung spielt dabei keine Rolle.
 
+Die Prüfsumme der ganzen ZIP-Datei Empire-Earth-Community-1.1.0.zip steht im Text des Release „Empire Earth Community 1.1.0“ auf GitHub.
+
 **Woher kommt das Paket?** Die Datei **BUILD-INFO.txt** nennt genau, woraus dieses Paket gebaut wurde: die Stände (Commits) des Quellcodes, die Prüfsummen der beiden Spiel-Setups, des Launchers und des Mod Creators und noch einmal die Prüfsummen der Setup-Dateien (.exe und .bin). Damit lässt sich das Paket eindeutig seinen Quellen zuordnen.
 
 ## Bekannte Probleme
 
-Version 1.0.0 ist getestet und läuft. Ein paar Kleinigkeiten kennen wir aber schon. Hier steht ehrlich, was noch nicht rund ist und was du tun kannst.
+Hier steht ehrlich, was noch nicht rund ist und was du tun kannst.
 
-**1. Die Maus reagiert direkt nach dem Spielstart nicht.**
-Abhilfe: Minimiere das Spiel einmal und hol es wieder nach vorne, zum Beispiel mit zweimal Alt+Tab. Danach reagiert die Maus.
-Stand: wird untersucht, die Behebung ist für 1.1.0 geplant.
+**Wie 1.1.0 getestet ist:** Am 2026-10-07 lief auf einem Laptop mit Windows 11 der erste Teil des Tests: das Update von 1.0.0 auf 1.1.0, Spielen und die Seiten des Launchers. Das ging gut, und die Maus reagiert dort sofort nach dem Start, ohne Alt+Tab.
+Der zweite Teil des Tests lief noch nicht. **Noch nicht auf einem echten Computer getestet** sind deshalb: das Abbrechen während der Installation (auch bei einer Reparatur), das Deinstallieren mit „Behalten“ und mit „Löschen“, eine neue Installation, wenn noch nichts installiert ist, die Übernahme eines Spiels, das mit seinem eigenen Setup installiert wurde, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. Abbrechen, Neuinstallation, Übernahme und Deinstallation hat bisher nur ein automatischer Test auf einem Windows-Rechner von GitHub geprüft, mit Platzhaltern statt der Spiele.
+Stößt du dabei auf ein Problem, melde es bitte (siehe [Hilfe und Feedback](#hilfe-und-feedback)). Es wird in 1.1.1 behoben.
 
-**2. Nach einer Windows-Benachrichtigung ist das Bild nicht mehr im Vollbild oder kleiner.**
-Eine Benachrichtigung von Windows kann das Spiel minimieren. Holst du es zurück, füllt das Bild manchmal nicht mehr den ganzen Bildschirm.
-Vorbeugen: Schalte Benachrichtigungen beim Spielen stumm (Windows 11: „Nicht stören“, Windows 10: „Benachrichtigungsassistent“). Dann kommt seltener etwas dazwischen.
-Stand: wird untersucht, die Behebung ist für 1.1.0 geplant.
+**1. Die Maus reagiert nach dem Spielstart nicht, wenn du ohne Launcher startest.**
+Seit 1.1.0 gibt der Launcher dem Spiel ein paar Sekunden nach dem Start ein Aktivierungssignal. Damit reagiert die Maus sofort, ohne Alt+Tab. Auf dem Test-Laptop ist das bestätigt. Lass den Launcher dafür offen, bis das Hauptmenü da ist. Schließt du ihn früher, kommt kein Signal.
+Startest du `Empire Earth.exe` oder `EE-AOC.exe` direkt, ohne Launcher, gibt es kein Signal. Läuft das Spiel mit „Als Administrator ausführen“, nimmt es das Signal nicht an.
+Abhilfe in diesen Fällen: einmal Alt+Tab hinaus und wieder zurück.
 
-**3. Die Online-Spielerliste von NeoEE im Launcher zeigt „nicht erreichbar“.**
-Das liegt nicht an deinem Computer. Der Statusserver titan.empireearth.eu ist im Internet nicht mehr zu finden (er hat keinen DNS-Eintrag mehr). Das Problem liegt auf der Seite des Servers. Du musst nichts tun.
+**2. Das Spiel minimiert sich, wenn ein anderes Fenster oder eine Benachrichtigung erscheint.**
+Das macht das Spielprogramm selbst. Setup und Launcher können das nicht abschalten.
+Mit dgVoodoo 2.87.5 kommt das Spiel auf dem Test-Laptop über Alt+Tab oder seinen Knopf in der Taskleiste in voller Größe zurück.
+Vorbeugen: Schließe Programme, die von selbst Fenster öffnen, bevor du spielst, und schalte Benachrichtigungen stumm (Windows 11: „Nicht stören“, Windows 10: „Fokus-Assistent“). Klicke nicht in andere Programme, während das Spiel lädt.
 
-**4. Im Launcher überlappen auf der Seite „Einstellungen“ oben Texte, und ein Bild verdeckt zwei Knöpfe.**
-Stand: die Behebung ist für 1.1.0 geplant.
+**3. Die Online-Spielerliste von NeoEE im Launcher zeigt „Spieler online (nicht verfügbar)“.**
+Das liegt nicht an deinem Computer. Der Statusserver titan.empireearth.eu war zuletzt im Internet nicht mehr zu finden (er hatte keinen DNS-Eintrag mehr). Das Problem liegt auf der Seite des Servers. Du musst nichts tun.
 
-**5. Während der Installation erscheinen neben dem Setup eigene Fortschrittsfenster der beiden Spiel-Setups.**
-Das ist harmlos. Schließe keines der Fenster und warte einfach (siehe [Schritt 8](#schritt-8-warten)).
-Stand: Ein einziges Fortschrittsfenster für alles ist für 1.1.0 geplant.
+**4. Der Szenario-Editor zeigt ein 4:3-Bild mit Rändern links und rechts.**
+Das ist so gewollt und kein Fehler.
+
+**5. Nach einem Abbruch bleibt ein temporärer Ordner „is-*.tmp“ mit bis zu etwa 170 MB.**
+Darin liegt, was das Setup bis zum Abbruch heruntergeladen hat. Windows räumt ihn mit der Speicheroptimierung auf, oder du löschst ihn selbst im Ordner `%TEMP%`.
+
+**6. Auf 32-Bit-Windows fehlt das Programm `dgVoodooCpl.exe`.**
+Das Einstellprogramm von dgVoodoo 2.87.5 gibt es nur für 64-Bit-Windows. Die Spiele brauchen es nicht.
 
 ## Was ist neu?
 
 Alle Änderungen jeder Version stehen in der Datei [CHANGELOG.md](CHANGELOG.md).
 
+Kurz zu **1.1.0** (2026-10-07):
+
+- **Ein Fenster** für die ganze Installation, mit Statuszeile, Balken und einer Liste der fertigen Schritte. Die Spiel-Setups zeigen keine eigenen Fenster mehr.
+- **Abbrechen** geht, bis ein Spiel installiert wird, auch bei einer Reparatur.
+- **Ein Symbol** „Empire Earth Community“ statt zwei. Der Launcher zeigt alle vier Spiele in einer Liste und merkt sich deine Wahl.
+- **Launcher:** neue Seiten „Grafik“ und „Mods“, ein Fenster, das du größer ziehen kannst, die Seite „Einstellungen“ ohne überlappende Texte, „Reparatur-Hinweise“ mit der Downloadseite der Website.
+- **Maus beim Start:** das Aktivierungssignal des Launchers.
+- **dgVoodoo 2.87.5** mit neuen Fenstereinstellungen, Spielfenster bis 1920 × 1200.
+- **Intro-Videos** werden standardmäßig mit installiert.
+- **Download** als eine ZIP-Datei im Release auf GitHub (siehe [Schritt 1](#schritt-1-paket-herunterladen)).
+
 Kurz zu **1.0.0** (2026-10-06): die erste Version. Ein einziges Setup installiert Empire Earth mit The Art of Conquest, Neo Empire Earth, den Empire Earth Launcher und den Mod Creator, repariert sie bei Bedarf und entfernt alles wieder sauber.
 
 ## Versionen
 
-Die aktuelle Version steht in der Datei [VERSION](VERSION). Jede Version hat eine Nummer aus drei Teilen, zum Beispiel **1.0.0**:
+Die aktuelle Version steht in der Datei [VERSION](VERSION). Jede Version hat eine Nummer aus drei Teilen, zum Beispiel **1.1.0**:
 
-- Ändert sich die letzte Zahl (1.0.**1**), wurden nur Fehler behoben.
-- Ändert sich die mittlere Zahl (1.**1**.0), gibt es neue Funktionen.
+- Ändert sich die letzte Zahl (1.1.**1**), wurden nur Fehler behoben.
+- Ändert sich die mittlere Zahl (1.**2**.0), gibt es neue Funktionen.
 - Ändert sich die erste Zahl (**2**.0.0), hat sich etwas Grundlegendes geändert.
 
 So funktioniert es hier:
 
-- **Die Hauptseite zeigt immer die neueste Version.** „Code“ > „Download ZIP“ (Schritt 1) lädt also immer die neueste herunter.
-- **Jede Version bekommt ein Release** mit einem „v“ vor der Nummer, zum Beispiel **v1.0.0**. Was sich geändert hat, steht in [CHANGELOG.md](CHANGELOG.md).
-- **Ältere Versionen bleiben erhalten.** Nichts wird nachträglich geändert oder gelöscht.
+- **Jede Version ist ein Release** mit einem „v“ vor der Nummer, zum Beispiel **v1.1.0**. Seit 1.1.0 liegt das Paket dort als eine ZIP-Datei unter „Assets“, zum Beispiel Empire-Earth-Community-1.1.0.zip. Was sich geändert hat, steht in [CHANGELOG.md](CHANGELOG.md).
+- **Die neueste Version ist immer das Release mit der Markierung „Latest“.** [Schritt 1](#schritt-1-paket-herunterladen) lädt also immer die neueste herunter.
+- **Die Hauptseite des Repositorys** zeigt die Anleitung und die anderen Dokumente der neuesten Version. Das Setup und seine .bin-Dateien liegen nur in der ZIP-Datei des Release.
+- **Testversionen** sind mit „Pre-release“ markiert, zum Beispiel v1.1.1-rc1. Zum Spielen nimm das Release mit „Latest“.
+- **Ältere Versionen bleiben erhalten.** Ein Release wird nachträglich nicht geändert oder gelöscht.
 
-**So holst du eine ältere Version:**
+**So holst du die ältere Version 1.0.0:**
 
-1. Klicke auf dieser Seite rechts auf „Releases“.
-2. Suche die Version, die du möchtest, zum Beispiel „v1.0.0“.
-3. Klicke darunter bei „Assets“ auf „Source code (zip)“. Lass dich vom Namen nicht verwirren: Diese ZIP-Datei enthält das ganze Paket genau in dieser Version.
+1. Klicke auf der Seite des Repositorys rechts auf „Releases“.
+2. Suche das Release mit dem Tag „v1.0.0“. Der Tag steht bei jedem Release neben dem Titel.
+3. Klicke darunter bei „Assets“ auf „Source code (zip)“. Bei 1.0.0 enthält diese ZIP-Datei das ganze Paket genau in dieser Version, weil 1.0.0 seine Dateien noch im Repository hatte. Ab 1.1.0 ist das anders: Dort nimmst du die Datei „Empire-Earth-Community-…zip“ (siehe [Schritt 1](#schritt-1-paket-herunterladen)).
 4. Mach dann weiter wie ab [Schritt 2](#schritt-2-download-freigeben-empfohlen).
 
 ## Hilfe und Feedback
@@ -388,7 +500,7 @@ Etwas klappt nicht, oder du hast eine Idee? Melde dich bei dem, der dir das Pake
 Schick außerdem die passenden Protokolle mit:
 
 - **Probleme beim Installieren, Reparieren oder Deinstallieren:** die Protokolle aus dem Abschnitt [Protokolle für die Hilfe](#protokolle-für-die-hilfe).
-- **Probleme mit dem Launcher:** das Protokoll des Launchers. Drücke die Windows-Taste und R, tippe `%LOCALAPPDATA%\Empire Earth Launcher` ein und drücke Enter. Die Datei heißt „log.txt“.
+- **Probleme beim Spielen oder mit dem Launcher:** das Protokoll des Launchers („log.txt“, siehe [Protokolle für die Hilfe](#protokolle-für-die-hilfe)). Schreib dazu, ob die Maus ohne Alt+Tab ging und welches Fenster oder welche Benachrichtigung das Spiel minimiert hat.
 
 Bevor du dich meldest, schau gern kurz in [Bekannte Probleme](#bekannte-probleme). Vielleicht steht die Lösung schon dort.
 
@@ -399,20 +511,23 @@ Gut zu wissen: In den Protokollen stehen Ordnernamen. Darin kann dein Windows-Be
 Dieser Abschnitt ist für Neugierige. Zum Installieren und Spielen brauchst du ihn nicht.
 
 <details>
-<summary>Bestandteile, Quellen und Ordner von Version 1.0.0</summary>
+<summary>Bestandteile, Quellen und Ordner von Version 1.1.0</summary>
 
 **Bestandteile und Quellen**
 
 | Teil | Version | Quelle |
 |---|---|---|
-| Suite-Installer „Empire Earth Community Setup“ | 1.0.0 | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup), Tag `suite-v1.0.0`, Commit `36b0e09` |
-| Empire Earth Launcher und Mod Creator | 1.0.0 | [DritteRippe/Empire-Earth-Launcher](https://github.com/DritteRippe/Empire-Earth-Launcher), Tag `v1.0.0`, Commit `b4fd570` |
-| Produkt-Setup Empire Earth (mit The Art of Conquest) | Setup 1.7.2 (`EE_Setup_v1.7.2.exe`) | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup), Commit `02afce0`, unverändert eingebettet |
-| Produkt-Setup Neo Empire Earth | NeoEE 2.0.0.5 (`NeoEE_v2.0.0.5_Setup_v1.7.2.exe`) | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup), Commit `02afce0`, unverändert eingebettet |
+| Suite-Installer „Empire Earth Community Setup“ | 1.1.0 | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup), Commit `2b764e4` |
+| Empire Earth Launcher und Mod Creator | 1.1.0 | [DritteRippe/Empire-Earth-Launcher](https://github.com/DritteRippe/Empire-Earth-Launcher), Commit `5d256c8` |
+| Produkt-Setup Empire Earth (mit The Art of Conquest) | Setup 1.7.2 | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup), Commit `2b764e4`, unverändert eingebettet |
+| Produkt-Setup Neo Empire Earth | NeoEE 2.0.0.5, Setup 1.7.2 | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup), Commit `2b764e4`, unverändert eingebettet |
+| DirectX-Wrapper dgVoodoo (in beiden Produkt-Setups) | 2.87.5 | die Dateien `DDraw.dll`, `D3DImm.dll` und `dgVoodooCpl.exe` der offiziellen Ausgabe von dgVoodoo 2.87.5, festgelegt mit ihren Prüfsummen |
 
-Gebaut mit Inno Setup 6.2.2 als Release-Build am 2026-10-06. Die vollständigen Commit-Kennungen und die Prüfsummen aller Eingaben stehen in [BUILD-INFO.txt](BUILD-INFO.txt).
+Gebaut mit Inno Setup 6.2.2 als Release-Build am 2026-10-07. Die vollständigen Commit-Kennungen und die Prüfsummen aller Eingaben stehen in [BUILD-INFO.txt](BUILD-INFO.txt).
 
 **Aufbau des Pakets**
+
+Die ZIP-Datei `Empire-Earth-Community-1.1.0.zip` aus dem Release enthält einen Ordner `Empire-Earth-Community-1.1.0` mit diesen Dateien:
 
 - `Empire Earth Community Setup.exe`: das Setup-Programm (etwa 1,7 MB)
 - `Empire Earth Community Setup-1.bin` bis `-26.bin`: die Daten des Setups, aufgeteilt in Stücke von höchstens 50 MB, zusammen etwa 1,25 GB
@@ -420,7 +535,9 @@ Gebaut mit Inno Setup 6.2.2 als Release-Build am 2026-10-06. Die vollständigen 
 - `BUILD-INFO.txt`: woraus genau das Paket gebaut wurde
 - `README.md` und `LIES-MICH.txt`: diese Anleitung (die .txt-Datei kannst du auch ohne Internet im Editor lesen)
 - `CHANGELOG.md` und `VERSION`: die Änderungen und die Versionsnummer
-- `Lizenzen/`: Lizenzen und Hinweise zum Quellcode
+- `Lizenzen/`: Lizenzen und Hinweise zum Quellcode, darunter `THIRD-PARTY-NOTICES-Setup.md` mit dem Hinweis zu dgVoodoo
+
+Das Repository „ee-paket“ selbst enthält nur die Dokumente der neuesten Version: `README.md`, `LIES-MICH.txt`, `CHANGELOG.md`, `VERSION`, `BUILD-INFO.txt`, `SHA256SUMS.txt` und `Lizenzen/`. Sie beschreiben die ZIP-Datei des neuesten Release. Das Setup und die .bin-Dateien liegen nur in der ZIP-Datei. Bis 1.0.0 lagen sie im Repository; dort bleiben sie in der Historie beim Tag `v1.0.0`.
 
 **Wohin wird installiert?** (bei einer Standard-Installation)
 
@@ -431,14 +548,16 @@ Gebaut mit Inno Setup 6.2.2 als Release-Build am 2026-10-06. Die vollständigen 
 | Neo Empire Earth | `C:\Program Files (x86)\Neo Empire Earth` |
 | Einstellungen, Sicherungen und Protokoll des Launchers | `%LOCALAPPDATA%\Empire Earth Launcher` |
 
-Spielstände und Profile liegen in den Spielordnern, in den Unterordnern `Users` und `Data\Saved Games`. Beim Deinstallieren mit „Behalten“ bleiben genau diese Ordner, die Launcher-Sicherungen und der Ordner „Mod Creator“ im Launcher-Ordner erhalten.
+Spielstände und Profile liegen in den Spielordnern, in den Unterordnern `Users` und `Data\Saved Games`, eigene Mods in `Data\dxm\mods`. Beim Deinstallieren mit „Behalten“ bleiben genau diese Ordner, die Launcher-Sicherungen und der Ordner „Mod Creator“ im Launcher-Ordner erhalten.
+
+Für das Programm „Empire Earth Diagnostic“ legt das Setup keine Verknüpfung mehr an. Es liegt weiter im Spielordner unter `Tools\Diagnostic`.
 
 **Getestet**
 
-Am 2026-10-06 auf einem echten Laptop mit Windows 11:
-
-- Beide Spiele mit den Standard-Einstellungen installiert und über die Desktop-Verknüpfungen gestartet und gespielt. Dabei erschien nur ein Launcher, und die NeoEE-CD-Keys wurden registriert.
-- Deinstalliert mit „Behalten“, neu installiert und wieder deinstalliert mit „Löschen“.
+- Automatisch: Der Ende-zu-Ende-Test des Suite-Installers (Szenarien S1 bis S14: Installation, Übernahme eines einzeln installierten Spiels, Reparatur, Deinstallation und Abbrechen) lief auf einem Windows-Rechner von GitHub ohne Fehler, mit Platzhaltern statt der Spiele, für die Commits `2b764e4` (aus ihm ist dieses Paket gebaut) und `75923f3`.
+- Auf dem Test-Laptop mit Windows 11 und einem Bildschirm mit 1920 × 1200, in einem früheren Test noch ohne das Aktivierungssignal: dgVoodoo 2.87.5 mit den Fenstereinstellungen von 1.1.0 bei einem Spielfenster von 1920 × 1200. Die Mehrspieler-Lobby, der Szenario-Editor und Alt+Tab gingen, ohne schwarze Balken. Die Maus war beim Start noch tot, bis Alt+Tab.
+- Auf demselben Laptop am 2026-10-07 mit genau diesen Setup-Dateien, erster Teil des Tests: Update von 1.0.0 auf 1.1.0, Spielen und die Seiten des Launchers. Ergebnis: bestanden, die Maus reagiert sofort nach dem Start, ohne Alt+Tab. Das Aktivierungssignal des Launchers 1.1.0 behebt also die tote Maus.
+- Der zweite Teil des Tests lief nicht: Abbrechen bei installierten Spielen (auch bei einer Reparatur), Deinstallieren, Abbrechen ohne Spiele, Neuinstallation, die Übernahme eines einzeln installierten Spiels, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. 1.1.0 wurde trotzdem freigegeben. Was davon der automatische Test abdeckt, lief nur dort, nicht auf echter Hardware. Findet der zweite Teil später ein Problem, wird es in 1.1.1 behoben.
 
 </details>
 
@@ -452,7 +571,7 @@ Der Quellcode der Programme in diesem Paket ist öffentlich:
 Welcher Stand genau in diesem Paket steckt, steht in [Lizenzen/Quellcode.txt](Lizenzen/Quellcode.txt) und in [BUILD-INFO.txt](BUILD-INFO.txt).
 
 - Der **Quellcode** und die daraus gebauten Programme stehen unter der **GNU General Public License, Version 3** (GPL-3.0), siehe [Lizenzen/LICENSE](Lizenzen/LICENSE).
-- **Komponenten Dritter** und ihre Lizenzen findest du in [Lizenzen/THIRD-PARTY-NOTICES.md](Lizenzen/THIRD-PARTY-NOTICES.md) und [Lizenzen/licenses/THIRD-PARTY-LICENSES.txt](Lizenzen/licenses/THIRD-PARTY-LICENSES.txt).
+- **Komponenten Dritter** und ihre Lizenzen findest du in [Lizenzen/THIRD-PARTY-NOTICES.md](Lizenzen/THIRD-PARTY-NOTICES.md), [Lizenzen/THIRD-PARTY-NOTICES-Setup.md](Lizenzen/THIRD-PARTY-NOTICES-Setup.md) (Installer, darunter dgVoodoo von Dege) und [Lizenzen/licenses/THIRD-PARTY-LICENSES.txt](Lizenzen/licenses/THIRD-PARTY-LICENSES.txt).
 - Die **Spieldaten** von Empire Earth, The Art of Conquest und NeoEE (Programmdateien, Grafiken, Musik, Videos und so weiter) stehen **nicht** unter der GPL. Für sie gelten die Rechte ihrer jeweiligen Inhaber.
 
 ## Rechtlicher Hinweis

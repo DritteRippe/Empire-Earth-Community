@@ -2,21 +2,51 @@
 
 Hier stehen alle Änderungen an diesem Paket, die neueste Version zuerst.
 
-Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die Versionsnummern folgen [Semantic Versioning](https://semver.org/lang/de/). Jede Version ist ein Tag `vX.Y.Z` auf `main` mit einem GitHub-Release. Ältere Versionen bleiben über ihren Tag erreichbar, die Historie wird nicht umgeschrieben. Wie du eine ältere Version herunterlädst, steht in der [README](README.md#versionen).
+Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die Versionsnummern folgen [Semantic Versioning](https://semver.org/lang/de/). Jede Version ist ein Tag `vX.Y.Z` auf `main` mit einem GitHub-Release. Ab 1.1.0 liegt das Paket in diesem Release als eine ZIP-Datei unter „Assets“. Ältere Versionen bleiben über ihren Tag erreichbar, die Historie wird nicht umgeschrieben. Wie du eine ältere Version herunterlädst, steht in der [README](README.md#versionen).
 
 ## [Unreleased]
 
 ### Geplant
 
-Für Version 1.1.0 ist geplant (ohne festes Datum):
+Für spätere Versionen ist geplant (ohne festes Datum):
 
-- Die Maus reagiert direkt nach dem Spielstart, ohne das Spiel erst minimieren zu müssen.
-- Nach einer Windows-Benachrichtigung bleibt das Spiel im Vollbild.
-- Die Launcher-Seite „Einstellungen“ wird aufgeräumt: keine überlappenden Texte und keine verdeckten Knöpfe mehr.
-- Während der Installation zeigt nur noch ein einziges Fenster den Fortschritt.
-- Eine neue Grafik-Seite im Launcher: Wrapper, Anzeigemodus und Auflösung einstellen.
 - Discord-Status: Discord zeigt an, was du gerade spielst.
-- Eine Mods-Seite im Launcher (dreXmod).
+- Grafik-Einstellungen, die Werte ändern: Wrapper, Anzeigemodus und Auflösung einstellen. Die Seite „Grafik“ in 1.1.0 zeigt die Werte nur an, und die Seite „Mods“ liest nur.
+
+## [1.1.0] – 2026-10-07
+
+Getestet am 2026-10-07 auf einem echten Laptop mit Windows 11 und einem Bildschirm mit 1920 × 1200, mit genau diesen Setup-Dateien: der erste Teil des Tests (Update von 1.0.0 auf 1.1.0, Spielen, die Seiten des Launchers) ist bestanden. Die Maus reagiert direkt nach dem Start ohne Alt+Tab.
+
+Der zweite Teil des Tests lief nicht. Nicht auf echter Hardware getestet sind deshalb: Abbrechen bei installierten Spielen (auch der Abbruch einer Reparatur), Deinstallieren mit „Behalten“ und mit „Löschen“, Abbrechen ohne Spiele, Neuinstallation, die Übernahme eines einzeln installierten Spiels, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. Abbrechen, Neuinstallation, Übernahme und Deinstallation prüft bisher nur der automatische Ende-zu-Ende-Test (Szenarien S1 bis S14 auf einem Windows-Rechner von GitHub, mit Platzhaltern statt der Spiele, ohne Fehler für die Setup-Commits `2b764e4` und `75923f3`). 1.1.0 wurde trotzdem freigegeben. Findet der zweite Teil später ein Problem, wird es in 1.1.1 behoben.
+
+### Hinzugefügt
+
+- **Ein Fenster für die ganze Installation:** Statuszeile, Balken und eine Liste der fertigen Schritte. Die Setups der beiden Spiele zeigen keine eigenen Fenster mehr (außer im Pfad „Erweitert“).
+- **Abbrechen** geht, bis ein Spiel installiert wird, auch bei einer Reparatur oder einem Update. Danach ist „Abbrechen“ grau, mit einer Zeile unter dem Balken, die sagt, warum.
+- **Ein Symbol** „Empire Earth Community“ auf dem Desktop statt zwei. Der **Launcher 1.1.0** zeigt alle vier Spiele in einer Liste und merkt sich deine Wahl. Ein Setup oder eine Reparatur entfernt die zwei alten Symbole von 1.0.0.
+- **Launcher:** neue Seite „Grafik“ (zeigt die Werte der Spiele an, ohne etwas zu ändern), neue Seite „Mods“ (nur lesend), ein Fenster, das du größer ziehen kannst, und „Reparatur-Hinweise“ mit Links zu den Downloadseiten der Website.
+- **Aktivierungssignal des Launchers:** Nach dem Start über den Launcher bekommt das Spiel ein Signal, das die Maus ohne Alt+Tab weckt.
+- **dgVoodoo 2.87.5** in allen fünf Stufen, mit neuen Fenstereinstellungen. Das Spielfenster kann bis 1920 × 1200 groß sein (bisher höchstens 1080 Zeilen).
+- **Intro-Videos** werden standardmäßig mit installiert. Bei einem Update bekommst du sie einmal nachgeliefert, danach bleibt deine Auswahl.
+
+### Geändert
+
+- **Download als GitHub-Release:** Das Paket ist eine einzige ZIP-Datei `Empire-Earth-Community-1.1.0.zip` (etwa 1,3 GB) unter „Assets“ im Release `v1.1.0`. Darin liegt der Ordner `Empire-Earth-Community-1.1.0` mit dem Setup, den 26 .bin-Dateien, `SHA256SUMS.txt`, `BUILD-INFO.txt`, `README.md`, `LIES-MICH.txt`, `CHANGELOG.md`, `VERSION` und `Lizenzen/`. „Source code (zip)“ und „Source code (tar.gz)“ dieses Release enthalten nur die Dokumente, nicht das Spiel. Das Repository enthält nur noch die Dokumente der neuesten Version. Das Setup und die .bin-Dateien von 1.0.0 sind nicht mehr im aktuellen Stand, bleiben aber in der Historie beim Tag `v1.0.0`. Testversionen erscheinen künftig als „Pre-release“, zum Beispiel `v1.1.1-rc1`.
+- Die Seite „Einstellungen“ des Launchers hat keine überlappenden Texte und keine verdeckten Knöpfe mehr.
+- „Empire Earth Diagnostic“ bekommt keine Verknüpfung mehr. Es liegt weiter im Spielordner unter `Tools\Diagnostic`.
+
+### Behoben
+
+- Die Maus reagiert nach dem Start über den Launcher sofort, ohne Alt+Tab (auf dem Test-Laptop bestätigt).
+- Während der Installation gab es neben dem Fenster der Suite eigene Fortschrittsfenster der Spiel-Setups.
+- Die Seite „Einstellungen“ des Launchers: überlappende Texte und ein Bild über zwei Knöpfen.
+
+### Bekannte Probleme
+
+- Die Maus bleibt tot, wenn du das Spiel ohne den Launcher startest, den Launcher früh schließt oder das Spiel mit „Als Administrator ausführen“ läuft. Abhilfe: einmal Alt+Tab hinaus und zurück.
+- Eine Windows-Benachrichtigung kann das Spiel minimieren. Das macht das Spielprogramm selbst. Vorbeugen: Benachrichtigungen stummschalten.
+- Die Online-Spielerliste von NeoEE im Launcher zeigt „nicht verfügbar“, weil der Statusserver titan.empireearth.eu keinen DNS-Eintrag mehr hat.
+- Abbrechen, Deinstallieren, Neuinstallation, andere Sprachen und der Weg über „Erweitert“ sind auf echter Hardware noch nicht getestet (siehe oben).
 
 ## [1.0.0] – 2026-10-06
 
@@ -48,5 +78,6 @@ Die erste Version. Getestet am 2026-10-06 auf einem echten Laptop mit Windows 11
 - Launcher-Seite „Einstellungen“: Oben überlappen Texte, und ein Bild verdeckt zwei Knöpfe. Behebung für 1.1.0 geplant.
 - Während der Installation zeigen die Setups von EE und NeoEE eigene Fortschrittsfenster neben dem Fenster der Suite. Ein einziges Fortschrittsfenster ist für 1.1.0 geplant.
 
-[Unreleased]: https://github.com/DritteRippe/ee-paket/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/DritteRippe/ee-paket/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/DritteRippe/ee-paket/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/DritteRippe/ee-paket/releases/tag/v1.0.0

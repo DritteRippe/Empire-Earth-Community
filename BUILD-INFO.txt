@@ -1,54 +1,54 @@
-Empire Earth Community Setup 1.0.0 (suite installer, ADR 0013)
-Built (UTC):          2026-10-06 14:58:46
-Setup repository:     36b0e0907cfc569158e79c387d1e1805f10c7c59
-Launcher commit:      b4fd570ddb0ec00a5e57d451cfde8066e3941a2f
-Mod Creator commit:   b4fd570ddb0ec00a5e57d451cfde8066e3941a2f
+Empire Earth Community Setup 1.1.0 (suite installer, ADR 0013)
+Built (UTC):          2026-10-07 17:44:30
+Setup repository:     2b764e479e9a406ebee92328a3afc462d234d208
+Launcher commit:      5d256c8d98fb1d7e7509ad095c1cb1d3becbdc72
+Mod Creator commit:   5d256c8d98fb1d7e7509ad095c1cb1d3becbdc72
 ISCC:                 6.2.2
 Build kind:           release build (TestID 0)
 DiskSliceSize:        50000000
-Slices:               26, 1250485711 bytes in total, setup program 1705275 bytes
+Slices:               26, 1250568410 bytes in total, setup program 1720031 bytes
 
 Inputs (SHA-256, size):
-  EE setup            105d2de50c4496932986a795243084ebcbf2ba6b86a1c01edb538191d8839490  603766374  EE_Setup_v1.7.2.exe
-  NeoEE setup         dad85c987b525a8d82a97649e7d3945f67ef21e7f4c0b9372d5d9d0b3579b63b  644898418  NeoEE_v2.0.0.5_Setup_v1.7.2.exe
-  Launcher folder     5f02474211f6414226b4b6a9ad93a1edf7ccf3de120b5869a9836ad88fee5000  7 files, 5059304 bytes (digest of the sorted file hashes, without .pdb)
-  Mod Creator folder  1c1305affa7cb4195ae9967bf8065f0542d8120278cb7f3833970fc86427be7f  5 files, 3724561 bytes
-  License folder      f68d7d77794ffaf04242489e34d039d102a3a25d41561fcad06881bf0f1ed14a  4 files, 43798 bytes
+  EE setup            46ae6aff9e70bec839a26a45963f6d78294719ccb33cffe5924bf86320e9c31f  603786464  EE_Setup_v1.7.2.exe
+  NeoEE setup         051094d0cef8fd8ff4cd69b9dd53438bdcf00f4b1f8de65008c9bc8f9e797340  644918473  NeoEE_v2.0.0.5_Setup_v1.7.2.exe
+  Launcher folder     5f0e5bcbb03d5c0b26d432c6825ec71d8e59af98e0872ecfdd23d384bb9c56ab  7 files, 5250792 bytes (digest of the sorted file hashes, without .pdb)
+  Mod Creator folder  ec0c7218f09bdde3fbc152940d3f5f3ed5bf0cd38fc24a39f2698f5569fa6a61  5 files, 3724561 bytes
+  License folder      7ba68cd67e66f565a8d362ed4985fd3954bc4904bfc0ed1eda14795163a6d632  5 files, 46055 bytes
   Legal text          0f803fca9c10477b216f65ddd6f783f077cd5861c0ad45bd0d67e0e324abca01  11859  EULA_DSML.txt
   Legal text          e157ad33db0b15ac761c68596b9a80f3e0b2430644725ea90b50606461480758  2226  neoee_rules.rtf
 
 Output (SHA-256, the same as in SHA256SUMS.txt):
-  f5f34c1987d1eb0c15f5759505c9c87d28a90083d061d45f1b5da27fa3f26d86  Empire Earth Community Setup.exe
-  d6fa21d39953e791f2c89891a4ce382876c1fb03e2f65543c4018c9dc10b6816  Empire Earth Community Setup-1.bin
-  8e4c704b80749658d979ebf470778dc2cd4b370ded2569ff5c3d9be6e8ef91aa  Empire Earth Community Setup-2.bin
-  43790343d0b1859d0dcf3ebcbc6c0f1a04ea9ab13b73d4d5553a555142eda68b  Empire Earth Community Setup-3.bin
-  27144db125cdf726ea22bfb2b62e0a98db882b7a360d1aab3056073d7a4859bf  Empire Earth Community Setup-4.bin
-  7418a69ae1b3eaba32386893b9f062b13179d5678a783185bd1af86b6a982482  Empire Earth Community Setup-5.bin
-  53fe27f5137e5b0523eba170412ce193cd5fe4f8d5048dd3186dd3720e5be6dc  Empire Earth Community Setup-6.bin
-  e5892b4d0c7d91f1454bd432c8325573faed33a577e9e76039174190aaaddac0  Empire Earth Community Setup-7.bin
-  852b45a6b230c0b776a15bc90358ceee6c3613ec1a10e5657faca3b90f9343ce  Empire Earth Community Setup-8.bin
-  a1712c9ad171a54ee7ac4497631284a6fd0d26c66d8fcd6243f57315f945290e  Empire Earth Community Setup-9.bin
-  7dfd0530e796f71fa9b8c64438918bce7d60ef2ef6cef2db4e753472dfaeda64  Empire Earth Community Setup-10.bin
-  aad9660454b0527e85210b993099fe940e46c444320611c010bee3470fa2ca82  Empire Earth Community Setup-11.bin
-  aaf8832fa6eed8f000530b52f5efbfda871160301994a71cbc107b32a44f5b2e  Empire Earth Community Setup-12.bin
-  f7b6ed3f20d1bb58cddd75917d5c7417a646b7faab895ccb34cc863954eac559  Empire Earth Community Setup-13.bin
-  54a596189e936127e10d2d02b8f3d39726efec859b5c14a93bdc1325c5cf4ae4  Empire Earth Community Setup-14.bin
-  6b338cc609f022480e53677dc90c843a998c0598e3982cc46bc5a404706d5233  Empire Earth Community Setup-15.bin
-  5d0014dd440edf010cec96530d3656559d6cbdac6a3442625aac659650cee225  Empire Earth Community Setup-16.bin
-  84af00c8f5cc9a85a865a8324499dbef3f26d5aa5df44a7a79d106fa651d6586  Empire Earth Community Setup-17.bin
-  604a73ad7c0957e174db3814433cdd4d17e7810a8924481c7785b0c5449757a0  Empire Earth Community Setup-18.bin
-  baefba45e0daf5f821fa51e1a5a2396d5f85be5c30dcf6705135f8924262540d  Empire Earth Community Setup-19.bin
-  615b6b04866d53225baf834930fd5b41282a0e2446ed87a782191273eaad4146  Empire Earth Community Setup-20.bin
-  503fc2ac67eb9415bac6078ff918c88365bc55460f8c585459618c17e9e1142d  Empire Earth Community Setup-21.bin
-  fed5dac16d54196975587b6c543d4807fb9dca61326634f704e16fb6685c8c75  Empire Earth Community Setup-22.bin
-  15aafe7e3e4caef195520ef6ad9325b3335eea6c2b742793ac87f3cc04960ada  Empire Earth Community Setup-23.bin
-  4b0882e4337c410723cfcbf1783ce628ef105a684a9290e4865df58f97077af1  Empire Earth Community Setup-24.bin
-  7948c9b8cc80bf9f7de60feec219ee05f2de6da7415ee70e4fa30538a8e4d901  Empire Earth Community Setup-25.bin
-  86e5b66843396145038d677706f88395533eca18cb83c8aff90ccf25bfbf47b1  Empire Earth Community Setup-26.bin
+  1bf4bfd1041236a0b292f8a43426e09067583267d1ee6187d0583b7192d95715  Empire Earth Community Setup.exe
+  b8b86c79876a3a02c04406104eff63db35091976b5eaef42e68149b3f9bdedad  Empire Earth Community Setup-1.bin
+  e397d6aeeeba84443bd0d5b0cb5c91e5f63054540c980628da997a69a1a29256  Empire Earth Community Setup-2.bin
+  55db604572f27c1530d629f8bbc2112dd4d732b37da81c4d592dcaa2f3a3a18e  Empire Earth Community Setup-3.bin
+  00ec6c4e63c866e823fad517f7cf449e1e59ff46277631d3532fa59678c49113  Empire Earth Community Setup-4.bin
+  ae0af8ab4eafdd6d5e32aa9ab66e719a095092a3d993fc7ee4f9f7cb46352ab3  Empire Earth Community Setup-5.bin
+  87bce9e3ab72ccafbb82236955434a17b441d06258fbc2c9d5e2ee6a1a996bee  Empire Earth Community Setup-6.bin
+  be60cae19781baf96244252129f07bb23ad78cc757269fddaded54b981e5ab66  Empire Earth Community Setup-7.bin
+  8871dd68267e86b3468a258277ce26d532cf6a252c9c5d703b3d7c5096aad045  Empire Earth Community Setup-8.bin
+  80694ea58469698a38345a01e883bbaf2e38ff2195f5417edb7d3d809c7139ce  Empire Earth Community Setup-9.bin
+  602f76d4e8c13553f74145e42be19f56b7f763b20fef581feae209621ce834de  Empire Earth Community Setup-10.bin
+  c44ef9434406ce33c502aa51ca8495c1f1870f615095d96a451f9eca8daecfcb  Empire Earth Community Setup-11.bin
+  e42d026118d78e5c30cb53a33dfb42f7eb180d50ab7300c850aea1121048e797  Empire Earth Community Setup-12.bin
+  f1d5fa3931451aaab7d9c9b7a95cfe843f0fa184ebf88eea4a40c1887103fb38  Empire Earth Community Setup-13.bin
+  29e66af03ba332712162663b03431d6f3d6ab8056f9cfa62473f03db9ab823fb  Empire Earth Community Setup-14.bin
+  6aaf6e79408381c6a3c59f16ad59ea39b10e3ea34dd6c74a6e779ab88eeb3c88  Empire Earth Community Setup-15.bin
+  8662e59d8c1efb862f0d2e60a0030b5728b612c5f51a27cb12ed03b167cb2db5  Empire Earth Community Setup-16.bin
+  1f07ef8dd6795afd4624cc3efdf834643722a663512a7a7bfda9d41737f176e0  Empire Earth Community Setup-17.bin
+  2bddf23b4731526ad42f0790a0735df58fb487039c5bde044ee6b1e7b7ff93d3  Empire Earth Community Setup-18.bin
+  8bdc6308b79b8e9baa37a11db9340ec40281382f5ea569efe5b9d87a529a374c  Empire Earth Community Setup-19.bin
+  d19cbca24aae8be81542ba118cabef9d55a1e1b55ba535c16a8db531b07c03f5  Empire Earth Community Setup-20.bin
+  a319b32a227b63edaf69a35fbea56c49c6aadd09c956d48cd520504775ee2a16  Empire Earth Community Setup-21.bin
+  544279368abaf6708b293f3191527d02949b26212a91ee86c21684a5e547eae5  Empire Earth Community Setup-22.bin
+  9efd3424e0f0787ee2d7c03659d6aad3cfd250401d0c32d49b85cf8d84b97013  Empire Earth Community Setup-23.bin
+  a0a37ab1381aa121b96ae87450ed7490cc798db48fcae3f9bcac6bf1e4db4234  Empire Earth Community Setup-24.bin
+  225790a3e3329f9905243d38035acfd66be250c07131f4ec02f8491dbf90dafa  Empire Earth Community Setup-25.bin
+  6b4d21486a25b566995245cc3557e95a35fa231de9242f1e5b404a94c22276ad  Empire Earth Community Setup-26.bin
 Suite AppId:          3CA3AF77-BFC2-4F3F-8107-C3D7529C1338
 EE AppId:             4C0B46D8-E7EB-4B95-97D4-A578D9B914C6
 NeoEE AppId:          A24FCC7A-5491-4FEA-837B-4E4430C349DA
-EEInstallSize:        810909712
-NeoEEInstallSize:     833851596
+EEInstallSize:        811017324
+NeoEEInstallSize:     833959208
 EULA (EULA_DSML.txt): 0f803fca9c10477b216f65ddd6f783f077cd5861c0ad45bd0d67e0e324abca01  11859 bytes
 NeoEE rules (rtf):    e157ad33db0b15ac761c68596b9a80f3e0b2430644725ea90b50606461480758  2226 bytes
