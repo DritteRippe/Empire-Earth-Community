@@ -78,6 +78,6 @@ Die erste Version. Getestet am 2026-10-06 auf einem echten Laptop mit Windows 11
 - Launcher-Seite „Einstellungen“: Oben überlappen Texte, und ein Bild verdeckt zwei Knöpfe. Behebung für 1.1.0 geplant.
 - Während der Installation zeigen die Setups von EE und NeoEE eigene Fortschrittsfenster neben dem Fenster der Suite. Ein einziges Fortschrittsfenster ist für 1.1.0 geplant.
 
-[Unreleased]: https://github.com/DritteRippe/ee-paket/compare/v1.1.0...HEAD
-[1.1.0]: https://github.com/DritteRippe/ee-paket/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/DritteRippe/ee-paket/releases/tag/v1.0.0
+[Unreleased]: https://github.com/DritteRippe/Empire-Earth-Community/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/DritteRippe/Empire-Earth-Community/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/DritteRippe/Empire-Earth-Community/releases/tag/v1.0.0

@@ -109,7 +109,7 @@ Danach kannst du den Ordner von 1.0.0 löschen. Behalte den neuen Ordner „Empi
 
 ## Schritt 1: Paket herunterladen
 
-1. Öffne die Seite des Repositorys „ee-paket“ auf GitHub. Du musst angemeldet sein.
+1. Öffne die Seite des Repositorys „Empire-Earth-Community“ auf GitHub. Du musst angemeldet sein.
 2. Klicke rechts auf „Releases“.
 3. Klicke auf das neueste Release **„Empire Earth Community 1.1.0“**. Es ist mit „Latest“ markiert.
 4. Unten im Release steht „Assets“. Klicke dort auf **Empire-Earth-Community-1.1.0.zip** (etwa 1,3 GB).
@@ -537,7 +537,7 @@ Die ZIP-Datei `Empire-Earth-Community-1.1.0.zip` aus dem Release enthält einen 
 - `CHANGELOG.md` und `VERSION`: die Änderungen und die Versionsnummer
 - `Lizenzen/`: Lizenzen und Hinweise zum Quellcode, darunter `THIRD-PARTY-NOTICES-Setup.md` mit dem Hinweis zu dgVoodoo
 
-Das Repository „ee-paket“ selbst enthält nur die Dokumente der neuesten Version: `README.md`, `LIES-MICH.txt`, `CHANGELOG.md`, `VERSION`, `BUILD-INFO.txt`, `SHA256SUMS.txt` und `Lizenzen/`. Sie beschreiben die ZIP-Datei des neuesten Release. Das Setup und die .bin-Dateien liegen nur in der ZIP-Datei. Bis 1.0.0 lagen sie im Repository; dort bleiben sie in der Historie beim Tag `v1.0.0`.
+Das Repository „Empire-Earth-Community“ selbst enthält nur die Dokumente der neuesten Version: `README.md`, `LIES-MICH.txt`, `CHANGELOG.md`, `VERSION`, `BUILD-INFO.txt`, `SHA256SUMS.txt` und `Lizenzen/`. Sie beschreiben die ZIP-Datei des neuesten Release. Das Setup und die .bin-Dateien liegen nur in der ZIP-Datei. Bis 1.0.0 lagen sie im Repository; dort bleiben sie in der Historie beim Tag `v1.0.0`.
 
 **Wohin wird installiert?** (bei einer Standard-Installation)
 
