@@ -6,6 +6,15 @@ Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die V
 
 ## [Unreleased]
 
+### Geändert
+
+- **Lizenzen:** Der Ordner `Lizenzen/` im Repository ist die Vorlage für das nächste Paket und hat jetzt den Stand der Repositorys des Launchers und des Setups: `THIRD-PARTY-NOTICES.md` nennt ZipStorer 3.7.0 mit seinen lokalen Korrekturen, `THIRD-PARTY-NOTICES-Setup.md` zusätzlich BASS und die anderen mitgelieferten Programmdateien der Spiel-Setups, und `licenses/THIRD-PARTY-LICENSES.txt` nennt das Repository DritteRippe/Empire-Earth-Launcher als Quelle. Die Fassung aus der ZIP-Datei von 1.1.0 bleibt beim Tag `v1.1.0`.
+
+### Behoben
+
+- `Lizenzen/Quellcode.txt` nannte als Stand des Quellcodes den Branch `v2`, den es nicht mehr gibt. Jetzt nennt die Datei die Tags `suite-v1.1.0` und `v1.1.0` mit ihren Commits und Links. Die Commits selbst sind unverändert.
+- Der Link in `Lizenzen/THIRD-PARTY-NOTICES.md` auf die Hinweise des Setups zeigte auf eine Seite, die es nicht gibt. Er führt jetzt zu DritteRippe/Empire-Earth-Setup.
+
 ### Geplant
 
 Für spätere Versionen ist geplant (ohne festes Datum):

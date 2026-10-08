@@ -539,6 +539,8 @@ Die ZIP-Datei `Empire-Earth-Community-1.1.0.zip` aus dem Release enthält einen 
 
 Das Repository „Empire-Earth-Community“ selbst enthält nur die Dokumente der neuesten Version: `README.md`, `LIES-MICH.txt`, `CHANGELOG.md`, `VERSION`, `BUILD-INFO.txt`, `SHA256SUMS.txt` und `Lizenzen/`. Sie beschreiben die ZIP-Datei des neuesten Release. Das Setup und die .bin-Dateien liegen nur in der ZIP-Datei. Bis 1.0.0 lagen sie im Repository; dort bleiben sie in der Historie beim Tag `v1.0.0`.
 
+Eine Ausnahme ist der Ordner `Lizenzen/`: Er ist schon die Vorlage für das nächste Paket. Die Hinweise zu Komponenten Dritter darin haben den aktuellen Stand der Repositorys des Launchers und des Setups, und `Quellcode.txt` nennt die Quellen mit ihren Tags. Genau die Fassung aus der ZIP-Datei von 1.1.0 findest du beim Tag `v1.1.0` dieses Repositorys.
+
 **Wohin wird installiert?** (bei einer Standard-Installation)
 
 | Was | Ordner |
