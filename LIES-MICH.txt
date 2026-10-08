@@ -3,6 +3,8 @@
 
 Empire Earth, The Art of Conquest und Neo Empire Earth mit einem einzigen Setup installieren – samt Launcher und Mod Creator.
 
+Wichtig: Nur für Besitzer des Originalspiels. Du brauchst Empire Earth mit der Erweiterung The Art of Conquest (oder die Gold Edition), auf CD mit gültigen Schlüsseln oder digital gekauft. Das Paket enthält die Spieldaten, die Rechte daran liegen bei ihren Inhabern (siehe Rechtlicher Hinweis).
+
 Diese Anleitung erklärt dir Schritt für Schritt, wie du alles mit einem Setup installierst.
 Du brauchst keine Vorkenntnisse. Lies jeden Schritt und klicke genau das, was dort steht.
 
@@ -21,23 +23,21 @@ Empire Earth Launcher  1.1.0
 Mod Creator  aus Launcher 1.1.0
 DirectX-Wrapper dgVoodoo (in den Spielen)  2.87.5
 
-Schnellstart
+In 3 Schritten spielen
+----------------------
 
-1. Auf der Release-Seite (https://github.com/DritteRippe/Empire-Earth-Community/releases/latest) unter „Assets“ die Datei Empire-Earth-Community-1.1.0.zip herunterladen, nicht „Source code“ (Schritt 1).
-2. Die Prüfsumme der ZIP-Datei prüfen, die Datei freigeben und mit „Alle extrahieren“ entpacken (Schritt 2 und Schritt 3).
-3. Im entpackten Ordner „Empire-Earth-Community-1.1.0“ das Programm „Empire Earth Community Setup“ starten (Schritt 4 bis 6).
-4. Durch die Seiten klicken, das Originalspiel bestätigen und warten, bis die letzte Seite erscheint (Schritt 7 bis 9).
-5. Auf dem Desktop „Empire Earth Community“ doppelklicken, im Launcher das Spiel wählen und spielen.
+1. Herunterladen: Auf der Release-Seite (https://github.com/DritteRippe/Empire-Earth-Community/releases/latest) unter „Assets“ die Datei Empire-Earth-Community-1.1.0.zip laden, nicht „Source code“ (Schritt 1). Ihre Prüfsumme prüfen und die Datei freigeben (Schritt 2).
+2. Installieren: Die ZIP-Datei mit „Alle extrahieren“ entpacken, im Ordner „Empire-Earth-Community-1.1.0“ das Programm „Empire Earth Community Setup“ starten, durch die Seiten klicken, das Originalspiel bestätigen und warten, bis die letzte Seite erscheint (Schritt 3 bis 9).
+3. Spielen: Auf dem Desktop „Empire Earth Community“ doppelklicken, im Launcher das Spiel wählen und auf „Spielen“ klicken (Spielen).
 
-Hast du schon Version 1.0.0? Dann lies zuerst Update von 1.0.0.
-
-Liest du diese Anleitung schon im entpackten Ordner „Empire-Earth-Community-1.1.0“? Dann hast du den Download hinter dir. Mach mit Schritt 4 weiter.
-
-Zum ersten Mal dabei? Dann nimm dir lieber die ausführlichen Schritte unten vor. Sie zeigen dir jedes Fenster genau.
+- Zum ersten Mal dabei? Nimm dir lieber die ausführlichen Schritte unten vor. Sie zeigen dir jedes Fenster genau.
+- Hast du schon Version 1.0.0? Dann lies zuerst Update von 1.0.0.
+- Liest du diese Anleitung schon im entpackten Ordner „Empire-Earth-Community-1.1.0“? Dann hast du den Download hinter dir. Mach mit Schritt 4 weiter.
 
 Inhalt
 ------
 
+- In 3 Schritten spielen
 - Was wird installiert?
 - Was brauchst du?
 - Update von 1.0.0
@@ -60,6 +60,7 @@ Inhalt
 - Protokolle für die Hilfe
 - Paket prüfen (Prüfsummen)
 - Bekannte Probleme
+- Häufige Fragen
 - Was ist neu?
 - Versionen
 - Hilfe und Feedback
@@ -327,7 +328,7 @@ Der Launcher hilft dir dabei: Auf der Seite „Werkzeuge“ zeigt „Reparatur-H
 
 Hast du den Ordner nicht mehr? Dann lade das Paket neu von der Release-Seite herunter (<https://github.com/DritteRippe/Empire-Earth-Community/releases/latest>) und entpacke es wie oben beschrieben.
 
-Wichtig: Nimm zum Reparieren nie das Setup von empireearth.eu. Die „Reparatur-Hinweise“ des Launchers 1.1.0 nennen auch eine Downloadseite von empireearth.eu („Downloadseite öffnen“). Das Setup dort gehört nicht zu diesem Paket. Es trägt dieselbe Versionsnummer 1.7.2, ersetzt aber deine Installation durch seine eigene Fassung und macht dabei Verbesserungen von 1.1.0 rückgängig, zum Beispiel dgVoodoo 2.87.5 mit den neuen Fenstereinstellungen. Nimm immer das Setup aus diesem Paket. Geplant ist, dass der Launcher ab Version 1.1.1 an dieser Stelle die Release-Seite dieses Pakets zeigt.
+Achtung: Nimm zum Reparieren nie das Setup von empireearth.eu. Die „Reparatur-Hinweise“ des Launchers 1.1.0 nennen auch eine Downloadseite von empireearth.eu („Downloadseite öffnen“). Das Setup dort gehört nicht zu diesem Paket. Es trägt dieselbe Versionsnummer 1.7.2, ersetzt aber deine Installation durch seine eigene Fassung und macht dabei Verbesserungen von 1.1.0 rückgängig, zum Beispiel dgVoodoo 2.87.5 mit den neuen Fenstereinstellungen. Nimm immer das Setup aus diesem Paket. Geplant ist, dass der Launcher ab Version 1.1.1 an dieser Stelle die Release-Seite dieses Pakets zeigt.
 
 Deinstallieren
 --------------
@@ -430,6 +431,8 @@ Die wichtigste Prüfung machst du schon vor dem Freigeben der ZIP-Datei: ihre Pr
 
 Die Prüfung der entpackten Dateien hier ist freiwillig. Das Setup prüft beim Start selbst, ob alle Dateien da sind und die richtige Größe haben. Willst du ganz sicher sein, dass beim Herunterladen oder Entpacken kein einziges Byte kaputtgegangen ist, kannst du die Prüfsummen vergleichen.
 
+So prüfst du die entpackten Dateien
+
 In der Datei SHA256SUMS.txt steht für jede der 27 Dateien (das Setup und die 26 .bin-Dateien) eine lange Folge aus Zahlen und Buchstaben, die Prüfsumme. Ist auch nur ein Byte einer Datei anders, kommt eine ganz andere Prüfsumme heraus.
 
 So prüfst du alle Dateien auf einmal:
@@ -467,7 +470,7 @@ Bekannte Probleme
 
 Hier steht ehrlich, was noch nicht rund ist und was du tun kannst.
 
-Wie 1.1.0 getestet ist: Am 2026-10-07 lief auf einem Laptop mit Windows 11 der erste Teil des Tests: das Update von 1.0.0 auf 1.1.0, Spielen und die Seiten des Launchers. Das ging gut, und die Maus reagiert dort sofort nach dem Start, ohne Alt+Tab.
+Hinweis: So ist 1.1.0 getestet. Am 2026-10-07 lief auf einem Laptop mit Windows 11 der erste Teil des Tests: das Update von 1.0.0 auf 1.1.0, Spielen und die Seiten des Launchers. Das ging gut, und die Maus reagiert dort sofort nach dem Start, ohne Alt+Tab.
 Der zweite Teil des Tests lief noch nicht. Noch nicht auf einem echten Computer getestet sind deshalb: das Abbrechen während der Installation (auch bei einer Reparatur), das Deinstallieren mit „Behalten“ und mit „Löschen“, eine neue Installation, wenn noch nichts installiert ist, die Übernahme eines Spiels, das mit seinem eigenen Setup installiert wurde, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. Abbrechen, Neuinstallation, Übernahme und Deinstallation hat bisher nur ein automatischer Test auf einem Windows-Rechner von GitHub geprüft, mit Platzhaltern statt der Spiele.
 Stößt du dabei auf ein Problem, melde es bitte (siehe Hilfe und Feedback). Die Behebung ist für 1.1.1 geplant.
 
@@ -492,6 +495,33 @@ Darin liegt, was das Setup bis zum Abbruch heruntergeladen hat. Windows räumt i
 
 6. Auf 32-Bit-Windows fehlt das Programm dgVoodooCpl.exe.
 Das Einstellprogramm von dgVoodoo 2.87.5 gibt es nur für 64-Bit-Windows. Die Spiele brauchen es nicht.
+
+Häufige Fragen
+--------------
+
+Brauche ich ein Konto bei GitHub?
+
+Zum Herunterladen nicht. Ein kostenloses Konto brauchst du nur, wenn du einen Fehler melden oder dich von GitHub über neue Versionen benachrichtigen lassen willst (siehe Versionen).
+
+Warum warnt Windows vor dem Setup?
+
+Das Setup hat keine digitale Signatur. Deshalb zeigt Windows eine SmartScreen-Warnung, und manche Virenschutzprogramme sind misstrauisch. Lade das Paket nur von der Release-Seite und prüfe die Prüfsumme der ZIP-Datei, bevor du sie freigibst (Schritt 2).
+
+Ist das dasselbe wie die Setups auf empireearth.eu?
+
+Nein. Die Setups von Empire Earth und NeoEE in diesem Paket sind eigene Builds aus dem Repository DritteRippe/Empire-Earth-Setup (https://github.com/DritteRippe/Empire-Earth-Setup), unter anderem mit dgVoodoo 2.87.5 und den neuen Fenstereinstellungen. Sie tragen aber dieselbe Versionsnummer 1.7.2 wie die Setups auf empireearth.eu, und Windows kann die beiden nicht auseinanderhalten. Mische sie deshalb nicht: Zum Reparieren und für ein Update nimm immer dieses Paket (siehe Reparieren).
+
+Kann ich nur eines der beiden Spiele installieren?
+
+Ja. Entferne im Setup auf der Seite „Was möchtest du installieren?“ den Haken beim anderen Spiel (Schritt 7). Der Launcher wird trotzdem installiert, wenn das .NET Framework 4.8 vorhanden ist.
+
+Wo liegen meine Spielstände?
+
+In den Spielordnern, in den Unterordnern Users und Data\Saved Games, eigene Mods in Data\dxm\mods. Normalerweise sind das C:\Program Files (x86)\Empire Earth und C:\Program Files (x86)\Neo Empire Earth. Ein Update von 1.0.0 lässt sie stehen, ebenso das Deinstallieren mit „Behalten“ (siehe Deinstallieren).
+
+Wie erfahre ich von neuen Versionen?
+
+Das Paket meldet sich nicht von selbst, und „Nach Updates suchen“ im Launcher prüft dieses Paket nicht. Lass dich von GitHub benachrichtigen oder abonniere den RSS-Feed der Releases (siehe Versionen).
 
 Was ist neu?
 ------------
@@ -536,9 +566,9 @@ Das Paket meldet sich nicht von selbst, wenn es eine neue Version gibt. So bleib
 - Ohne Konto: Trage den RSS-Feed der Releases in einen Feed-Reader ein: <https://github.com/DritteRippe/Empire-Earth-Community/releases.atom>
 - Oder schau ab und zu auf die Release-Seite: <https://github.com/DritteRippe/Empire-Earth-Community/releases/latest>
 
-Der Launcher kennt dieses Paket nicht. Die Knöpfe „Version prüfen“ (Seite „Spielen“) und „Nach Updates suchen“ (Seite „Werkzeuge“) fragen nur den Update-Server von empireearth.eu nach der Version des Spiels und seines Setups (Setup 1.7.2). Nach neuen Versionen von Empire Earth Community fragen sie nicht. Meldet der Launcher „aktuell“, kann es trotzdem eine neue Version dieses Pakets geben. Meldet er eine neuere Version, gilt sie für die Setups von empireearth.eu: Installiere sie nicht über dieses Paket (siehe Reparieren). Neue Versionen des Pakets gibt es nur auf der Release-Seite.
+Hinweis: Der Launcher kennt dieses Paket nicht. Die Knöpfe „Version prüfen“ (Seite „Spielen“) und „Nach Updates suchen“ (Seite „Werkzeuge“) fragen nur den Update-Server von empireearth.eu nach der Version des Spiels und seines Setups (Setup 1.7.2). Nach neuen Versionen von Empire Earth Community fragen sie nicht. Meldet der Launcher „aktuell“, kann es trotzdem eine neue Version dieses Pakets geben. Meldet er eine neuere Version, gilt sie für die Setups von empireearth.eu: Installiere sie nicht über dieses Paket (siehe Reparieren). Neue Versionen des Pakets gibt es nur auf der Release-Seite.
 
-So holst du die ältere Version 1.0.0:
+So holst du die ältere Version 1.0.0
 
 1. Öffne die Liste aller Releases: <https://github.com/DritteRippe/Empire-Earth-Community/releases>
 2. Suche das Release mit dem Tag „v1.0.0“. Der Tag steht bei jedem Release neben dem Titel.
@@ -565,7 +595,7 @@ Schick außerdem die passenden Protokolle mit:
 
 Bevor du dich meldest, schau gern kurz in Bekannte Probleme. Vielleicht steht die Lösung schon dort.
 
-Issues sind öffentlich. Hänge nie Spieldateien, CD-Keys oder das Paket an. In den Protokollen stehen Ordnernamen, darin kann dein Windows-Benutzername vorkommen. Lies die Protokolle vor dem Hochladen durch und ersetze, was du nicht zeigen möchtest.
+Achtung: Issues sind öffentlich. Hänge nie Spieldateien, CD-Keys oder das Paket an. In den Protokollen stehen Ordnernamen, darin kann dein Windows-Benutzername vorkommen. Lies die Protokolle vor dem Hochladen durch und ersetze, was du nicht zeigen möchtest.
 
 Eine Sicherheitslücke meldest du bitte nicht in einem Issue, sondern privat, siehe SECURITY.md (SECURITY.md).
 
