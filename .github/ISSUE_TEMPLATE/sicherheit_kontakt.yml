@@ -1,0 +1,17 @@
+name: Privaten Kontakt für eine Sicherheitsmeldung anfragen
+description: Nur, wenn das private Formular „Sicherheitslücke melden“ bei dir nicht funktioniert. Keine Einzelheiten hier.
+title: "Bitte um privaten Kontakt für eine Sicherheitsmeldung"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Dieses Issue ist öffentlich. Beschreibe die Sicherheitslücke hier nicht.**
+
+        Probier bitte zuerst das private Formular: [Sicherheitslücke melden](https://github.com/DritteRippe/Empire-Earth-Community/security/advisories/new) ([SECURITY.md](https://github.com/DritteRippe/Empire-Earth-Community/security/policy)). Klappt es nicht, schick dieses Formular ab: Der Maintainer antwortet hier und vereinbart mit dir einen privaten Weg.
+  - type: checkboxes
+    id: no-details
+    attributes:
+      label: Bestätigung
+      options:
+        - label: Dieses Issue enthält keine Einzelheiten zur Sicherheitslücke.
+          required: true

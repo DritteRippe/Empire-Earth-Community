@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sicherheitslücke melden
+    url: https://github.com/DritteRippe/Empire-Earth-Community/security/policy
+    about: Bitte privat melden, nie in einem öffentlichen Issue (SECURITY.md).
+  - name: Fehler im Code des Setups (für Entwickler)
+    url: https://github.com/DritteRippe/Empire-Earth-Setup/issues
+    about: Das Setup „Empire Earth Community Setup“ und die Setups von Empire Earth und NeoEE werden im Setup-Repository entwickelt (auf Englisch).
+  - name: Fehler im Code des Launchers oder des Mod Creators (für Entwickler)
+    url: https://github.com/DritteRippe/Empire-Earth-Launcher/issues
+    about: Der Empire Earth Launcher und der Mod Creator werden im Launcher-Repository entwickelt (auf Englisch).
+  - name: Erst selbst nachsehen?
+    url: https://github.com/DritteRippe/Empire-Earth-Community#wenn-etwas-nicht-klappt
+    about: Die Anleitung erklärt die häufigsten Meldungen des Setups und wo die Protokolle liegen.

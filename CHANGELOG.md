@@ -6,6 +6,12 @@ Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die V
 
 ## [Unreleased]
 
+### Hinzugefügt
+
+- **Fehler melden:** Ein Formular für Issues in diesem Repository fragt nach der Version des Pakets, nach Windows, nach dem Spiel und dem Spielmodus, nach dem, was passiert ist, und nach den Protokollen. Fragen zum Code gehen über die Auswahl direkt zum Repository des Setups oder des Launchers.
+- **Sicherheit:** `SECURITY.md` erklärt, wie du eine Sicherheitslücke privat meldest (über „Private vulnerability reporting“ von GitHub) und wie du die Echtheit des Pakets prüfst.
+- **Mitmachen:** `CONTRIBUTING.md` erklärt, wie du Fehler meldest und die Anleitung verbesserst, wo der Code liegt und wie ein Release entsteht.
+
 ### Geändert
 
 - **Lizenzen:** Der Ordner `Lizenzen/` im Repository ist die Vorlage für das nächste Paket und hat jetzt den Stand der Repositorys des Launchers und des Setups: `THIRD-PARTY-NOTICES.md` nennt ZipStorer 3.7.0 mit seinen lokalen Korrekturen, `THIRD-PARTY-NOTICES-Setup.md` zusätzlich BASS und die anderen mitgelieferten Programmdateien der Spiel-Setups, und `licenses/THIRD-PARTY-LICENSES.txt` nennt das Repository DritteRippe/Empire-Earth-Launcher als Quelle. Die Fassung aus der ZIP-Datei von 1.1.0 bleibt beim Tag `v1.1.0`.
