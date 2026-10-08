@@ -28,7 +28,7 @@ Du brauchst keine Vorkenntnisse. Lies jeden Schritt und klicke genau das, was do
 | | |
 |---|---|
 | **Version** | 1.1.1 ([Was ist neu?](#was-ist-neu)) |
-| **Status** | freigegeben am ⟦BUILD:release_date⟧, noch nicht auf einem echten Computer getestet. 1.1.0 ist unter Windows 11 getestet (Update von 1.0.0 und Spielen). Abbrechen und Deinstallieren sind mit keiner Version auf einem echten Computer getestet (siehe [Bekannte Probleme](#bekannte-probleme)) |
+| **Status** | freigegeben am ⟦BUILD:release_date⟧, noch nicht auf einem echten Computer getestet. 1.1.0 ist unter Windows 11 getestet (Update von 1.0.0 und Spielen). Abbrechen ist mit keiner Version auf einem echten Computer getestet, Deinstallieren zuletzt mit 1.0.0 (siehe [Bekannte Probleme](#bekannte-probleme)) |
 | **Für** | Windows 10 und Windows 11, nur für Besitzer des Originalspiels |
 | **Download** | eine ZIP-Datei, etwa ⟦BUILD:zip_size_gb⟧ GB, auf der [Release-Seite](https://github.com/DritteRippe/Empire-Earth-Community/releases/latest) |
 
@@ -37,8 +37,8 @@ Du brauchst keine Vorkenntnisse. Lies jeden Schritt und klicke genau das, was do
 | Teil | Version |
 |---|---|
 | Empire Earth Community Setup (das eine Setup für alles) | 1.1.1 |
-| Empire Earth mit der Erweiterung The Art of Conquest | Setup 1.7.2 (Build `suite-1.1.1-164e561`) |
-| Neo Empire Earth (NeoEE) | 2.0.0.5 (Setup 1.7.2, Build `suite-1.1.1-164e561`) |
+| Empire Earth mit der Erweiterung The Art of Conquest | Setup 1.7.2 (Build `⟦BUILD:setupbuild⟧`) |
+| Neo Empire Earth (NeoEE) | 2.0.0.5 (Setup 1.7.2, Build `⟦BUILD:setupbuild⟧`) |
 | Empire Earth Launcher | 1.1.1 |
 | Mod Creator | aus Launcher 1.1.1 |
 | DirectX-Wrapper dgVoodoo (in den Spielen) | 2.87.5 |
@@ -368,7 +368,7 @@ Hast du den Ordner nicht mehr? Dann lade das Paket neu von der Release-Seite her
 
 ## Deinstallieren
 
-So ist das Deinstallieren gebaut. Bisher ist es nur in einem automatischen Test geprüft, seit 1.1.1 auch mit „Löschen“, aber mit keiner Version auf einem echten Computer (siehe [Bekannte Probleme](#bekannte-probleme)).
+So ist das Deinstallieren gebaut. Auf einem echten Computer lief es mit „Behalten“ und mit „Löschen“ zuletzt mit 1.0.0, mit 1.1.0 und 1.1.1 nicht. Mit 1.1.1 hat es bisher nur ein automatischer Test geprüft, jetzt auch mit „Löschen“ (siehe [Bekannte Probleme](#bekannte-probleme)).
 
 1. Schließe alle Spiele und den Launcher.
 2. Öffne „Einstellungen“ > „Apps“ > „Installierte Apps“. Unter Windows 10 heißt die Seite „Apps & Features“.
@@ -550,7 +550,7 @@ Hier steht ehrlich, was noch nicht rund ist und was du tun kannst.
 > [!NOTE]
 > **So ist 1.1.1 getestet: noch nicht auf einem echten Computer.** Bis zur Freigabe von Setup und Launcher 1.1.1 am 2026-10-08 lief mit 1.1.1 kein Test auf echter Hardware. Das gilt auch für alles, was in 1.1.1 neu ist (siehe [Was ist neu?](#was-ist-neu)).
 > Mit 1.1.0 lief am 2026-10-07 auf einem Laptop mit Windows 11 der erste Teil des Tests: das Update von 1.0.0 auf 1.1.0, Spielen und die Seiten des Launchers. Das ging gut, und die Maus reagiert dort sofort nach dem Start, ohne Alt+Tab. Mit 1.1.1 wurde dieser Teil nicht wiederholt.
-> Der zweite Teil des Tests lief mit keiner Version. **Noch nicht auf einem echten Computer getestet** sind deshalb: das Abbrechen während der Installation (auch bei einer Reparatur), das Deinstallieren mit „Behalten“ und mit „Löschen“, eine neue Installation, wenn noch nichts installiert ist, die Übernahme eines Spiels, das mit seinem eigenen Setup installiert wurde, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. Installation, Übernahme, Reparatur, Abbrechen und Deinstallation (seit 1.1.1 auch mit „Löschen“) hat bisher nur ein automatischer Test auf einem Windows-Rechner von GitHub geprüft, mit Platzhaltern statt der Spiele.
+> Der zweite Teil des Tests lief weder mit 1.1.0 noch mit 1.1.1. **Mit keiner Version auf einem echten Computer getestet** sind deshalb: das Abbrechen während der Installation, das es seit 1.1.0 gibt (auch bei einer Reparatur), die Übernahme eines Spiels, das mit seinem eigenen Setup installiert wurde, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. **Seit 1.0.0 nicht mehr auf einem echten Computer getestet** sind das Deinstallieren mit „Behalten“ und mit „Löschen“ und eine neue Installation, wenn noch nichts installiert ist: Sie liefen am 2026-10-06 mit 1.0.0, mit 1.1.0 und 1.1.1 nicht. Mit 1.1.1 hat Installation, Übernahme, Reparatur, Abbrechen und Deinstallation (jetzt auch mit „Löschen“) bisher nur ein automatischer Test auf einem Windows-Rechner von GitHub geprüft, mit Platzhaltern statt der Spiele.
 > Stößt du auf ein Problem, melde es bitte (siehe [Hilfe und Feedback](#hilfe-und-feedback)).
 
 **1. Die Maus reagiert nach dem Spielstart nicht, wenn du ohne Launcher startest.**
@@ -629,7 +629,7 @@ Kurz zu **1.1.1** (⟦BUILD:release_date⟧), einer Version mit Fehlerbehebungen
 - **Launcher, Seite „Werkzeuge“:** der neue Knopf „Release-Seite öffnen“. Die Erklärung zu „Nach Updates suchen“ sagt, dass nur das Spiel und sein Setup geprüft werden, nicht dieses Paket.
 - **Launcher:** Ein zweiter Start schreibt in dieselbe Datei „log.txt“, statt eine neue anzulegen. „Nach Updates suchen“, „Version prüfen“ und „Netzwerk prüfen“ enden nicht mehr mit einem unerwarteten Fehler, wenn der Server oder ein Proxy dazwischen einen Zeichensatz nennt, den Windows nicht kennt.
 - **Mod Creator:** mehrere Fehler beim Erstellen von Mod-Archiven behoben, zum Beispiel löscht der Export keine eigenen Bilder mehr.
-- **Abbrechen und Deinstallieren:** Ein Abbruch genau dann, wenn sich das Setup eines Spiels beendet, wird nicht mehr unnötig wiederholt. „Löschen“ prüft jeden Ordner direkt vor dem Löschen noch einmal, damit nichts außerhalb der Installation gelöscht wird.
+- **Abbrechen und Deinstallieren:** Ein Abbruch genau dann, wenn sich das Setup eines Spiels beendet, wird nicht mehr unnötig wiederholt. „Löschen“ prüft jeden Ordner direkt vor dem Löschen noch einmal auf Verknüpfungen (Junctions), die nach außerhalb der Installation führen könnten.
 - **Windows „Apps“:** Die Links für Hilfe und Updates des Eintrags „Empire Earth Community (Launcher, EE, NeoEE)“ führen zu diesem Repository.
 - **Anleitung:** neu ist der Abschnitt [Update von 1.1.0](#update-von-110). Dazu kommen ein Formular zum Melden von Fehlern, [SECURITY.md](SECURITY.md) und [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -722,8 +722,8 @@ Dieser Abschnitt ist für Neugierige. Zum Installieren und Spielen brauchst du i
 |---|---|---|
 | Suite-Installer „Empire Earth Community Setup“ | 1.1.1 | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1), Tag `suite-v1.1.1`, Commit `164e561` |
 | Empire Earth Launcher und Mod Creator | 1.1.1 | [DritteRippe/Empire-Earth-Launcher](https://github.com/DritteRippe/Empire-Earth-Launcher/tree/v1.1.1), Tag `v1.1.1`, Commit `90a35a4` |
-| Produkt-Setup Empire Earth (mit The Art of Conquest) | Setup 1.7.2, SetupBuild `suite-1.1.1-164e561` | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1), Tag `suite-v1.1.1`, Commit `164e561`, unverändert eingebettet |
-| Produkt-Setup Neo Empire Earth | NeoEE 2.0.0.5, Setup 1.7.2, SetupBuild `suite-1.1.1-164e561` | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1), Tag `suite-v1.1.1`, Commit `164e561`, unverändert eingebettet |
+| Produkt-Setup Empire Earth (mit The Art of Conquest) | Setup 1.7.2, SetupBuild `⟦BUILD:setupbuild⟧` | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1), Tag `suite-v1.1.1`, Commit `164e561`, unverändert eingebettet |
+| Produkt-Setup Neo Empire Earth | NeoEE 2.0.0.5, Setup 1.7.2, SetupBuild `⟦BUILD:setupbuild⟧` | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1), Tag `suite-v1.1.1`, Commit `164e561`, unverändert eingebettet |
 | DirectX-Wrapper dgVoodoo (in beiden Produkt-Setups) | 2.87.5 | die Dateien `DDraw.dll`, `D3DImm.dll` und `dgVoodooCpl.exe` der offiziellen Ausgabe von dgVoodoo 2.87.5, festgelegt mit ihren Prüfsummen |
 
 Gebaut mit Inno Setup 6.2.2 als Release-Build am ⟦BUILD:build_date⟧. Die vollständigen Commit-Kennungen, der SetupBuild der beiden Produkt-Setups und die Prüfsummen aller Eingaben stehen in [BUILD-INFO.txt](BUILD-INFO.txt).
@@ -760,10 +760,11 @@ Für das Programm „Empire Earth Diagnostic“ legt das Setup keine Verknüpfun
 **Getestet**
 
 - Auf echter Hardware mit 1.1.1: nichts. Setup und Launcher 1.1.1 wurden am 2026-10-08 freigegeben, ohne dass bis dahin ein Fall des Testplans mit 1.1.1 auf einem echten Computer lief. Das gilt auch für alles, was in 1.1.1 neu ist.
-- Automatisch: Der Ende-zu-Ende-Test des Suite-Installers (Szenarien S1 bis S15: Installation, Übernahme eines einzeln installierten Spiels, Reparatur, Abbrechen und Deinstallation, neu in S15 mit „Löschen“) lief auf einem Windows-Rechner von GitHub ohne Fehler, mit Platzhaltern statt der Spiele, für die Commits `2fc0e76` und `e597714`. Bis zum Commit `164e561`, aus dem dieses Paket gebaut ist, änderte sich am Setup danach nur noch die Versionsnummer.
+- Automatisch: Der Ende-zu-Ende-Test des Suite-Installers (Szenarien S1 bis S15: Installation, Übernahme eines einzeln installierten Spiels, Reparatur, Abbrechen und Deinstallation, neu in S15 mit „Löschen“) lief auf einem Windows-Rechner von GitHub ohne Fehler, mit Platzhaltern statt der Spiele, für die Commits `2fc0e76` und `e597714`. Bis zum Commit `164e561`, aus dem dieses Paket gebaut ist, änderte sich danach am Setup selbst nur noch die Versionsnummer. Die übrigen Änderungen betrafen Dokumente, ein Formular und einen Workflow zum Veröffentlichen.
 - Mit 1.1.0 auf dem Test-Laptop mit Windows 11 und einem Bildschirm mit 1920 × 1200, in einem früheren Test noch ohne das Aktivierungssignal: dgVoodoo 2.87.5 mit den Fenstereinstellungen von 1.1.0 bei einem Spielfenster von 1920 × 1200. Die Mehrspieler-Lobby, der Szenario-Editor und Alt+Tab gingen, ohne schwarze Balken. Die Maus war beim Start noch tot, bis Alt+Tab. 1.1.1 hat dieselben Fenstereinstellungen.
 - Mit 1.1.0 auf demselben Laptop am 2026-10-07, erster Teil des Tests: Update von 1.0.0 auf 1.1.0, Spielen und die Seiten des Launchers. Ergebnis: bestanden, die Maus reagiert sofort nach dem Start, ohne Alt+Tab. Das Aktivierungssignal des Launchers 1.1.0 behebt also die tote Maus. Mit 1.1.1 wurde dieser Teil nicht wiederholt.
-- Der zweite Teil des Tests lief mit keiner Version: Abbrechen bei installierten Spielen (auch bei einer Reparatur), Deinstallieren, Abbrechen ohne Spiele, Neuinstallation, die Übernahme eines einzeln installierten Spiels, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. Was davon der automatische Test abdeckt, lief nur dort, nicht auf echter Hardware. Die Fehler, die 1.1.1 behebt, stammen aus einer Durchsicht des Codes nach 1.1.0, nicht aus einem Test auf echter Hardware.
+- Der zweite Teil des Tests lief weder mit 1.1.0 noch mit 1.1.1: Abbrechen bei installierten Spielen (auch bei einer Reparatur), Deinstallieren, Abbrechen ohne Spiele, Neuinstallation, die Übernahme eines einzeln installierten Spiels, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. Abbrechen, die Übernahme, andere Sprachen und „Erweitert“ liefen damit mit keiner Version auf echter Hardware, Deinstallieren und Neuinstallation zuletzt mit 1.0.0 (nächster Punkt). Was davon der automatische Test abdeckt, lief mit 1.1.1 nur dort, nicht auf echter Hardware. Die Fehler, die 1.1.1 behebt, stammen aus einer Durchsicht des Codes nach 1.1.0, nicht aus einem Test auf echter Hardware.
+- Mit 1.0.0 am 2026-10-06 auf einem Laptop mit Windows 11: Installation beider Spiele mit den Standard-Einstellungen, Spielen über die Desktop-Verknüpfungen, Deinstallation mit „Behalten“, Neuinstallation und Deinstallation mit „Löschen“. Deinstallieren und Neuinstallation wurden mit 1.1.0 und 1.1.1 nicht wiederholt.
 
 </details>
 
