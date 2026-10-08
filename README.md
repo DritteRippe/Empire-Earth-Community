@@ -14,7 +14,7 @@
 [![Lizenz des Codes: GPL-3.0](https://img.shields.io/badge/Lizenz%20des%20Codes-GPL--3.0-blue)](#quellcode-und-lizenzen)
 
 <p align="center">
-  <a href="https://github.com/DritteRippe/Empire-Earth-Community/releases/latest"><img alt="Neueste Version herunterladen (ZIP-Datei, etwa ⟦BUILD:zip_size_gb⟧ GB)" src="https://img.shields.io/badge/Neueste%20Version%20herunterladen-ZIP%2C%20etwa%20⟦BUILD:zip_size_gb_url⟧%20GB-845A0F?style=for-the-badge"></a>
+  <a href="https://github.com/DritteRippe/Empire-Earth-Community/releases/latest"><img alt="Neueste Version herunterladen (ZIP-Datei, etwa 1,3 GB)" src="https://img.shields.io/badge/Neueste%20Version%20herunterladen-ZIP%2C%20etwa%201%2C3%20GB-845A0F?style=for-the-badge"></a>
   <br>
   <a href="https://github.com/DritteRippe/Empire-Earth-Community/releases/latest"><b>Neueste Version herunterladen</b></a> · <a href="#in-3-schritten-spielen">In 3 Schritten spielen</a> · <a href="#häufige-fragen">Häufige Fragen</a> · <a href="#hilfe-und-feedback">Hilfe</a>
 </p>
@@ -28,17 +28,17 @@ Du brauchst keine Vorkenntnisse. Lies jeden Schritt und klicke genau das, was do
 | | |
 |---|---|
 | **Version** | 1.1.1 ([Was ist neu?](#was-ist-neu)) |
-| **Status** | freigegeben am ⟦BUILD:release_date⟧, noch nicht auf einem echten Computer getestet. 1.1.0 ist unter Windows 11 getestet (Update von 1.0.0 und Spielen). Abbrechen ist mit keiner Version auf einem echten Computer getestet, Deinstallieren zuletzt mit 1.0.0 (siehe [Bekannte Probleme](#bekannte-probleme)) |
+| **Status** | freigegeben am 2026-10-09, noch nicht auf einem echten Computer getestet. 1.1.0 ist unter Windows 11 getestet (Update von 1.0.0 und Spielen). Abbrechen ist mit keiner Version auf einem echten Computer getestet, Deinstallieren zuletzt mit 1.0.0 (siehe [Bekannte Probleme](#bekannte-probleme)) |
 | **Für** | Windows 10 und Windows 11, nur für Besitzer des Originalspiels |
-| **Download** | eine ZIP-Datei, etwa ⟦BUILD:zip_size_gb⟧ GB, auf der [Release-Seite](https://github.com/DritteRippe/Empire-Earth-Community/releases/latest) |
+| **Download** | eine ZIP-Datei, etwa 1,3 GB, auf der [Release-Seite](https://github.com/DritteRippe/Empire-Earth-Community/releases/latest) |
 
 **Das ist enthalten:**
 
 | Teil | Version |
 |---|---|
 | Empire Earth Community Setup (das eine Setup für alles) | 1.1.1 |
-| Empire Earth mit der Erweiterung The Art of Conquest | Setup 1.7.2 (Build `⟦BUILD:setupbuild⟧`) |
-| Neo Empire Earth (NeoEE) | 2.0.0.5 (Setup 1.7.2, Build `⟦BUILD:setupbuild⟧`) |
+| Empire Earth mit der Erweiterung The Art of Conquest | Setup 1.7.2 (Build `suite-1.1.1-164e561`) |
+| Neo Empire Earth (NeoEE) | 2.0.0.5 (Setup 1.7.2, Build `suite-1.1.1-164e561`) |
 | Empire Earth Launcher | 1.1.1 |
 | Mod Creator | aus Launcher 1.1.1 |
 | DirectX-Wrapper dgVoodoo (in den Spielen) | 2.87.5 |
@@ -104,8 +104,8 @@ Du kannst im Setup auch nur eines der beiden Spiele auswählen. Der Launcher wir
 
 - **Das Originalspiel.** Du musst Empire Earth und seine Erweiterung (oder die Gold Edition) auf CD mit gültigen Schlüsseln besitzen oder das Spiel digital gekauft haben. Das Setup fragt dich danach. Ohne das Originalspiel kannst du nicht installieren.
 - **Windows 10 oder Windows 11.**
-- **Etwa ⟦BUILD:zip_size_gb⟧ GB Download.**
-- **Genug freien Platz.** Das Setup braucht auf Laufwerk C: etwa ⟦BUILD:space_c_gb⟧ GB, wenn du beide Spiele installierst. Dazu kommen die ZIP-Datei und der entpackte Ordner (je etwa ⟦BUILD:zip_size_gb⟧ GB). Plane also gut ⟦BUILD:space_total_gb⟧ GB freien Platz ein.
+- **Etwa 1,3 GB Download.**
+- **Genug freien Platz.** Das Setup braucht auf Laufwerk C: etwa 2,9 GB, wenn du beide Spiele installierst. Dazu kommen die ZIP-Datei und der entpackte Ordner (je etwa 1,3 GB). Plane also gut 5,5 GB freien Platz ein.
 - **Eine Internetverbindung** während der Installation. Neo Empire Earth registriert dabei seine CD-Keys online.
 
 ## Update von 1.1.0
@@ -154,7 +154,7 @@ Danach kannst du den Ordner von 1.0.0 löschen. Behalte den neuen Ordner „Empi
 
 1. Öffne die Release-Seite: <https://github.com/DritteRippe/Empire-Earth-Community/releases/latest>. Ein Konto bei GitHub brauchst du dafür nicht.
 2. Die Seite zeigt das neueste Release, zum Beispiel **„Empire Earth Community 1.1.1“**. Es ist mit „Latest“ markiert.
-3. Unten im Release steht „Assets“. Klicke dort auf **Empire-Earth-Community-1.1.1.zip** (etwa ⟦BUILD:zip_size_gb⟧ GB).
+3. Unten im Release steht „Assets“. Klicke dort auf **Empire-Earth-Community-1.1.1.zip** (etwa 1,3 GB).
 4. Warte, bis der Download fertig ist. Die ZIP-Datei liegt danach meistens im Ordner „Downloads“.
 
 Auf die Release-Seite kommst du auch von der Seite des Repositorys (<https://github.com/DritteRippe/Empire-Earth-Community>): Klicke dort rechts auf „Releases“.
@@ -505,7 +505,7 @@ Die Prüfung der entpackten Dateien hier ist freiwillig. Das Setup prüft beim S
 <details>
 <summary>So prüfst du die entpackten Dateien</summary>
 
-In der Datei **SHA256SUMS.txt** steht für das Setup und für jede der ⟦BUILD:slice_count⟧ .bin-Dateien eine lange Folge aus Zahlen und Buchstaben, die Prüfsumme. Ist auch nur ein Byte einer Datei anders, kommt eine ganz andere Prüfsumme heraus.
+In der Datei **SHA256SUMS.txt** steht für das Setup und für jede der 26 .bin-Dateien eine lange Folge aus Zahlen und Buchstaben, die Prüfsumme. Ist auch nur ein Byte einer Datei anders, kommt eine ganz andere Prüfsumme heraus.
 
 **So prüfst du alle Dateien auf einmal:**
 
@@ -623,7 +623,7 @@ Das Paket meldet sich nicht von selbst, und „Nach Updates suchen“ im Launche
 
 Alle Änderungen jeder Version stehen in der Datei [CHANGELOG.md](CHANGELOG.md).
 
-Kurz zu **1.1.1** (⟦BUILD:release_date⟧), einer Version mit Fehlerbehebungen. Sie ist noch nicht auf einem echten Computer getestet (siehe [Bekannte Probleme](#bekannte-probleme)).
+Kurz zu **1.1.1** (2026-10-09), einer Version mit Fehlerbehebungen. Sie ist noch nicht auf einem echten Computer getestet (siehe [Bekannte Probleme](#bekannte-probleme)).
 
 - **Nie mehr zum Setup von empireearth.eu:** Die „Reparatur-Hinweise“ des Launchers nennen für eine Installation aus diesem Paket die Release-Seite dieses Pakets, auch wenn der entpackte Ordner fehlt oder der Launcher ein Update meldet.
 - **Launcher, Seite „Werkzeuge“:** der neue Knopf „Release-Seite öffnen“. Die Erklärung zu „Nach Updates suchen“ sagt, dass nur das Spiel und sein Setup geprüft werden, nicht dieses Paket.
@@ -722,19 +722,19 @@ Dieser Abschnitt ist für Neugierige. Zum Installieren und Spielen brauchst du i
 |---|---|---|
 | Suite-Installer „Empire Earth Community Setup“ | 1.1.1 | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1), Tag `suite-v1.1.1`, Commit `164e561` |
 | Empire Earth Launcher und Mod Creator | 1.1.1 | [DritteRippe/Empire-Earth-Launcher](https://github.com/DritteRippe/Empire-Earth-Launcher/tree/v1.1.1), Tag `v1.1.1`, Commit `90a35a4` |
-| Produkt-Setup Empire Earth (mit The Art of Conquest) | Setup 1.7.2, SetupBuild `⟦BUILD:setupbuild⟧` | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1), Tag `suite-v1.1.1`, Commit `164e561`, unverändert eingebettet |
-| Produkt-Setup Neo Empire Earth | NeoEE 2.0.0.5, Setup 1.7.2, SetupBuild `⟦BUILD:setupbuild⟧` | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1), Tag `suite-v1.1.1`, Commit `164e561`, unverändert eingebettet |
+| Produkt-Setup Empire Earth (mit The Art of Conquest) | Setup 1.7.2, SetupBuild `suite-1.1.1-164e561` | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1), Tag `suite-v1.1.1`, Commit `164e561`, unverändert eingebettet |
+| Produkt-Setup Neo Empire Earth | NeoEE 2.0.0.5, Setup 1.7.2, SetupBuild `suite-1.1.1-164e561` | [DritteRippe/Empire-Earth-Setup](https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1), Tag `suite-v1.1.1`, Commit `164e561`, unverändert eingebettet |
 | DirectX-Wrapper dgVoodoo (in beiden Produkt-Setups) | 2.87.5 | die Dateien `DDraw.dll`, `D3DImm.dll` und `dgVoodooCpl.exe` der offiziellen Ausgabe von dgVoodoo 2.87.5, festgelegt mit ihren Prüfsummen |
 
-Gebaut mit Inno Setup 6.2.2 als Release-Build am ⟦BUILD:build_date⟧. Die vollständigen Commit-Kennungen, der SetupBuild der beiden Produkt-Setups und die Prüfsummen aller Eingaben stehen in [BUILD-INFO.txt](BUILD-INFO.txt).
+Gebaut mit Inno Setup 6.2.2 als Release-Build am 2026-10-08. Die vollständigen Commit-Kennungen, der SetupBuild der beiden Produkt-Setups und die Prüfsummen aller Eingaben stehen in [BUILD-INFO.txt](BUILD-INFO.txt).
 
 **Aufbau des Pakets**
 
 Die ZIP-Datei `Empire-Earth-Community-1.1.1.zip` aus dem Release enthält einen Ordner `Empire-Earth-Community-1.1.1` mit diesen Dateien:
 
-- `Empire Earth Community Setup.exe`: das Setup-Programm (etwa ⟦BUILD:setup_exe_size_mb⟧ MB)
-- `Empire Earth Community Setup-1.bin` bis `-⟦BUILD:slice_count⟧.bin`: die Daten des Setups, aufgeteilt in Stücke von höchstens 50 MB, zusammen etwa ⟦BUILD:slices_size_gb⟧ GB
-- `SHA256SUMS.txt`: die Prüfsummen des Setups und der ⟦BUILD:slice_count⟧ .bin-Dateien
+- `Empire Earth Community Setup.exe`: das Setup-Programm (etwa 1,7 MB)
+- `Empire Earth Community Setup-1.bin` bis `-26.bin`: die Daten des Setups, aufgeteilt in Stücke von höchstens 50 MB, zusammen etwa 1,25 GB
+- `SHA256SUMS.txt`: die Prüfsummen des Setups und der 26 .bin-Dateien
 - `BUILD-INFO.txt`: woraus genau das Paket gebaut wurde
 - `README.md` und `LIES-MICH.txt`: diese Anleitung (die .txt-Datei kannst du auch ohne Internet im Editor lesen)
 - `CHANGELOG.md` und `VERSION`: die Änderungen und die Versionsnummer
