@@ -1,4 +1,4 @@
-﻿Quellcode von Empire Earth Community Setup 1.1.0
+﻿Quellcode von Empire Earth Community Setup 1.1.1
 ================================================
 
 Dieses Paket besteht aus mehreren Teilen. Der Quellcode der Programme und
@@ -8,19 +8,19 @@ Version 3 (siehe LICENSE in diesem Ordner) verfügbar:
 1. Der Suite-Installer "Empire Earth Community Setup" (Installationsskript,
    Build-Skripte, Dokumentation)
    https://github.com/DritteRippe/Empire-Earth-Setup
-   Stand: Tag suite-v1.1.0, Commit 2b764e479e9a406ebee92328a3afc462d234d208
-   https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.0
+   Stand: Tag suite-v1.1.1, Commit 164e561b0f3afe596ffed29622d954a73cfb4cb4
+   https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.1
 
-2. Der Empire Earth Launcher 1.1.0 und der Mod Creator (Empire_Earth_Mod.exe)
+2. Der Empire Earth Launcher 1.1.1 und der Mod Creator (Empire_Earth_Mod.exe)
    https://github.com/DritteRippe/Empire-Earth-Launcher
-   Stand: Tag v1.1.0, Commit 5d256c8d98fb1d7e7509ad095c1cb1d3becbdc72
-   https://github.com/DritteRippe/Empire-Earth-Launcher/tree/v1.1.0
+   Stand: Tag v1.1.1, Commit 90a35a4eaabac30454c1397eda8a08ecc44f2043
+   https://github.com/DritteRippe/Empire-Earth-Launcher/tree/v1.1.1
 
 3. Die beiden Produkt-Setups für Empire Earth und NeoEE, die der Suite-Installer
    unverändert enthält und ausführt, wurden aus dem Quellcode des Repositorys
    Empire-Earth-Setup gebaut:
    https://github.com/DritteRippe/Empire-Earth-Setup
-   Stand: Tag suite-v1.1.0, Commit 2b764e479e9a406ebee92328a3afc462d234d208
+   Stand: Tag suite-v1.1.1, Commit 164e561b0f3afe596ffed29622d954a73cfb4cb4
    (derselbe Stand wie der Suite-Installer unter 1.)
 
 Beide Commits liegen auf dem Branch main ihres Repositorys. Ein veröffentlichter
