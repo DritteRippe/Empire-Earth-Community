@@ -8,18 +8,23 @@ Version 3 (siehe LICENSE in diesem Ordner) verfügbar:
 1. Der Suite-Installer "Empire Earth Community Setup" (Installationsskript,
    Build-Skripte, Dokumentation)
    https://github.com/DritteRippe/Empire-Earth-Setup
-   Stand: Commit 2b764e479e9a406ebee92328a3afc462d234d208 (Branch v2)
+   Stand: Tag suite-v1.1.0, Commit 2b764e479e9a406ebee92328a3afc462d234d208
+   https://github.com/DritteRippe/Empire-Earth-Setup/tree/suite-v1.1.0
 
 2. Der Empire Earth Launcher 1.1.0 und der Mod Creator (Empire_Earth_Mod.exe)
    https://github.com/DritteRippe/Empire-Earth-Launcher
-   Stand: Commit 5d256c8d98fb1d7e7509ad095c1cb1d3becbdc72 (Branch v2)
+   Stand: Tag v1.1.0, Commit 5d256c8d98fb1d7e7509ad095c1cb1d3becbdc72
+   https://github.com/DritteRippe/Empire-Earth-Launcher/tree/v1.1.0
 
 3. Die beiden Produkt-Setups für Empire Earth und NeoEE, die der Suite-Installer
    unverändert enthält und ausführt, wurden aus dem Quellcode des Repositorys
    Empire-Earth-Setup gebaut:
    https://github.com/DritteRippe/Empire-Earth-Setup
-   Stand: Commit 2b764e479e9a406ebee92328a3afc462d234d208 (derselbe Stand wie
-   der Suite-Installer unter 1.)
+   Stand: Tag suite-v1.1.0, Commit 2b764e479e9a406ebee92328a3afc462d234d208
+   (derselbe Stand wie der Suite-Installer unter 1.)
+
+Beide Commits liegen auf dem Branch main ihres Repositorys. Ein veröffentlichter
+Tag wird nie verschoben oder gelöscht, die Links oben bleiben also gültig.
 
 Mit diesen Ständen lassen sich die Installer (mit Inno Setup 6.2.2) und der
 Launcher (Visual Studio / .NET Framework 4.8) nachbauen. Wie, steht in den
@@ -42,6 +47,6 @@ Komponenten Dritter und ihre Lizenzen sind in THIRD-PARTY-NOTICES.md (Launcher)
 und THIRD-PARTY-NOTICES-Setup.md (Installer, darunter dgVoodoo 2.87.5 von Dege)
 sowie im Ordner licenses aufgeführt.
 
-Hinweis: Der in licenses/THIRD-PARTY-LICENSES.txt genannte Link zu EE-modders ist das
-Ursprungsprojekt des Launchers. Der Quellcode genau der Version in diesem Paket liegt im
-oben unter 2. genannten Repository.
+Hinweis: licenses/THIRD-PARTY-LICENSES.txt nennt auch EE-modders/Empire-Earth-Launcher.
+Das ist das Ursprungsprojekt des Launchers. Der Quellcode genau der Version in diesem
+Paket liegt im oben unter 2. genannten Repository beim genannten Tag.

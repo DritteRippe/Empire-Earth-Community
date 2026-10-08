@@ -1,0 +1,114 @@
+name: Fehler melden
+description: Beim Installieren, Spielen, Reparieren oder Deinstallieren des Pakets klappt etwas nicht.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du dir die Zeit nimmst! Du kannst auf Deutsch oder auf Englisch schreiben.
+
+        - Schau bitte zuerst in [Bekannte Probleme](https://github.com/DritteRippe/Empire-Earth-Community#bekannte-probleme) und [Wenn etwas nicht klappt](https://github.com/DritteRippe/Empire-Earth-Community#wenn-etwas-nicht-klappt). Vielleicht steht die Lösung schon dort.
+        - **Dieses Issue ist öffentlich.** Hänge nie Spieldateien, CD-Keys oder das Paket an. In den Protokollen stehen Ordnernamen, darin kann dein Windows-Benutzername vorkommen. Lies sie vor dem Hochladen durch und ersetze, was du nicht zeigen möchtest.
+        - Eine Sicherheitslücke? Bitte privat melden, siehe [SECURITY.md](https://github.com/DritteRippe/Empire-Earth-Community/security/policy).
+  - type: input
+    id: version
+    attributes:
+      label: Version des Pakets
+      description: Steht in der Datei `VERSION` im entpackten Ordner und im Namen der ZIP-Datei, zum Beispiel `Empire-Earth-Community-1.1.0.zip`.
+      placeholder: "1.1.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows-Version
+      description: Steht unter „Einstellungen“ > „System“ > „Info“.
+      placeholder: "Windows 11 24H2, 64-Bit"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Wobei ist es passiert?
+      multiple: true
+      options:
+        - Installieren
+        - "Installieren mit „Erweitert: Das Setup jedes Spiels selbst durchgehen“"
+        - Update von einer älteren Version
+        - Reparieren
+        - Abbrechen
+        - Deinstallieren
+        - Im Launcher
+        - Beim Spielen
+        - Im Mod Creator
+        - Etwas anderes
+    validations:
+      required: true
+  - type: dropdown
+    id: game
+    attributes:
+      label: Welches Spiel?
+      multiple: true
+      options:
+        - Empire Earth
+        - Empire Earth – The Art of Conquest
+        - Neo Empire Earth
+        - Neo Empire Earth – The Art of Conquest
+        - Kein bestimmtes Spiel
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Welcher Spielmodus?
+      description: Nur, wenn es beim Spielen passiert ist.
+      multiple: true
+      options:
+        - Einzelspieler
+        - Mehrspieler (Lobby oder Netzwerk)
+        - Szenario-Editor
+        - Trifft nicht zu
+  - type: textarea
+    id: happened
+    attributes:
+      label: Was ist passiert?
+      description: Was hast du gemacht, und was ist dann passiert? Kopiere den genauen Text einer Fehlermeldung, oder hänge ein Bildschirmfoto an.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Was hast du erwartet?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Nachstellen
+      placeholder: |
+        1. ...
+        2. ...
+  - type: textarea
+    id: logs
+    attributes:
+      label: Protokolle
+      description: |
+        Füge die wichtigen Zeilen ein, oder hänge die Datei als `.txt` oder `.log` an (in dieses Feld ziehen). Wo die Dateien liegen, steht auch in der README unter [Protokolle für die Hilfe](https://github.com/DritteRippe/Empire-Earth-Community#protokolle-für-die-hilfe).
+
+        - Setup: die neueste Datei `%TEMP%\Setup Log <Datum> #<Nummer>.txt` (hat Windows nach dem Kennwort eines Administratorkontos gefragt, liegt sie im `%TEMP%` dieses Kontos).
+        - Die Setups der beiden Spiele: `Logs\EE-<JJJJMMTT-HHMM>.log` und `Logs\NeoEE-<JJJJMMTT-HHMM>.log` im Ordner des Pakets, normalerweise `C:\Program Files\Empire Earth Community\Logs`.
+        - Launcher und Spielen: die Zeilen von `%LOCALAPPDATA%\Empire Earth Launcher\log.txt` um das Problem herum (beim Spielen ab „Game started:“), dazu gern der Diagnosebericht (Seite „Werkzeuge“, „Bericht kopieren“).
+  - type: textarea
+    id: more
+    attributes:
+      label: Weitere Angaben
+      description: Zum Beispiel dein Virenschutz, Bildschirmauflösung und Skalierung, ob die Maus ohne Alt+Tab ging oder welches Fenster das Spiel minimiert hat.
+  - type: checkboxes
+    id: owner
+    attributes:
+      label: Bestätigung
+      options:
+        - label: Ich besitze das Originalspiel (Empire Earth mit The Art of Conquest oder die Gold Edition, auf CD mit gültigen Schlüsseln oder digital gekauft).
+          required: true
+        - label: Ich habe keine Spieldateien, keine CD-Keys und nicht das Paket angehängt.
+          required: true

@@ -6,12 +6,34 @@ Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die V
 
 ## [Unreleased]
 
+### Hinzugefügt
+
+- **Fehler melden:** Ein Formular für Issues in diesem Repository fragt nach der Version des Pakets, nach Windows, nach dem Spiel und dem Spielmodus, nach dem, was passiert ist, und nach den Protokollen. Fragen zum Code gehen über die Auswahl direkt zum Repository des Setups oder des Launchers.
+- **Sicherheit:** `SECURITY.md` erklärt, wie du eine Sicherheitslücke privat meldest (über „Private vulnerability reporting“ von GitHub) und wie du die Echtheit des Pakets prüfst.
+- **Mitmachen:** `CONTRIBUTING.md` erklärt, wie du Fehler meldest und die Anleitung verbesserst, wo der Code liegt und wie ein Release entsteht.
+
+### Geändert
+
+- **Anleitung für ein öffentliches Repository:** `README.md` und `LIES-MICH.txt` nennen die Adresse der Release-Seite (<https://github.com/DritteRippe/Empire-Earth-Community/releases/latest>), für den Download brauchst du kein Konto. Fehler meldest du in den Issues dieses Repositorys, Sicherheitslücken privat (siehe `SECURITY.md`). Der Hinweis, dass das Paket nur für Besitzer des Originalspiels ist und die Rechte an den Spieldaten bei ihren Inhabern liegen, bleibt im Abschnitt „Rechtlicher Hinweis“.
+- **Übersichtlichere README:** ein Banner, Abzeichen für Version, Downloads, Windows und Lizenz, ein großer Knopf „Neueste Version herunterladen“, der Abschnitt „In 3 Schritten spielen“ (statt „Schnellstart“), ein Bild des Launchers, farbige Hinweiskästen für das Wichtigste und zum Aufklappen die Fehlermeldungen, die Prüfung der entpackten Dateien und die ältere Version. Neu ist der Abschnitt „Häufige Fragen“. `LIES-MICH.txt` hat denselben Inhalt als reinen Text.
+- **Erst prüfen, dann freigeben:** Schritt 2 zeigt, wie du die Prüfsumme der ZIP-Datei mit der im Text des Release vergleichst, bevor du die Datei mit „Zulassen“ freigibst. „Paket prüfen“ erklärt, dass `SHA256SUMS.txt` nur Schäden zeigt, nicht die Herkunft.
+- **Neue Versionen:** Der Abschnitt „Versionen“ erklärt, wie du von einer neuen Version erfährst (auf GitHub „Watch“ > „Custom“ > „Releases“ oder der RSS-Feed der Releases), und dass „Version prüfen“ und „Nach Updates suchen“ im Launcher nur das Spiel und sein Setup beim Server von empireearth.eu prüfen, nicht dieses Paket.
+- **Reparieren:** Die Anleitung warnt davor, das Setup von empireearth.eu zu nehmen, das die „Reparatur-Hinweise“ des Launchers 1.1.0 auch nennen. Es ersetzt die Installation des Pakets und macht Verbesserungen von 1.1.0 rückgängig.
+- **Ehrlich, was noch nicht getestet ist:** Abbrechen, Deinstallieren und der Wechsel des Wrappers über „Erweitert“ stehen in der Anleitung als vorgesehen, nicht als geprüft. Dass ein Spiel mit „Als Administrator ausführen“ das Aktivierungssignal nicht annimmt, steht dort als erwartet, nicht als Tatsache.
+- **Lizenzen:** Der Ordner `Lizenzen/` im Repository ist die Vorlage für das nächste Paket und hat jetzt den Stand der Repositorys des Launchers und des Setups: `THIRD-PARTY-NOTICES.md` nennt ZipStorer 3.7.0 mit seinen lokalen Korrekturen, `THIRD-PARTY-NOTICES-Setup.md` zusätzlich BASS und die anderen mitgelieferten Programmdateien der Spiel-Setups, und `licenses/THIRD-PARTY-LICENSES.txt` nennt das Repository DritteRippe/Empire-Earth-Launcher als Quelle. Die Fassung aus der ZIP-Datei von 1.1.0 bleibt beim Tag `v1.1.0`.
+
+### Behoben
+
+- `Lizenzen/Quellcode.txt` nannte als Stand des Quellcodes den Branch `v2`, den es nicht mehr gibt. Jetzt nennt die Datei die Tags `suite-v1.1.0` und `v1.1.0` mit ihren Commits und Links. Die Commits selbst sind unverändert.
+- Der Eintrag zu 1.1.0 beschrieb die Seite „Grafik“ des Launchers falsch: Sie ändert sehr wohl etwas, nämlich die Größe des Spielfensters. Der Eintrag ist korrigiert und als Korrektur gekennzeichnet. Die Anleitung war schon richtig.
+- Der Link in `Lizenzen/THIRD-PARTY-NOTICES.md` auf die Hinweise des Setups zeigte auf eine Seite, die es nicht gibt. Er führt jetzt zu DritteRippe/Empire-Earth-Setup.
+
 ### Geplant
 
 Für spätere Versionen ist geplant (ohne festes Datum):
 
 - Discord-Status: Discord zeigt an, was du gerade spielst.
-- Grafik-Einstellungen, die Werte ändern: Wrapper, Anzeigemodus und Auflösung einstellen. Die Seite „Grafik“ in 1.1.0 zeigt die Werte nur an, und die Seite „Mods“ liest nur.
+- Weitere Grafik-Einstellungen: Wrapper und Anzeigemodus wählen, Auflösungen über 1920 × 1200. Seit 1.1.0 stellt die Seite „Grafik“ die Größe des Spielfensters ein (bis 1920 × 1200) und zeigt den Wrapper und seine `dgVoodoo.conf` nur an. Die Seite „Mods“ liest nur.
 
 ## [1.1.0] – 2026-10-07
 
@@ -24,7 +46,7 @@ Der zweite Teil des Tests lief nicht. Nicht auf echter Hardware getestet sind de
 - **Ein Fenster für die ganze Installation:** Statuszeile, Balken und eine Liste der fertigen Schritte. Die Setups der beiden Spiele zeigen keine eigenen Fenster mehr (außer im Pfad „Erweitert“).
 - **Abbrechen** geht, bis ein Spiel installiert wird, auch bei einer Reparatur oder einem Update. Danach ist „Abbrechen“ grau, mit einer Zeile unter dem Balken, die sagt, warum.
 - **Ein Symbol** „Empire Earth Community“ auf dem Desktop statt zwei. Der **Launcher 1.1.0** zeigt alle vier Spiele in einer Liste und merkt sich deine Wahl. Ein Setup oder eine Reparatur entfernt die zwei alten Symbole von 1.0.0.
-- **Launcher:** neue Seite „Grafik“ (zeigt die Werte der Spiele an, ohne etwas zu ändern), neue Seite „Mods“ (nur lesend), ein Fenster, das du größer ziehen kannst, und „Reparatur-Hinweise“ mit Links zu den Downloadseiten der Website.
+- **Launcher:** neue Seite „Grafik“ (die Größe des Spielfensters wählen, bis 1920 × 1200, mit einer Sicherung der alten Werte; den Wrapper und seine `dgVoodoo.conf` zeigt sie nur an), neue Seite „Mods“ (nur lesend), ein Fenster, das du größer ziehen kannst, und „Reparatur-Hinweise“ mit Links zu den Downloadseiten der Website. *(Korrektur vom 2026-10-08: Hier stand zuerst, die Seite „Grafik“ zeige die Werte der Spiele an, ohne etwas zu ändern. Das war falsch, die Größe des Spielfensters lässt sich dort ändern.)*
 - **Aktivierungssignal des Launchers:** Nach dem Start über den Launcher bekommt das Spiel ein Signal, das die Maus ohne Alt+Tab weckt.
 - **dgVoodoo 2.87.5** in allen fünf Stufen, mit neuen Fenstereinstellungen. Das Spielfenster kann bis 1920 × 1200 groß sein (bisher höchstens 1080 Zeilen).
 - **Intro-Videos** werden standardmäßig mit installiert. Bei einem Update bekommst du sie einmal nachgeliefert, danach bleibt deine Auswahl.
