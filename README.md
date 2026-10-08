@@ -10,7 +10,7 @@ Du brauchst keine Vorkenntnisse. Lies jeden Schritt und klicke genau das, was do
 | **Version** | 1.1.0 ([Was ist neu?](#was-ist-neu)) |
 | **Status** | freigegeben am 2026-10-07, getestet unter Windows 11: Update von 1.0.0 und Spielen. Abbrechen und Deinstallieren sind noch nicht auf einem echten Computer getestet (siehe [Bekannte Probleme](#bekannte-probleme)) |
 | **Für** | Windows 10 und Windows 11, nur für Besitzer des Originalspiels |
-| **Download** | eine ZIP-Datei, etwa 1,3 GB |
+| **Download** | eine ZIP-Datei, etwa 1,3 GB, auf der [Release-Seite](https://github.com/DritteRippe/Empire-Earth-Community/releases/latest) |
 
 **Das ist enthalten:**
 
@@ -25,8 +25,8 @@ Du brauchst keine Vorkenntnisse. Lies jeden Schritt und klicke genau das, was do
 
 ### Schnellstart
 
-1. Rechts auf „Releases“ klicken, beim neuesten Release „Empire Earth Community 1.1.0“ (markiert mit „Latest“) unter „Assets“ die Datei **Empire-Earth-Community-1.1.0.zip** herunterladen, nicht „Source code“ ([Schritt 1](#schritt-1-paket-herunterladen)).
-2. Die ZIP-Datei mit „Alle extrahieren“ entpacken ([Schritt 2](#schritt-2-download-freigeben-empfohlen) und [Schritt 3](#schritt-3-zip-entpacken)).
+1. Auf der [Release-Seite](https://github.com/DritteRippe/Empire-Earth-Community/releases/latest) unter „Assets“ die Datei **Empire-Earth-Community-1.1.0.zip** herunterladen, nicht „Source code“ ([Schritt 1](#schritt-1-paket-herunterladen)).
+2. Die Prüfsumme der ZIP-Datei prüfen, die Datei freigeben und mit „Alle extrahieren“ entpacken ([Schritt 2](#schritt-2-download-freigeben-empfohlen) und [Schritt 3](#schritt-3-zip-entpacken)).
 3. Im entpackten Ordner „Empire-Earth-Community-1.1.0“ das Programm „Empire Earth Community Setup“ starten ([Schritt 4 bis 6](#schritt-4-setup-starten)).
 4. Durch die Seiten klicken, das Originalspiel bestätigen und warten, bis die letzte Seite erscheint ([Schritt 7 bis 9](#schritt-7-die-seiten-des-setups)).
 5. Auf dem Desktop „Empire Earth Community“ doppelklicken, im Launcher das Spiel wählen und [spielen](#spielen).
@@ -109,11 +109,12 @@ Danach kannst du den Ordner von 1.0.0 löschen. Behalte den neuen Ordner „Empi
 
 ## Schritt 1: Paket herunterladen
 
-1. Öffne die Seite des Repositorys „Empire-Earth-Community“ auf GitHub. Du musst angemeldet sein.
-2. Klicke rechts auf „Releases“.
-3. Klicke auf das neueste Release **„Empire Earth Community 1.1.0“**. Es ist mit „Latest“ markiert.
-4. Unten im Release steht „Assets“. Klicke dort auf **Empire-Earth-Community-1.1.0.zip** (etwa 1,3 GB).
-5. Warte, bis der Download fertig ist. Die ZIP-Datei liegt danach meistens im Ordner „Downloads“.
+1. Öffne die Release-Seite: <https://github.com/DritteRippe/Empire-Earth-Community/releases/latest>. Ein Konto bei GitHub brauchst du dafür nicht.
+2. Die Seite zeigt das neueste Release, zum Beispiel **„Empire Earth Community 1.1.0“**. Es ist mit „Latest“ markiert.
+3. Unten im Release steht „Assets“. Klicke dort auf **Empire-Earth-Community-1.1.0.zip** (etwa 1,3 GB).
+4. Warte, bis der Download fertig ist. Die ZIP-Datei liegt danach meistens im Ordner „Downloads“.
+
+Auf die Release-Seite kommst du auch von der Seite des Repositorys (<https://github.com/DritteRippe/Empire-Earth-Community>): Klicke dort rechts auf „Releases“.
 
 **Wichtig:** Unter „Assets“ stehen auch „Source code (zip)“ und „Source code (tar.gz)“. Die fügt GitHub bei jedem Release von selbst hinzu. Sie enthalten nur diese Anleitung und die anderen Dokumente, **nicht** das Spiel. Nimm sie nicht. Auch der grüne Knopf „Code“ mit „Download ZIP“ lädt nur die Dokumente herunter.
 
@@ -121,7 +122,26 @@ Das Release mit „Latest“ ist immer die neueste Version. Wie du eine ältere 
 
 ## Schritt 2: Download freigeben (empfohlen)
 
-Damit zeigt Windows später keine SmartScreen-Warnung beim Start des Setups.
+Damit zeigt Windows später keine SmartScreen-Warnung beim Start des Setups. Gib aber nur eine Datei frei, von der du weißt, dass sie genau die aus dem Release ist. Das Setup hat keine digitale Signatur. Prüfe deshalb zuerst die Prüfsumme der ZIP-Datei. Das dauert etwa eine Minute.
+
+**Zuerst prüfen: Ist es genau die ZIP-Datei aus dem Release?**
+
+1. Öffne den Ordner, in dem die ZIP-Datei liegt (meistens „Downloads“).
+2. Windows 11: Klicke mit der rechten Maustaste auf eine freie Stelle im Ordner und dann auf „Im Terminal öffnen“.
+   Windows 10: Halte die Umschalttaste gedrückt, klicke mit der rechten Maustaste auf eine freie Stelle und dann auf „PowerShell-Fenster hier öffnen“.
+   Es muss ein PowerShell-Fenster sein (die Zeile beginnt mit „PS“).
+3. Kopiere diese Zeile, füge sie im neuen Fenster mit einem Rechtsklick ein und drücke Enter:
+
+   ```powershell
+   (Get-FileHash -Algorithm SHA256 -LiteralPath .\Empire-Earth-Community-1.1.0.zip).Hash
+   ```
+
+   Heißt deine Datei anders, zum Beispiel mit „(1)“ am Ende, passe den Namen in der Zeile an.
+4. Nach einer Weile erscheint eine lange Folge aus Zahlen und Buchstaben. Vergleiche sie mit der Prüfsumme der ZIP-Datei im Text des Release auf der Release-Seite (unter „SHA-256“). Groß- und Kleinschreibung spielt keine Rolle.
+
+Stimmen beide überein, mach weiter. Stimmen sie nicht überein, gib die Datei nicht frei und starte nichts daraus: Lösche sie und lade sie neu von der Release-Seite herunter.
+
+**Dann freigeben:**
 
 1. Klicke mit der rechten Maustaste auf die ZIP-Datei.
 2. Klicke auf „Eigenschaften“.
@@ -153,7 +173,7 @@ Vielleicht erscheint ein blaues Fenster: „Der Computer wurde durch Windows ges
 1. Klicke auf „Weitere Informationen“.
 2. Klicke auf „Trotzdem ausführen“.
 
-Das Setup hat keine digitale Signatur. Deshalb warnt Windows hier.
+Das Setup hat keine digitale Signatur. Deshalb warnt Windows hier. Klicke nur dann auf „Trotzdem ausführen“, wenn du das Paket selbst von der Release-Seite geladen hast, am besten mit geprüfter Prüfsumme ([Schritt 2](#schritt-2-download-freigeben-empfohlen)).
 
 ## Schritt 6: Benutzerkontensteuerung
 
@@ -198,6 +218,8 @@ Jetzt installiert das Setup die Spiele nacheinander. Zuerst Empire Earth, danach
 Klicke in dieser Zeit nichts an. Warte, bis die letzte Seite erscheint.
 
 **Abbrechen**
+
+So ist das Abbrechen gebaut. Mit 1.1.0 ist es bisher nur in einem automatischen Test geprüft, noch nicht auf einem echten Computer (siehe [Bekannte Probleme](#bekannte-probleme)).
 
 Solange ein Spiel noch nicht installiert wird, zum Beispiel während es seine Sprachdateien herunterlädt, kannst du auf „Abbrechen“ klicken. Das Setup fragt dann nach, zum Beispiel: „Möchtest du die Installation von Empire Earth (mit The Art of Conquest) abbrechen?“
 
@@ -273,7 +295,7 @@ Das Fenster des Launchers kannst du größer ziehen oder maximieren.
 - **Spielfenster:** Das Setup stellt das Spielfenster auf die Größe deines Bildschirms ein, höchstens 1920 × 1200. Ist dein Bildschirm breiter als 1920 Pixel, behält das Fenster seine Form: Ein Bildschirm mit 2560 × 1440 bekommt 1920 × 1080, einer mit 2560 × 1600 bekommt 1920 × 1200.
 - **Selbst wählen:** Im Launcher auf der Seite „Grafik“ wählst du unter „Auflösung:“ eine andere Größe und klickst auf „Diese Größe verwenden“. Der Launcher sichert vorher die alten Werte. Eine Reparatur oder ein Update mit dem Setup stellt wieder die empfohlene Größe ein. Wähle dann einfach neu.
 - **dgVoodoo 2.87.5:** Die Spiele laufen mit dem DirectX-Wrapper dgVoodoo 2.87.5 und neuen Fenstereinstellungen. Damit funktionieren auf dem Test-Laptop die Mehrspieler-Lobby, der Szenario-Editor und Alt+Tab. Der Szenario-Editor zeigt ein 4:3-Bild mit Rändern links und rechts. Das ist so gewollt.
-- **Den Wrapper wechseln:** Das macht nur das Setup. Starte es erneut, setze den Haken bei „Erweitert: Das Setup jedes Spiels selbst durchgehen“ und wähle im Setup des Spiels „Benutzerdefinierte Installationseinstellungen“ und dann unter „DirectX-Wrapper“ den Wrapper. So steht es auch im Launcher auf der Seite „Grafik“.
+- **Den Wrapper wechseln:** Das macht nur das Setup. Starte es erneut, setze den Haken bei „Erweitert: Das Setup jedes Spiels selbst durchgehen“ und wähle im Setup des Spiels „Benutzerdefinierte Installationseinstellungen“ und dann unter „DirectX-Wrapper“ den Wrapper. So steht es auch im Launcher auf der Seite „Grafik“. So ist es vorgesehen; auf einem echten Computer ist dieser Weg mit 1.1.0 noch nicht getestet (siehe [Bekannte Probleme](#bekannte-probleme)).
 - **dgVoodoo.conf selbst ändern:** Jeder Lauf des Setups ersetzt die Datei. Heb dir eine Kopie deiner Fassung auf.
 
 ## Reparieren
@@ -285,13 +307,17 @@ Ein Spiel startet nicht mehr richtig? Oder die Verknüpfung fehlt?
 3. Bei den installierten Spielen steht jetzt: „Schon installiert. Das Setup aktualisiert oder repariert es.“
 4. Klicke dich wie bei der Installation durch.
 
-Das Setup legt dabei auch die Verknüpfung neu an. Brichst du eine Reparatur ab, solange die Sprachdateien laden, bleibt das Spiel genau so, wie es war.
+Das Setup legt dabei auch die Verknüpfung neu an. Brichst du eine Reparatur ab, solange die Sprachdateien laden, soll das Spiel genau so bleiben, wie es war. Das hat mit 1.1.0 bisher nur der automatische Test geprüft (siehe [Bekannte Probleme](#bekannte-probleme)).
 
 Der Launcher hilft dir dabei: Auf der Seite „Werkzeuge“ zeigt „Reparatur-Hinweise“ die Schritte, und „Setup-Ordner öffnen“ öffnet den entpackten Ordner.
 
-Hast du den Ordner nicht mehr? Dann lade das Paket neu herunter und entpacke es wie oben beschrieben.
+Hast du den Ordner nicht mehr? Dann lade das Paket neu von der Release-Seite herunter (<https://github.com/DritteRippe/Empire-Earth-Community/releases/latest>) und entpacke es wie oben beschrieben.
+
+**Wichtig: Nimm zum Reparieren nie das Setup von empireearth.eu.** Die „Reparatur-Hinweise“ des Launchers 1.1.0 nennen auch eine Downloadseite von empireearth.eu („Downloadseite öffnen“). Das Setup dort gehört nicht zu diesem Paket. Es trägt dieselbe Versionsnummer 1.7.2, ersetzt aber deine Installation durch seine eigene Fassung und macht dabei Verbesserungen von 1.1.0 rückgängig, zum Beispiel dgVoodoo 2.87.5 mit den neuen Fenstereinstellungen. Nimm immer das Setup aus diesem Paket. Geplant ist, dass der Launcher ab Version 1.1.1 an dieser Stelle die Release-Seite dieses Pakets zeigt.
 
 ## Deinstallieren
+
+So ist das Deinstallieren gebaut. Mit 1.1.0 ist es bisher nur in einem automatischen Test geprüft, noch nicht auf einem echten Computer (siehe [Bekannte Probleme](#bekannte-probleme)).
 
 1. Schließe alle Spiele und den Launcher.
 2. Öffne „Einstellungen“ > „Apps“ > „Installierte Apps“. Unter Windows 10 heißt die Seite „Apps & Features“.
@@ -364,7 +390,7 @@ Prüfe deine Internetverbindung. Starte dann das Setup erneut, um die Registrier
 
 **Auf der letzten Seite steht bei einem Spiel „fehlgeschlagen (das Protokoll nennt den Grund)“**
 
-Starte das Setup erneut. Klappt es wieder nicht, schicke die Protokolle an den, der dir das Paket gegeben hat (siehe nächster Abschnitt).
+Starte das Setup erneut. Klappt es wieder nicht, melde den Fehler mit den Protokollen (siehe [Protokolle für die Hilfe](#protokolle-für-die-hilfe) und [Hilfe und Feedback](#hilfe-und-feedback)).
 
 **Auf der letzten Seite steht bei einem Spiel „von dir abgebrochen, nichts daran wurde geändert“**
 
@@ -382,7 +408,9 @@ Die Deinstallation löscht die Protokolle der Spiel-Setups und des Launchers. Ko
 
 ## Paket prüfen (Prüfsummen)
 
-Dieser Schritt ist freiwillig. Das Setup prüft beim Start selbst, ob alle Dateien da sind und die richtige Größe haben. Willst du ganz sicher sein, dass beim Download kein einziges Byte kaputtgegangen ist, kannst du die Prüfsummen vergleichen.
+Die wichtigste Prüfung machst du schon vor dem Freigeben der ZIP-Datei: ihre Prüfsumme (siehe [Schritt 2](#schritt-2-download-freigeben-empfohlen)).
+
+Die Prüfung der entpackten Dateien hier ist freiwillig. Das Setup prüft beim Start selbst, ob alle Dateien da sind und die richtige Größe haben. Willst du ganz sicher sein, dass beim Herunterladen oder Entpacken kein einziges Byte kaputtgegangen ist, kannst du die Prüfsummen vergleichen.
 
 In der Datei **SHA256SUMS.txt** steht für jede der 27 Dateien (das Setup und die 26 .bin-Dateien) eine lange Folge aus Zahlen und Buchstaben, die Prüfsumme. Ist auch nur ein Byte einer Datei anders, kommt eine ganz andere Prüfsumme heraus.
 
@@ -416,6 +444,8 @@ Vergleiche die angezeigte Prüfsumme („Hash“) mit der Zeile für diese Datei
 
 Die Prüfsumme der ganzen ZIP-Datei Empire-Earth-Community-1.1.0.zip steht im Text des Release „Empire Earth Community 1.1.0“ auf GitHub.
 
+**Was die Prüfsummen zeigen:** SHA256SUMS.txt liegt mit in der ZIP-Datei. Sie zeigt, ob beim Herunterladen oder Entpacken etwas kaputtgegangen ist. Ob das Paket wirklich aus dem Release stammt, zeigt nur der Vergleich mit der Prüfsumme im Text des Release auf GitHub (Schritt 2): Wer die ZIP-Datei verändert, kann auch SHA256SUMS.txt anpassen.
+
 **Woher kommt das Paket?** Die Datei **BUILD-INFO.txt** nennt genau, woraus dieses Paket gebaut wurde: die Stände (Commits) des Quellcodes, die Prüfsummen der beiden Spiel-Setups, des Launchers und des Mod Creators und noch einmal die Prüfsummen der Setup-Dateien (.exe und .bin). Damit lässt sich das Paket eindeutig seinen Quellen zuordnen.
 
 ## Bekannte Probleme
@@ -424,11 +454,11 @@ Hier steht ehrlich, was noch nicht rund ist und was du tun kannst.
 
 **Wie 1.1.0 getestet ist:** Am 2026-10-07 lief auf einem Laptop mit Windows 11 der erste Teil des Tests: das Update von 1.0.0 auf 1.1.0, Spielen und die Seiten des Launchers. Das ging gut, und die Maus reagiert dort sofort nach dem Start, ohne Alt+Tab.
 Der zweite Teil des Tests lief noch nicht. **Noch nicht auf einem echten Computer getestet** sind deshalb: das Abbrechen während der Installation (auch bei einer Reparatur), das Deinstallieren mit „Behalten“ und mit „Löschen“, eine neue Installation, wenn noch nichts installiert ist, die Übernahme eines Spiels, das mit seinem eigenen Setup installiert wurde, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. Abbrechen, Neuinstallation, Übernahme und Deinstallation hat bisher nur ein automatischer Test auf einem Windows-Rechner von GitHub geprüft, mit Platzhaltern statt der Spiele.
-Stößt du dabei auf ein Problem, melde es bitte (siehe [Hilfe und Feedback](#hilfe-und-feedback)). Es wird in 1.1.1 behoben.
+Stößt du dabei auf ein Problem, melde es bitte (siehe [Hilfe und Feedback](#hilfe-und-feedback)). Die Behebung ist für 1.1.1 geplant.
 
 **1. Die Maus reagiert nach dem Spielstart nicht, wenn du ohne Launcher startest.**
 Seit 1.1.0 gibt der Launcher dem Spiel ein paar Sekunden nach dem Start ein Aktivierungssignal. Damit reagiert die Maus sofort, ohne Alt+Tab. Auf dem Test-Laptop ist das bestätigt. Lass den Launcher dafür offen, bis das Hauptmenü da ist. Schließt du ihn früher, kommt kein Signal.
-Startest du `Empire Earth.exe` oder `EE-AOC.exe` direkt, ohne Launcher, gibt es kein Signal. Läuft das Spiel mit „Als Administrator ausführen“, nimmt es das Signal nicht an.
+Startest du `Empire Earth.exe` oder `EE-AOC.exe` direkt, ohne Launcher, gibt es kein Signal. Läuft das Spiel mit „Als Administrator ausführen“, nimmt es das Signal sehr wahrscheinlich nicht an: Windows lässt ein Programm ohne Administratorrechte, wie den Launcher, nicht auf ein Programm mit Administratorrechten einwirken. Getestet ist das noch nicht.
 Abhilfe in diesen Fällen: einmal Alt+Tab hinaus und wieder zurück.
 
 **2. Das Spiel minimiert sich, wenn ein anderes Fenster oder eine Benachrichtigung erscheint.**
@@ -481,19 +511,32 @@ So funktioniert es hier:
 - **Testversionen** sind mit „Pre-release“ markiert, zum Beispiel v1.1.1-rc1. Zum Spielen nimm das Release mit „Latest“.
 - **Ältere Versionen bleiben erhalten.** Ein Release wird nachträglich nicht geändert oder gelöscht.
 
+**So erfährst du von neuen Versionen:**
+
+Das Paket meldet sich nicht von selbst, wenn es eine neue Version gibt. So bleibst du auf dem Laufenden:
+
+- **Mit einem GitHub-Konto:** Klicke oben auf der Seite des Repositorys (<https://github.com/DritteRippe/Empire-Earth-Community>) auf „Watch“, dann auf „Custom“, setze den Haken bei „Releases“ und klicke auf „Apply“. GitHub benachrichtigt dich dann bei jeder neuen Version.
+- **Ohne Konto:** Trage den RSS-Feed der Releases in einen Feed-Reader ein: <https://github.com/DritteRippe/Empire-Earth-Community/releases.atom>
+- Oder schau ab und zu auf die Release-Seite: <https://github.com/DritteRippe/Empire-Earth-Community/releases/latest>
+
+**Der Launcher kennt dieses Paket nicht.** Die Knöpfe „Version prüfen“ (Seite „Spielen“) und „Nach Updates suchen“ (Seite „Werkzeuge“) fragen nur den Update-Server von empireearth.eu nach der Version des Spiels und seines Setups (Setup 1.7.2). Nach neuen Versionen von Empire Earth Community fragen sie nicht. Meldet der Launcher „aktuell“, kann es trotzdem eine neue Version dieses Pakets geben. Meldet er eine neuere Version, gilt sie für die Setups von empireearth.eu: Installiere sie nicht über dieses Paket (siehe [Reparieren](#reparieren)). Neue Versionen des Pakets gibt es nur auf der Release-Seite.
+
 **So holst du die ältere Version 1.0.0:**
 
-1. Klicke auf der Seite des Repositorys rechts auf „Releases“.
+1. Öffne die Liste aller Releases: <https://github.com/DritteRippe/Empire-Earth-Community/releases>
 2. Suche das Release mit dem Tag „v1.0.0“. Der Tag steht bei jedem Release neben dem Titel.
 3. Klicke darunter bei „Assets“ auf „Source code (zip)“. Bei 1.0.0 enthält diese ZIP-Datei das ganze Paket genau in dieser Version, weil 1.0.0 seine Dateien noch im Repository hatte. Ab 1.1.0 ist das anders: Dort nimmst du die Datei „Empire-Earth-Community-…zip“ (siehe [Schritt 1](#schritt-1-paket-herunterladen)).
 4. Mach dann weiter wie ab [Schritt 2](#schritt-2-download-freigeben-empfohlen).
 
 ## Hilfe und Feedback
 
-Etwas klappt nicht, oder du hast eine Idee? Melde dich bei dem, der dir das Paket gegeben hat. Damit dir schnell geholfen werden kann, schreib kurz dazu:
+Etwas klappt nicht, oder du hast eine Idee? Melde es in den Issues dieses Repositorys: **[Fehler melden](https://github.com/DritteRippe/Empire-Earth-Community/issues/new/choose)**. Dafür brauchst du ein kostenloses Konto bei GitHub. Du kannst auf Deutsch oder auf Englisch schreiben. Schau vorher gern in die [vorhandenen Issues](https://github.com/DritteRippe/Empire-Earth-Community/issues?q=is%3Aissue), vielleicht hat schon jemand dasselbe gemeldet.
+
+Das Formular fragt nach allem, was für die Hilfe wichtig ist:
 
 - welche Version du benutzt (steht in der Datei VERSION im entpackten Ordner),
 - ob du Windows 10 oder Windows 11 hast,
+- welches Spiel betroffen ist,
 - was du gemacht hast und was dann passiert ist,
 - den genauen Text einer Fehlermeldung (oder ein Bildschirmfoto davon).
 
@@ -504,7 +547,11 @@ Schick außerdem die passenden Protokolle mit:
 
 Bevor du dich meldest, schau gern kurz in [Bekannte Probleme](#bekannte-probleme). Vielleicht steht die Lösung schon dort.
 
-Gut zu wissen: In den Protokollen stehen Ordnernamen. Darin kann dein Windows-Benutzername vorkommen.
+**Issues sind öffentlich.** Hänge nie Spieldateien, CD-Keys oder das Paket an. In den Protokollen stehen Ordnernamen, darin kann dein Windows-Benutzername vorkommen. Lies die Protokolle vor dem Hochladen durch und ersetze, was du nicht zeigen möchtest.
+
+**Eine Sicherheitslücke** meldest du bitte nicht in einem Issue, sondern privat, siehe [SECURITY.md](SECURITY.md).
+
+**Für Entwickler:** Fehler im Code des Setups oder des Launchers kannst du direkt in deren Repositorys melden: [Setup](https://github.com/DritteRippe/Empire-Earth-Setup/issues) und [Launcher](https://github.com/DritteRippe/Empire-Earth-Launcher/issues). Wie du sonst mithelfen kannst, steht in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Technische Details
 
@@ -559,7 +606,7 @@ Für das Programm „Empire Earth Diagnostic“ legt das Setup keine Verknüpfun
 - Automatisch: Der Ende-zu-Ende-Test des Suite-Installers (Szenarien S1 bis S14: Installation, Übernahme eines einzeln installierten Spiels, Reparatur, Deinstallation und Abbrechen) lief auf einem Windows-Rechner von GitHub ohne Fehler, mit Platzhaltern statt der Spiele, für die Commits `2b764e4` (aus ihm ist dieses Paket gebaut) und `75923f3`.
 - Auf dem Test-Laptop mit Windows 11 und einem Bildschirm mit 1920 × 1200, in einem früheren Test noch ohne das Aktivierungssignal: dgVoodoo 2.87.5 mit den Fenstereinstellungen von 1.1.0 bei einem Spielfenster von 1920 × 1200. Die Mehrspieler-Lobby, der Szenario-Editor und Alt+Tab gingen, ohne schwarze Balken. Die Maus war beim Start noch tot, bis Alt+Tab.
 - Auf demselben Laptop am 2026-10-07 mit genau diesen Setup-Dateien, erster Teil des Tests: Update von 1.0.0 auf 1.1.0, Spielen und die Seiten des Launchers. Ergebnis: bestanden, die Maus reagiert sofort nach dem Start, ohne Alt+Tab. Das Aktivierungssignal des Launchers 1.1.0 behebt also die tote Maus.
-- Der zweite Teil des Tests lief nicht: Abbrechen bei installierten Spielen (auch bei einer Reparatur), Deinstallieren, Abbrechen ohne Spiele, Neuinstallation, die Übernahme eines einzeln installierten Spiels, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. 1.1.0 wurde trotzdem freigegeben. Was davon der automatische Test abdeckt, lief nur dort, nicht auf echter Hardware. Findet der zweite Teil später ein Problem, wird es in 1.1.1 behoben.
+- Der zweite Teil des Tests lief nicht: Abbrechen bei installierten Spielen (auch bei einer Reparatur), Deinstallieren, Abbrechen ohne Spiele, Neuinstallation, die Übernahme eines einzeln installierten Spiels, das Setup in anderen Sprachen und der Wechsel des Wrappers über „Erweitert“. 1.1.0 wurde trotzdem freigegeben. Was davon der automatische Test abdeckt, lief nur dort, nicht auf echter Hardware. Findet der zweite Teil später ein Problem, soll es in 1.1.1 behoben werden.
 
 </details>
 
@@ -578,6 +625,8 @@ Welcher Stand genau in diesem Paket steckt, steht in [Lizenzen/Quellcode.txt](Li
 
 ## Rechtlicher Hinweis
 
-Dieses Paket ist nur für Besitzer des Originalspiels gedacht: Empire Earth mit seiner Erweiterung (oder die Gold Edition) auf CD mit gültigen Schlüsseln oder als digitaler Kauf. Gib das Paket und den Zugang zum Repository nicht weiter.
+**Nur für Besitzer des Originalspiels.** Dieses Paket ist nur für Besitzer des Originalspiels gedacht: Empire Earth mit seiner Erweiterung The Art of Conquest (oder die Gold Edition), auf CD mit gültigen Schlüsseln oder digital gekauft. Das Setup fragt danach. Installiere das Paket nur, wenn du das Originalspiel besitzt.
 
-Weil das Paket die Spieldaten enthält, ist dieses Repository absichtlich privat.
+Das Paket enthält die Spieldaten von Empire Earth, The Art of Conquest und NeoEE. Die Rechte an diesen Spieldaten liegen bei ihren jeweiligen Inhabern. Sie stehen nicht unter der GPL (siehe [Quellcode und Lizenzen](#quellcode-und-lizenzen)). Namen und Marken gehören ihren jeweiligen Inhabern.
+
+Möchtest du das Paket weiterempfehlen, teile bitte den Link zur Release-Seite (<https://github.com/DritteRippe/Empire-Earth-Community/releases/latest>) und nicht die Datei selbst. So bekommt jeder genau die Fassung aus dem Release, und die Prüfsumme im Text des Release passt.

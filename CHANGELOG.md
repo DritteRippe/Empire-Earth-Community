@@ -14,6 +14,11 @@ Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die V
 
 ### Geändert
 
+- **Anleitung für ein öffentliches Repository:** `README.md` und `LIES-MICH.txt` nennen die Adresse der Release-Seite (<https://github.com/DritteRippe/Empire-Earth-Community/releases/latest>), für den Download brauchst du kein Konto. Fehler meldest du in den Issues dieses Repositorys, Sicherheitslücken privat (siehe `SECURITY.md`). Der Hinweis, dass das Paket nur für Besitzer des Originalspiels ist und die Rechte an den Spieldaten bei ihren Inhabern liegen, bleibt im Abschnitt „Rechtlicher Hinweis“.
+- **Erst prüfen, dann freigeben:** Schritt 2 zeigt, wie du die Prüfsumme der ZIP-Datei mit der im Text des Release vergleichst, bevor du die Datei mit „Zulassen“ freigibst. „Paket prüfen“ erklärt, dass `SHA256SUMS.txt` nur Schäden zeigt, nicht die Herkunft.
+- **Neue Versionen:** Der Abschnitt „Versionen“ erklärt, wie du von einer neuen Version erfährst (auf GitHub „Watch“ > „Custom“ > „Releases“ oder der RSS-Feed der Releases), und dass „Version prüfen“ und „Nach Updates suchen“ im Launcher nur das Spiel und sein Setup beim Server von empireearth.eu prüfen, nicht dieses Paket.
+- **Reparieren:** Die Anleitung warnt davor, das Setup von empireearth.eu zu nehmen, das die „Reparatur-Hinweise“ des Launchers 1.1.0 auch nennen. Es ersetzt die Installation des Pakets und macht Verbesserungen von 1.1.0 rückgängig.
+- **Ehrlich, was noch nicht getestet ist:** Abbrechen, Deinstallieren und der Wechsel des Wrappers über „Erweitert“ stehen in der Anleitung als vorgesehen, nicht als geprüft. Dass ein Spiel mit „Als Administrator ausführen“ das Aktivierungssignal nicht annimmt, steht dort als erwartet, nicht als Tatsache.
 - **Lizenzen:** Der Ordner `Lizenzen/` im Repository ist die Vorlage für das nächste Paket und hat jetzt den Stand der Repositorys des Launchers und des Setups: `THIRD-PARTY-NOTICES.md` nennt ZipStorer 3.7.0 mit seinen lokalen Korrekturen, `THIRD-PARTY-NOTICES-Setup.md` zusätzlich BASS und die anderen mitgelieferten Programmdateien der Spiel-Setups, und `licenses/THIRD-PARTY-LICENSES.txt` nennt das Repository DritteRippe/Empire-Earth-Launcher als Quelle. Die Fassung aus der ZIP-Datei von 1.1.0 bleibt beim Tag `v1.1.0`.
 
 ### Behoben
