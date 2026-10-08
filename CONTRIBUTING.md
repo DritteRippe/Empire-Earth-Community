@@ -59,5 +59,11 @@ Ein Release des Pakets entsteht in drei Schritten, in dieser Reihenfolge:
    dazu bekommt die ZIP-Datei `Empire-Earth-Community-X.Y.Z.zip` unter „Assets“ und ihre Prüfsumme (SHA-256) im Text.
    Testversionen erscheinen als „Pre-release“, zum Beispiel `v1.1.1-rc1`.
 
+Dieselbe Reihenfolge gilt auch zwischen zwei Releases. Dieses Repository verlinkt Dateien auf `main` des Launchers und
+des Setups, und `Lizenzen/` übernimmt ihre Hinweise zu Komponenten Dritter samt den Commits, die darin genannt sind. Ein
+Pull Request, der sich darauf stützt, kommt deshalb erst auf `main`, wenn die Änderungen im Launcher und im Setup dort
+auf `main` sind, zusammengeführt mit einem Merge-Commit (nie mit „Squash and merge“ oder „Rebase and merge“). So bleiben
+die genannten Commits gültig, und kein Link führt ins Leere.
+
 Ein veröffentlichter Tag wird nie verschoben oder gelöscht, ein veröffentlichtes Release nicht nachträglich geändert,
 und die Historie von `main` wird nicht umgeschrieben. Ein Fehler nach dem Release bekommt eine neue Version.
