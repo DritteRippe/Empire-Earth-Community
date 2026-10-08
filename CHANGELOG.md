@@ -24,6 +24,7 @@ Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die V
 ### Behoben
 
 - `Lizenzen/Quellcode.txt` nannte als Stand des Quellcodes den Branch `v2`, den es nicht mehr gibt. Jetzt nennt die Datei die Tags `suite-v1.1.0` und `v1.1.0` mit ihren Commits und Links. Die Commits selbst sind unverändert.
+- Der Eintrag zu 1.1.0 beschrieb die Seite „Grafik“ des Launchers falsch: Sie ändert sehr wohl etwas, nämlich die Größe des Spielfensters. Der Eintrag ist korrigiert und als Korrektur gekennzeichnet. Die Anleitung war schon richtig.
 - Der Link in `Lizenzen/THIRD-PARTY-NOTICES.md` auf die Hinweise des Setups zeigte auf eine Seite, die es nicht gibt. Er führt jetzt zu DritteRippe/Empire-Earth-Setup.
 
 ### Geplant
@@ -31,7 +32,7 @@ Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die V
 Für spätere Versionen ist geplant (ohne festes Datum):
 
 - Discord-Status: Discord zeigt an, was du gerade spielst.
-- Grafik-Einstellungen, die Werte ändern: Wrapper, Anzeigemodus und Auflösung einstellen. Die Seite „Grafik“ in 1.1.0 zeigt die Werte nur an, und die Seite „Mods“ liest nur.
+- Weitere Grafik-Einstellungen: Wrapper und Anzeigemodus wählen, Auflösungen über 1920 × 1200. Seit 1.1.0 stellt die Seite „Grafik“ die Größe des Spielfensters ein (bis 1920 × 1200) und zeigt den Wrapper und seine `dgVoodoo.conf` nur an. Die Seite „Mods“ liest nur.
 
 ## [1.1.0] – 2026-10-07
 
@@ -44,7 +45,7 @@ Der zweite Teil des Tests lief nicht. Nicht auf echter Hardware getestet sind de
 - **Ein Fenster für die ganze Installation:** Statuszeile, Balken und eine Liste der fertigen Schritte. Die Setups der beiden Spiele zeigen keine eigenen Fenster mehr (außer im Pfad „Erweitert“).
 - **Abbrechen** geht, bis ein Spiel installiert wird, auch bei einer Reparatur oder einem Update. Danach ist „Abbrechen“ grau, mit einer Zeile unter dem Balken, die sagt, warum.
 - **Ein Symbol** „Empire Earth Community“ auf dem Desktop statt zwei. Der **Launcher 1.1.0** zeigt alle vier Spiele in einer Liste und merkt sich deine Wahl. Ein Setup oder eine Reparatur entfernt die zwei alten Symbole von 1.0.0.
-- **Launcher:** neue Seite „Grafik“ (zeigt die Werte der Spiele an, ohne etwas zu ändern), neue Seite „Mods“ (nur lesend), ein Fenster, das du größer ziehen kannst, und „Reparatur-Hinweise“ mit Links zu den Downloadseiten der Website.
+- **Launcher:** neue Seite „Grafik“ (die Größe des Spielfensters wählen, bis 1920 × 1200, mit einer Sicherung der alten Werte; den Wrapper und seine `dgVoodoo.conf` zeigt sie nur an), neue Seite „Mods“ (nur lesend), ein Fenster, das du größer ziehen kannst, und „Reparatur-Hinweise“ mit Links zu den Downloadseiten der Website. *(Korrektur vom 2026-10-08: Hier stand zuerst, die Seite „Grafik“ zeige die Werte der Spiele an, ohne etwas zu ändern. Das war falsch, die Größe des Spielfensters lässt sich dort ändern.)*
 - **Aktivierungssignal des Launchers:** Nach dem Start über den Launcher bekommt das Spiel ein Signal, das die Maus ohne Alt+Tab weckt.
 - **dgVoodoo 2.87.5** in allen fünf Stufen, mit neuen Fenstereinstellungen. Das Spielfenster kann bis 1920 × 1200 groß sein (bisher höchstens 1080 Zeilen).
 - **Intro-Videos** werden standardmäßig mit installiert. Bei einem Update bekommst du sie einmal nachgeliefert, danach bleibt deine Auswahl.
