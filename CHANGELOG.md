@@ -13,7 +13,7 @@ Für spätere Versionen ist geplant (ohne festes Datum):
 - Discord-Status: Discord zeigt an, was du gerade spielst.
 - Weitere Grafik-Einstellungen: Wrapper und Anzeigemodus wählen, Auflösungen über 1920 × 1200. Seit 1.1.0 stellt die Seite „Grafik“ die Größe des Spielfensters ein (bis 1920 × 1200) und zeigt den Wrapper und seine `dgVoodoo.conf` nur an. Die Seite „Mods“ liest nur.
 
-## [1.1.1] – 2026-10-09
+## [1.1.1] – 2026-10-10
 
 Eine Version mit Fehlerbehebungen. Setup 1.1.1 und Launcher 1.1.1 bringen die Korrekturen aus einer Durchsicht des Codes nach 1.1.0. Am meisten merkst du davon: Der Launcher schickt eine Installation aus diesem Paket nie mehr zum Setup von empireearth.eu, das die Verbesserungen des Pakets rückgängig machen würde, sondern zur Release-Seite dieses Pakets. Die Spiele und ihre Setups (Version 1.7.2) haben keine neuen Funktionen. Dazu kommen eine überarbeitete Anleitung und neue Dateien für ein öffentliches Repository.
 

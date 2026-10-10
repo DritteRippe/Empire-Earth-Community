@@ -28,7 +28,7 @@ Du brauchst keine Vorkenntnisse. Lies jeden Schritt und klicke genau das, was do
 | | |
 |---|---|
 | **Version** | 1.1.1 ([Was ist neu?](#was-ist-neu)) |
-| **Status** | freigegeben am 2026-10-09, noch nicht auf einem echten Computer getestet. 1.1.0 ist unter Windows 11 getestet (Update von 1.0.0 und Spielen). Abbrechen ist mit keiner Version auf einem echten Computer getestet, Deinstallieren zuletzt mit 1.0.0 (siehe [Bekannte Probleme](#bekannte-probleme)) |
+| **Status** | freigegeben am 2026-10-10, noch nicht auf einem echten Computer getestet. 1.1.0 ist unter Windows 11 getestet (Update von 1.0.0 und Spielen). Abbrechen ist mit keiner Version auf einem echten Computer getestet, Deinstallieren zuletzt mit 1.0.0 (siehe [Bekannte Probleme](#bekannte-probleme)) |
 | **Für** | Windows 10 und Windows 11, nur für Besitzer des Originalspiels |
 | **Download** | eine ZIP-Datei, etwa 1,3 GB, auf der [Release-Seite](https://github.com/DritteRippe/Empire-Earth-Community/releases/latest) |
 
@@ -623,7 +623,7 @@ Das Paket meldet sich nicht von selbst, und „Nach Updates suchen“ im Launche
 
 Alle Änderungen jeder Version stehen in der Datei [CHANGELOG.md](CHANGELOG.md).
 
-Kurz zu **1.1.1** (2026-10-09), einer Version mit Fehlerbehebungen. Sie ist noch nicht auf einem echten Computer getestet (siehe [Bekannte Probleme](#bekannte-probleme)).
+Kurz zu **1.1.1** (2026-10-10), einer Version mit Fehlerbehebungen. Sie ist noch nicht auf einem echten Computer getestet (siehe [Bekannte Probleme](#bekannte-probleme)).
 
 - **Nie mehr zum Setup von empireearth.eu:** Die „Reparatur-Hinweise“ des Launchers nennen für eine Installation aus diesem Paket die Release-Seite dieses Pakets, auch wenn der entpackte Ordner fehlt oder der Launcher ein Update meldet.
 - **Launcher, Seite „Werkzeuge“:** der neue Knopf „Release-Seite öffnen“. Die Erklärung zu „Nach Updates suchen“ sagt, dass nur das Spiel und sein Setup geprüft werden, nicht dieses Paket.
