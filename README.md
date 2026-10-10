@@ -631,7 +631,7 @@ Kurz zu **1.1.1** (2026-10-10), einer Version mit Fehlerbehebungen. Sie ist noch
 - **Mod Creator:** mehrere Fehler beim Erstellen von Mod-Archiven behoben, zum Beispiel löscht der Export keine eigenen Bilder mehr.
 - **Abbrechen und Deinstallieren:** Ein Abbruch genau dann, wenn sich das Setup eines Spiels beendet, wird nicht mehr unnötig wiederholt. „Löschen“ prüft jeden Ordner direkt vor dem Löschen noch einmal auf Verknüpfungen (Junctions), die nach außerhalb der Installation führen könnten.
 - **Windows „Apps“:** Die Links für Hilfe und Updates des Eintrags „Empire Earth Community (Launcher, EE, NeoEE)“ führen zu diesem Repository.
-- **Anleitung:** neu ist der Abschnitt [Update von 1.1.0](#update-von-110). Dazu kommen ein Formular zum Melden von Fehlern, [SECURITY.md](SECURITY.md) und [CONTRIBUTING.md](CONTRIBUTING.md).
+- **Anleitung:** neu ist der Abschnitt [Update von 1.1.0](#update-von-110). Dazu kommen ein Formular zum Melden von Fehlern, [SECURITY.md](https://github.com/DritteRippe/Empire-Earth-Community/security/policy) und [CONTRIBUTING.md](https://github.com/DritteRippe/Empire-Earth-Community/blob/main/CONTRIBUTING.md).
 
 Kurz zu **1.1.0** (2026-10-07):
 
@@ -705,9 +705,9 @@ Bevor du dich meldest, schau gern kurz in [Bekannte Probleme](#bekannte-probleme
 > [!WARNING]
 > **Issues sind öffentlich.** Hänge nie Spieldateien, CD-Keys oder das Paket an. In den Protokollen stehen Ordnernamen, darin kann dein Windows-Benutzername vorkommen. Lies die Protokolle vor dem Hochladen durch und ersetze, was du nicht zeigen möchtest.
 
-**Eine Sicherheitslücke** meldest du bitte nicht in einem Issue, sondern privat, siehe [SECURITY.md](SECURITY.md).
+**Eine Sicherheitslücke** meldest du bitte nicht in einem Issue, sondern privat, siehe [SECURITY.md](https://github.com/DritteRippe/Empire-Earth-Community/security/policy).
 
-**Für Entwickler:** Fehler im Code des Setups oder des Launchers kannst du direkt in deren Repositorys melden: [Setup](https://github.com/DritteRippe/Empire-Earth-Setup/issues) und [Launcher](https://github.com/DritteRippe/Empire-Earth-Launcher/issues). Wie du sonst mithelfen kannst, steht in [CONTRIBUTING.md](CONTRIBUTING.md).
+**Für Entwickler:** Fehler im Code des Setups oder des Launchers kannst du direkt in deren Repositorys melden: [Setup](https://github.com/DritteRippe/Empire-Earth-Setup/issues) und [Launcher](https://github.com/DritteRippe/Empire-Earth-Launcher/issues). Wie du sonst mithelfen kannst, steht in [CONTRIBUTING.md](https://github.com/DritteRippe/Empire-Earth-Community/blob/main/CONTRIBUTING.md).
 
 ## Technische Details
 
@@ -740,7 +740,7 @@ Die ZIP-Datei `Empire-Earth-Community-1.1.1.zip` aus dem Release enthält einen 
 - `CHANGELOG.md` und `VERSION`: die Änderungen und die Versionsnummer
 - `Lizenzen/`: Lizenzen und Hinweise zum Quellcode, darunter `THIRD-PARTY-NOTICES-Setup.md` mit dem Hinweis zu dgVoodoo
 
-Das Repository „Empire-Earth-Community“ selbst enthält die Dokumente der neuesten Version: `README.md`, `LIES-MICH.txt`, `CHANGELOG.md`, `VERSION`, `BUILD-INFO.txt`, `SHA256SUMS.txt` und `Lizenzen/`. Sie beschreiben die ZIP-Datei des neuesten Release. Dazu kommen die Dateien für GitHub, die nicht im Paket liegen: [SECURITY.md](SECURITY.md), [CONTRIBUTING.md](CONTRIBUTING.md) und der Ordner `.github/` mit den Formularen für Issues und den Bildern dieser Anleitung. Das Setup und die .bin-Dateien liegen nur in der ZIP-Datei. Bis 1.0.0 lagen sie im Repository; dort bleiben sie in der Historie beim Tag `v1.0.0`.
+Das Repository „Empire-Earth-Community“ selbst enthält die Dokumente der neuesten Version: `README.md`, `LIES-MICH.txt`, `CHANGELOG.md`, `VERSION`, `BUILD-INFO.txt`, `SHA256SUMS.txt` und `Lizenzen/`. Sie beschreiben die ZIP-Datei des neuesten Release. Dazu kommen die Dateien für GitHub, die nicht im Paket liegen: [SECURITY.md](https://github.com/DritteRippe/Empire-Earth-Community/security/policy), [CONTRIBUTING.md](https://github.com/DritteRippe/Empire-Earth-Community/blob/main/CONTRIBUTING.md) und der Ordner `.github/` mit den Formularen für Issues und den Bildern dieser Anleitung. Das Setup und die .bin-Dateien liegen nur in der ZIP-Datei. Bis 1.0.0 lagen sie im Repository; dort bleiben sie in der Historie beim Tag `v1.0.0`.
 
 Der Ordner `Lizenzen/` hat den Stand der Tags `v1.1.1` des Launchers und `suite-v1.1.1` des Setups, und `Quellcode.txt` nennt die Quellen mit ihren Tags und Commits. Die Dokumente genau so, wie sie in der ZIP-Datei einer Version liegen, findest du beim Tag dieser Version in diesem Repository, zum Beispiel `v1.1.0`.
 
