@@ -14,8 +14,8 @@ body:
     id: version
     attributes:
       label: Version des Pakets
-      description: Steht in der Datei `VERSION` im entpackten Ordner und im Namen der ZIP-Datei, zum Beispiel `Empire-Earth-Community-1.1.0.zip`.
-      placeholder: "1.1.0"
+      description: Steht in der Datei `VERSION` im entpackten Ordner und im Namen der ZIP-Datei, zum Beispiel `Empire-Earth-Community-1.1.1.zip`.
+      placeholder: "1.1.1"
     validations:
       required: true
   - type: input
