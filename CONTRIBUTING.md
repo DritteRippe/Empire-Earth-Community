@@ -57,7 +57,7 @@ Ein Release des Pakets entsteht in drei Schritten, in dieser Reihenfolge:
 3. **Paket (dieses Repository):** `README.md`, `LIES-MICH.txt`, `CHANGELOG.md`, `VERSION`, `BUILD-INFO.txt`,
    `SHA256SUMS.txt` und `Lizenzen/` beschreiben die neue Version. Dann bekommt `main` den Tag `vX.Y.Z`, und das Release
    dazu bekommt die ZIP-Datei `Empire-Earth-Community-X.Y.Z.zip` unter „Assets“ und ihre Prüfsumme (SHA-256) im Text.
-   Testversionen erscheinen als „Pre-release“, zum Beispiel `v1.1.1-rc1`.
+   Testversionen erscheinen als „Pre-release“, zum Beispiel `v1.1.2-rc1`.
 
 Dieselbe Reihenfolge gilt auch zwischen zwei Releases. Dieses Repository verlinkt Dateien auf `main` des Launchers und
 des Setups, und `Lizenzen/` übernimmt ihre Hinweise zu Komponenten Dritter samt den Commits, die darin genannt sind. Ein
